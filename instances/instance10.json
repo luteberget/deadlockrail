@@ -1,0 +1,2435 @@
+{
+  "trains": [
+    {
+      "name": "0",
+      "id": "0",
+      "is_dummy": false,
+      "initial_routes": [
+        "101111"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "follower_trains": [
+        "1",
+        "3"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "1",
+      "id": "1",
+      "is_dummy": false,
+      "initial_routes": [
+        "131143"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "follower_trains": [
+        "0",
+        "3"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "2",
+      "id": "2",
+      "is_dummy": false,
+      "initial_routes": [
+        "140130"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "0",
+        "1",
+        "3"
+      ],
+      "follower_trains": [
+        "4",
+        "5",
+        "6"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "3",
+      "id": "3",
+      "is_dummy": false,
+      "initial_routes": [
+        "141151"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "follower_trains": [
+        "0",
+        "1"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "4",
+      "id": "4",
+      "is_dummy": false,
+      "initial_routes": [
+        "170160"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "0",
+        "1",
+        "3"
+      ],
+      "follower_trains": [
+        "2",
+        "5",
+        "6"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "5",
+      "id": "5",
+      "is_dummy": false,
+      "initial_routes": [
+        "190180",
+        "180170"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "0",
+        "1",
+        "3"
+      ],
+      "follower_trains": [
+        "2",
+        "4",
+        "6"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "6",
+      "id": "6",
+      "is_dummy": false,
+      "initial_routes": [
+        "160150"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "0",
+        "1",
+        "3"
+      ],
+      "follower_trains": [
+        "2",
+        "4",
+        "5"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "101",
+      "id": "101",
+      "is_dummy": true,
+      "initial_routes": [
+        "103101"
+      ],
+      "final_routes": [],
+      "crossing_trains": [],
+      "follower_trains": [],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    },
+    {
+      "name": "200",
+      "id": "200",
+      "is_dummy": true,
+      "initial_routes": [
+        "202200"
+      ],
+      "final_routes": [],
+      "crossing_trains": [],
+      "follower_trains": [],
+      "is_safe_place_bound": false,
+      "safe_place_route": "0"
+    }
+  ],
+  "routes": [
+    {
+      "name": "101111",
+      "id": "101111",
+      "is_multi_train": false,
+      "station_or_track_id": "110",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "103101",
+      "id": "103101",
+      "is_multi_train": false,
+      "station_or_track_id": "100",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "110100",
+      "id": "110100",
+      "is_multi_train": false,
+      "station_or_track_id": "100",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "111121",
+      "id": "111121",
+      "is_multi_train": false,
+      "station_or_track_id": "120",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "111123",
+      "id": "111123",
+      "is_multi_train": false,
+      "station_or_track_id": "120",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "120110",
+      "id": "120110",
+      "is_multi_train": false,
+      "station_or_track_id": "110",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "121131",
+      "id": "121131",
+      "is_multi_train": false,
+      "station_or_track_id": "130",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "122110",
+      "id": "122110",
+      "is_multi_train": false,
+      "station_or_track_id": "110",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "123131",
+      "id": "123131",
+      "is_multi_train": false,
+      "station_or_track_id": "130",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "130120",
+      "id": "130120",
+      "is_multi_train": false,
+      "station_or_track_id": "120",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "130122",
+      "id": "130122",
+      "is_multi_train": false,
+      "station_or_track_id": "120",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "131141",
+      "id": "131141",
+      "is_multi_train": false,
+      "station_or_track_id": "140",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "131143",
+      "id": "131143",
+      "is_multi_train": false,
+      "station_or_track_id": "140",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "140130",
+      "id": "140130",
+      "is_multi_train": false,
+      "station_or_track_id": "130",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "141151",
+      "id": "141151",
+      "is_multi_train": false,
+      "station_or_track_id": "150",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "142130",
+      "id": "142130",
+      "is_multi_train": false,
+      "station_or_track_id": "130",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "143151",
+      "id": "143151",
+      "is_multi_train": false,
+      "station_or_track_id": "150",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "150140",
+      "id": "150140",
+      "is_multi_train": false,
+      "station_or_track_id": "140",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "150142",
+      "id": "150142",
+      "is_multi_train": false,
+      "station_or_track_id": "140",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "151161",
+      "id": "151161",
+      "is_multi_train": false,
+      "station_or_track_id": "160",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "151163",
+      "id": "151163",
+      "is_multi_train": false,
+      "station_or_track_id": "160",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "160150",
+      "id": "160150",
+      "is_multi_train": false,
+      "station_or_track_id": "150",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "161171",
+      "id": "161171",
+      "is_multi_train": false,
+      "station_or_track_id": "170",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "162150",
+      "id": "162150",
+      "is_multi_train": false,
+      "station_or_track_id": "150",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "163171",
+      "id": "163171",
+      "is_multi_train": false,
+      "station_or_track_id": "170",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "170160",
+      "id": "170160",
+      "is_multi_train": false,
+      "station_or_track_id": "160",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "170162",
+      "id": "170162",
+      "is_multi_train": false,
+      "station_or_track_id": "160",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "171181",
+      "id": "171181",
+      "is_multi_train": false,
+      "station_or_track_id": "180",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "171183",
+      "id": "171183",
+      "is_multi_train": false,
+      "station_or_track_id": "180",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "180170",
+      "id": "180170",
+      "is_multi_train": false,
+      "station_or_track_id": "170",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "181191",
+      "id": "181191",
+      "is_multi_train": false,
+      "station_or_track_id": "190",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "182170",
+      "id": "182170",
+      "is_multi_train": false,
+      "station_or_track_id": "170",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "183191",
+      "id": "183191",
+      "is_multi_train": false,
+      "station_or_track_id": "190",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "190180",
+      "id": "190180",
+      "is_multi_train": false,
+      "station_or_track_id": "180",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "190182",
+      "id": "190182",
+      "is_multi_train": false,
+      "station_or_track_id": "180",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "191201",
+      "id": "191201",
+      "is_multi_train": false,
+      "station_or_track_id": "200",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "200190",
+      "id": "200190",
+      "is_multi_train": false,
+      "station_or_track_id": "190",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    },
+    {
+      "name": "202200",
+      "id": "202200",
+      "is_multi_train": false,
+      "station_or_track_id": "200",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false
+    }
+  ],
+  "train_routes": [
+    {
+      "train": "0",
+      "route": "101111",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "111121",
+        "111123"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "111121",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "121131"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "111123",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "123131"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "121131",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "131143",
+        "131141"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "123131",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "131143",
+        "131141"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "131141",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "141151"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "131143",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "143151"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "141151",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "143151",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "151161",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "161171"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "151163",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "163171"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "161171",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "163171",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "171181",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "181191"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "171183",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "183191"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "181191",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "183191",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "0",
+      "route": "191201",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "1",
+      "route": "131143",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "143151"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "143151",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "151161",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "161171"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "151163",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "163171"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "161171",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "163171",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "171181",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "181191"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "171183",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "183191"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "181191",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "183191",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "1",
+      "route": "191201",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "2",
+      "route": "110100",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "2",
+      "route": "120110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "2",
+      "route": "122110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "2",
+      "route": "130120",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "120110"
+      ]
+    },
+    {
+      "train": "2",
+      "route": "130122",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "122110"
+      ]
+    },
+    {
+      "train": "2",
+      "route": "140130",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "141151",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "151161",
+      "length": 12,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "161171"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "151163",
+      "length": 12,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "163171"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "161171",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "163171",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "171181",
+      "length": 12,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "181191"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "171183",
+      "length": 12,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "183191"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "181191",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "183191",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "3",
+      "route": "191201",
+      "length": 12,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "4",
+      "route": "110100",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "4",
+      "route": "120110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "122110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "130120",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "120110"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "130122",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "122110"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "140130",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "142130",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "150140",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "140130"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "150142",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "142130"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "160150",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "4",
+      "route": "170160",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "160150"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "110100",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "5",
+      "route": "120110",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "122110",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "130120",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "120110"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "130122",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "122110"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "140130",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "142130",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "150140",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "140130"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "150142",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "142130"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "160150",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "162150",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "170160",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "160150"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "170162",
+      "length": 10,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "162150"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "180170",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "170162",
+        "170160"
+      ]
+    },
+    {
+      "train": "5",
+      "route": "190180",
+      "length": 10,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "180170"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "110100",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "6",
+      "route": "120110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "122110",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "130120",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "120110"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "130122",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "122110"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "140130",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "142130",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "150140",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "140130"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "150142",
+      "length": 5,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "142130"
+      ]
+    },
+    {
+      "train": "6",
+      "route": "160150",
+      "length": 5,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "101111",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "111121",
+        "111123"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "103101",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": [
+        "101111"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "111121",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "121131"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "111123",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "123131"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "121131",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "131143",
+        "131141"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "123131",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "131143",
+        "131141"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "131141",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "141151"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "131143",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "143151"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "141151",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "143151",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "151163",
+        "151161"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "151161",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "161171"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "151163",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "163171"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "161171",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "163171",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "171181",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "181191"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "171183",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "183191"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "181191",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "183191",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "191201"
+      ]
+    },
+    {
+      "train": "101",
+      "route": "191201",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "200",
+      "route": "110100",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": []
+    },
+    {
+      "train": "200",
+      "route": "120110",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "122110",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "110100"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "130120",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "120110"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "130122",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "122110"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "140130",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "142130",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "150140",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "140130"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "150142",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "142130"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "160150",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "162150",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "170160",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "160150"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "170162",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "162150"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "180170",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "170162",
+        "170160"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "182170",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "170162",
+        "170160"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "190180",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "180170"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "190182",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "182170"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "200190",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "190182",
+        "190180"
+      ]
+    },
+    {
+      "train": "200",
+      "route": "202200",
+      "length": 1,
+      "is_potential_safe_place": false,
+      "is_black_hole": true,
+      "next_routes": [
+        "200190"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "route": "101111",
+      "length": 20,
+      "conflicts": [
+        "101111",
+        "120110",
+        "122110"
+      ]
+    },
+    {
+      "route": "101111",
+      "length": 21,
+      "conflicts": [
+        "111121",
+        "111123"
+      ]
+    },
+    {
+      "route": "103101",
+      "length": 2147483646,
+      "conflicts": []
+    },
+    {
+      "route": "103101",
+      "length": 2147483647,
+      "conflicts": []
+    },
+    {
+      "route": "110100",
+      "length": 2147483646,
+      "conflicts": []
+    },
+    {
+      "route": "110100",
+      "length": 2147483647,
+      "conflicts": []
+    },
+    {
+      "route": "111121",
+      "length": 9,
+      "conflicts": [
+        "111121",
+        "130120"
+      ]
+    },
+    {
+      "route": "111121",
+      "length": 10,
+      "conflicts": [
+        "101111",
+        "121131",
+        "120110",
+        "122110"
+      ]
+    },
+    {
+      "route": "111123",
+      "length": 10,
+      "conflicts": [
+        "111123",
+        "130122"
+      ]
+    },
+    {
+      "route": "111123",
+      "length": 11,
+      "conflicts": [
+        "101111",
+        "123131",
+        "120110",
+        "122110"
+      ]
+    },
+    {
+      "route": "120110",
+      "length": 20,
+      "conflicts": [
+        "101111",
+        "120110",
+        "122110"
+      ]
+    },
+    {
+      "route": "120110",
+      "length": 21,
+      "conflicts": [
+        "111121",
+        "111123",
+        "130120"
+      ]
+    },
+    {
+      "route": "121131",
+      "length": 20,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131"
+      ]
+    },
+    {
+      "route": "121131",
+      "length": 21,
+      "conflicts": [
+        "111121",
+        "131143",
+        "131141",
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "route": "122110",
+      "length": 20,
+      "conflicts": [
+        "101111",
+        "120110",
+        "122110"
+      ]
+    },
+    {
+      "route": "122110",
+      "length": 21,
+      "conflicts": [
+        "111121",
+        "111123",
+        "130122"
+      ]
+    },
+    {
+      "route": "123131",
+      "length": 20,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131"
+      ]
+    },
+    {
+      "route": "123131",
+      "length": 21,
+      "conflicts": [
+        "111123",
+        "131143",
+        "131141",
+        "130120",
+        "130122"
+      ]
+    },
+    {
+      "route": "130120",
+      "length": 9,
+      "conflicts": [
+        "111121",
+        "130120"
+      ]
+    },
+    {
+      "route": "130120",
+      "length": 10,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131",
+        "120110"
+      ]
+    },
+    {
+      "route": "130122",
+      "length": 10,
+      "conflicts": [
+        "111123",
+        "130122"
+      ]
+    },
+    {
+      "route": "130122",
+      "length": 11,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131",
+        "122110"
+      ]
+    },
+    {
+      "route": "131141",
+      "length": 3,
+      "conflicts": [
+        "131141",
+        "150140"
+      ]
+    },
+    {
+      "route": "131141",
+      "length": 4,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131",
+        "141151"
+      ]
+    },
+    {
+      "route": "131143",
+      "length": 5,
+      "conflicts": [
+        "131143",
+        "150142"
+      ]
+    },
+    {
+      "route": "131143",
+      "length": 6,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131",
+        "143151"
+      ]
+    },
+    {
+      "route": "140130",
+      "length": 20,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131"
+      ]
+    },
+    {
+      "route": "140130",
+      "length": 21,
+      "conflicts": [
+        "131143",
+        "131141",
+        "130120",
+        "130122",
+        "150140"
+      ]
+    },
+    {
+      "route": "141151",
+      "length": 20,
+      "conflicts": [
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "141151",
+      "length": 21,
+      "conflicts": [
+        "131141",
+        "151163",
+        "151161",
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "route": "142130",
+      "length": 20,
+      "conflicts": [
+        "140130",
+        "142130",
+        "121131",
+        "123131"
+      ]
+    },
+    {
+      "route": "142130",
+      "length": 21,
+      "conflicts": [
+        "131143",
+        "131141",
+        "130120",
+        "130122",
+        "150142"
+      ]
+    },
+    {
+      "route": "143151",
+      "length": 20,
+      "conflicts": [
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "143151",
+      "length": 21,
+      "conflicts": [
+        "131143",
+        "151163",
+        "151161",
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "route": "150140",
+      "length": 3,
+      "conflicts": [
+        "131141",
+        "150140"
+      ]
+    },
+    {
+      "route": "150140",
+      "length": 4,
+      "conflicts": [
+        "140130",
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "150142",
+      "length": 5,
+      "conflicts": [
+        "131143",
+        "150142"
+      ]
+    },
+    {
+      "route": "150142",
+      "length": 6,
+      "conflicts": [
+        "142130",
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "151161",
+      "length": 9,
+      "conflicts": [
+        "170160",
+        "151161"
+      ]
+    },
+    {
+      "route": "151161",
+      "length": 10,
+      "conflicts": [
+        "161171",
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "151163",
+      "length": 10,
+      "conflicts": [
+        "170162",
+        "151163"
+      ]
+    },
+    {
+      "route": "151163",
+      "length": 11,
+      "conflicts": [
+        "163171",
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "160150",
+      "length": 20,
+      "conflicts": [
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "160150",
+      "length": 21,
+      "conflicts": [
+        "170160",
+        "151163",
+        "151161",
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "route": "161171",
+      "length": 20,
+      "conflicts": [
+        "161171",
+        "163171",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "161171",
+      "length": 21,
+      "conflicts": [
+        "170162",
+        "170160",
+        "151161",
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "route": "162150",
+      "length": 20,
+      "conflicts": [
+        "160150",
+        "162150",
+        "141151",
+        "143151"
+      ]
+    },
+    {
+      "route": "162150",
+      "length": 21,
+      "conflicts": [
+        "170162",
+        "151163",
+        "151161",
+        "150142",
+        "150140"
+      ]
+    },
+    {
+      "route": "163171",
+      "length": 20,
+      "conflicts": [
+        "161171",
+        "163171",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "163171",
+      "length": 21,
+      "conflicts": [
+        "170162",
+        "170160",
+        "151163",
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "route": "170160",
+      "length": 9,
+      "conflicts": [
+        "170160",
+        "151161"
+      ]
+    },
+    {
+      "route": "170160",
+      "length": 10,
+      "conflicts": [
+        "161171",
+        "163171",
+        "160150",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "170162",
+      "length": 10,
+      "conflicts": [
+        "170162",
+        "151163"
+      ]
+    },
+    {
+      "route": "170162",
+      "length": 11,
+      "conflicts": [
+        "161171",
+        "163171",
+        "162150",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "171181",
+      "length": 5,
+      "conflicts": [
+        "190180",
+        "171181"
+      ]
+    },
+    {
+      "route": "171181",
+      "length": 6,
+      "conflicts": [
+        "161171",
+        "163171",
+        "181191",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "171183",
+      "length": 7,
+      "conflicts": [
+        "190182",
+        "171183"
+      ]
+    },
+    {
+      "route": "171183",
+      "length": 8,
+      "conflicts": [
+        "161171",
+        "163171",
+        "183191",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "180170",
+      "length": 20,
+      "conflicts": [
+        "161171",
+        "163171",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "180170",
+      "length": 21,
+      "conflicts": [
+        "170162",
+        "170160",
+        "190180",
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "route": "181191",
+      "length": 20,
+      "conflicts": [
+        "181191",
+        "183191",
+        "200190"
+      ]
+    },
+    {
+      "route": "181191",
+      "length": 21,
+      "conflicts": [
+        "190182",
+        "190180",
+        "171181"
+      ]
+    },
+    {
+      "route": "182170",
+      "length": 20,
+      "conflicts": [
+        "161171",
+        "163171",
+        "180170",
+        "182170"
+      ]
+    },
+    {
+      "route": "182170",
+      "length": 21,
+      "conflicts": [
+        "170162",
+        "170160",
+        "190182",
+        "171183",
+        "171181"
+      ]
+    },
+    {
+      "route": "183191",
+      "length": 20,
+      "conflicts": [
+        "181191",
+        "183191",
+        "200190"
+      ]
+    },
+    {
+      "route": "183191",
+      "length": 21,
+      "conflicts": [
+        "190182",
+        "190180",
+        "171183"
+      ]
+    },
+    {
+      "route": "190180",
+      "length": 5,
+      "conflicts": [
+        "190180",
+        "171181"
+      ]
+    },
+    {
+      "route": "190180",
+      "length": 6,
+      "conflicts": [
+        "181191",
+        "183191",
+        "180170",
+        "200190"
+      ]
+    },
+    {
+      "route": "190182",
+      "length": 7,
+      "conflicts": [
+        "190182",
+        "171183"
+      ]
+    },
+    {
+      "route": "190182",
+      "length": 8,
+      "conflicts": [
+        "181191",
+        "183191",
+        "182170",
+        "200190"
+      ]
+    },
+    {
+      "route": "191201",
+      "length": 2147483646,
+      "conflicts": []
+    },
+    {
+      "route": "191201",
+      "length": 2147483647,
+      "conflicts": []
+    },
+    {
+      "route": "200190",
+      "length": 20,
+      "conflicts": [
+        "181191",
+        "183191",
+        "200190"
+      ]
+    },
+    {
+      "route": "200190",
+      "length": 21,
+      "conflicts": [
+        "190182",
+        "190180"
+      ]
+    },
+    {
+      "route": "202200",
+      "length": 2147483646,
+      "conflicts": []
+    },
+    {
+      "route": "202200",
+      "length": 2147483647,
+      "conflicts": []
+    }
+  ]
+}
