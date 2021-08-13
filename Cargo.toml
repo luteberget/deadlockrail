@@ -11,10 +11,9 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 log = "0.4"
 simple_logger = "1.11"
-satcoder = { path = "../../salvers/satcoder" }
+satcoder = { git = "https://github.com/luteberget/salvers", rev="0f83a5c" }
 structopt = "0.3"
 hprof = "0.1"
-#good_lp = "1.1"
 velcro = "0.5"
 
 [profile.release]
