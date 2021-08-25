@@ -1,0 +1,71 @@
+   Compiling deadlockrail v0.1.0 (C:\Users\bjornarl\repos\deadlockrail)
+    Finished release [optimized] target(s) in 21.56s
+#
+# ALGORITHM 1
+#
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000002.json
+2021-08-25 13:41:58,328 INFO  [deadlockrail::solver] DEADLOCKED: situation locked after reaching UB 10 on steps at 10
+  deadlockcheck - 1 * 3.9ms = 3.9ms (34.1%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000004.json
+2021-08-25 13:41:58,739 INFO  [deadlockrail::solver] DEADLOCKED: situation locked after reaching UB 22 on steps at 22
+  deadlockcheck - 1 * 262.2ms = 262.2ms (97.2%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000006.json
+2021-08-25 13:42:02,354 INFO  [deadlockrail::solver] DEADLOCKED: situation locked after reaching UB 34 on steps at 34
+  deadlockcheck - 1 * 3.5s = 3.5s (99.8%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000008.json
+2021-08-25 13:42:15,327 INFO  [deadlockrail::solver] DEADLOCKED: situation locked after reaching UB 46 on steps at 46
+  deadlockcheck - 1 * 12.8s = 12.8s (99.9%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000010.json
+2021-08-25 13:43:05,087 INFO  [deadlockrail::solver] DEADLOCKED: situation locked after reaching UB 58 on steps at 58
+  deadlockcheck - 1 * 49.6s = 49.6s (100.0%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000020.json
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000050.json
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000100.json
+#
+# ALGORITHM 2
+#
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000002.json
+2021-08-25 13:46:05,606 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 7 steps
+  deadlockcheck - 1 * 5.8ms = 5.8ms (61.9%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000004.json
+2021-08-25 13:46:06,002 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 13 steps
+  deadlockcheck - 1 * 223.5ms = 223.5ms (98.0%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000006.json
+2021-08-25 13:46:07,694 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 19 steps
+  deadlockcheck - 1 * 1.5s = 1.5s (99.7%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000008.json
+2021-08-25 13:46:17,815 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 25 steps
+  deadlockcheck - 1 * 10.0s = 10.0s (100.0%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000010.json
+2021-08-25 13:46:47,284 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 31 steps
+  deadlockcheck - 1 * 29.3s = 29.3s (100.0%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000020.json
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000050.json
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000100.json
+#
+# ALGORITHM 3
+#
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000002.json
+2021-08-25 13:49:47,787 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 1.4ms = 1.4ms (41.5%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000004.json
+2021-08-25 13:49:47,932 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 2.1ms = 2.1ms (51.5%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000006.json
+2021-08-25 13:49:48,057 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 3.2ms = 3.2ms (61.3%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000008.json
+2021-08-25 13:49:48,197 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 3.6ms = 3.6ms (62.2%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000010.json
+2021-08-25 13:49:48,338 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 5.7ms = 5.7ms (72.5%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000020.json
+2021-08-25 13:49:48,478 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 10.4ms = 10.4ms (83.8%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000050.json
+2021-08-25 13:49:48,648 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 34.8ms = 34.8ms (94.1%)
+instance benchmark_twotrainscaling/twotrack_multi_train000010_line000100_station000005_n000100.json
+2021-08-25 13:49:48,902 INFO  [deadlockrail::solver] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 117.1ms = 117.1ms (97.7%)
