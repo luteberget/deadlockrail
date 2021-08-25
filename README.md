@@ -13,13 +13,13 @@ The directory `benchmark_sasso` contains example problem instances originally us
 
 > Veronica Dal Sasso, Leonardo Lamorgese, Carlo Mannino, Andrea Onofri & Paolo Ventura (2021):The Tick Formulation for deadlock detection and avoidance in railways traffic control. J. Rail Transp. Plan. Manag.17,p. 100239, doi:10.1016/j.jrtpm.2021.100239.
 
-A performance measurement script can be run by typing:
+A performance measurement script can be run by executing:
 
  > ./perf_benchmark_sasso.sh
 
-The directory `benchmark_twotrainscaling` contains a set of instances with two trains and a number of stations. The performance can be measured by typing:
+The directory `benchmark_twotrainscaling` contains a set of instances with two trains and a number of stations. The performance can be measured by executing:
 
- > ./perf_benchmark_twotrainscaling
+ > ./perf_benchmark_twotrainscaling.sh
 
 
 ## Usage
