@@ -1,15 +1,13 @@
 use crate::plan::DeadlockResult;
-use crate::state::{StateConstraintSettings, ub_steps};
+use crate::state::{ub_steps, StateConstraintSettings};
 use crate::{
-    plan::Plan,
     problem::*,
     state::{goal_condition, initial_state, mk_state, model_to_plan},
 };
 use log::*;
 use satcoder::prelude::*;
 
-pub fn solve_1_using_num_states_bound(problem: &Problem,    print_fn: &impl Fn(&Plan),
-) -> DeadlockResult {
+pub fn solve_1_using_num_states_bound(problem: &Problem) -> DeadlockResult {
     // The first algorithm simply adds states with consistency constraints and
     // solves until some upper bound of states is reached.
 
@@ -22,12 +20,10 @@ pub fn solve_1_using_num_states_bound(problem: &Problem,    print_fn: &impl Fn(&
             global_progress_constraint: false,
             local_early_progress_constraint: false,
         },
-        print_fn,
     )
 }
 
-pub fn solve_2_using_global_progress(problem: &Problem,    print_fn: &impl Fn(&Plan),
-) -> DeadlockResult {
+pub fn solve_2_using_global_progress(problem: &Problem) -> DeadlockResult {
     // The second algorithm adds a global progress constraints and solves
     // the system without the goal state assumption to check whether a deadlock
     // has been reached.
@@ -41,14 +37,10 @@ pub fn solve_2_using_global_progress(problem: &Problem,    print_fn: &impl Fn(&P
             global_progress_constraint: true,
             local_early_progress_constraint: false,
         },
-        print_fn,
     )
 }
 
-pub fn solve_3_using_local_and_global_progress(
-    problem: &Problem,
-    print_fn: &impl Fn(&Plan),
-) -> DeadlockResult {
+pub fn solve_3_using_local_and_global_progress(problem: &Problem) -> DeadlockResult {
     // The third algorithm adds a local progress constraints which
     // 1. forces freeing of resources once sufficient resources ahead have been allocated, and
     // 2. forces allocation to happen as early as possible by allowing allocations to
@@ -63,7 +55,6 @@ pub fn solve_3_using_local_and_global_progress(
             global_progress_constraint: true,
             local_early_progress_constraint: true,
         },
-        print_fn,
     )
 }
 
@@ -71,7 +62,6 @@ pub fn solve(
     problem: &Problem,
     check_unconditional: bool,
     settings: StateConstraintSettings,
-    print_fn: &impl Fn(&Plan),
 ) -> DeadlockResult {
     let mut s = satcoder::solvers::cadical::Solver::new();
     let mut states = vec![initial_state(&mut s, problem)];
@@ -93,10 +83,8 @@ pub fn solve(
             if let SatResult::Sat(model) = uncond_result {
                 info!("Unconditional solve succeeded.");
                 let plan = model_to_plan(&states, problem, model.as_ref());
-
-                    print_fn(&plan);
-                    let (summary, commands) = crate::plan::print_plan(&plan);
-                    debug!("SUMMARY: \n{}\n", summary);
+                let (summary, _commands) = crate::plan::print_plan(&plan);
+                debug!("SUMMARY: \n{}\n", summary);
             } else {
                 // TODO deadlock analysis
                 info!("DEADLOCKED: situation locked in {} steps", states.len());
@@ -137,7 +125,11 @@ pub fn solve(
                 settings,
             ));
         } else {
-            info!("DEADLOCKED: situation locked after reaching UB {} on steps at {}", ub, states.len());
+            info!(
+                "DEADLOCKED: situation locked after reaching UB {} on steps at {}",
+                ub,
+                states.len()
+            );
             return DeadlockResult::Deadlocked(());
         }
     }

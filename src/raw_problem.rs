@@ -26,8 +26,6 @@ pub struct Route {
     pub name: String,
     pub id: String,
 
-    /// an more than one trani be simultaneously on the route?
-    /// (TODO: what does this mean)
     /// NOTE Always false
     pub is_multi_train: bool,
 

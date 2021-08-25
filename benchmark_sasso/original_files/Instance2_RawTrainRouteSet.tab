@@ -1,0 +1,35 @@
+trainId	routeId	trainLength	isPotentialSafePlace	isBlackHole	nextRouteIdCsv
+1	1121	8	false	false	2131,2133
+1	2131	8	true	false	3141
+1	2133	8	true	false	3341
+1	3141	8	false	false	4151
+1	3341	8	false	false	4151
+1	4151	8	false	true	
+2	2010	1	false	true	
+2	3020	1	false	false	2010
+2	3220	1	false	false	2010
+2	4030	1	false	false	3020
+2	4032	1	true	false	3220
+2	5040	1	false	false	4032,4030
+2	5250	1	false	false	5040
+3	2010	1	false	true	
+3	3020	1	false	false	2010
+3	3220	1	false	false	2010
+3	4030	1	false	false	3020
+3	4032	1	false	false	3220
+3	5040	1	false	false	4032,4030
+3	5250	1	false	false	5040
+11	1121	1	false	false	2131,2133
+11	1311	1	false	true	1121
+11	2131	1	true	false	3141
+11	2133	1	true	false	3341
+11	3141	1	false	false	4151
+11	3341	1	false	false	4151
+11	4151	1	false	true	
+50	2010	1	false	true	
+50	3020	1	false	false	2010
+50	3220	1	false	false	2010
+50	4030	1	true	false	3020
+50	4032	1	true	false	3220
+50	5040	1	false	false	4032,4030
+50	5250	1	false	true	5040

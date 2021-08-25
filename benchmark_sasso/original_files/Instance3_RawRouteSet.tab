@@ -1,0 +1,15 @@
+RouteStr	routeId	isMultiTrain	stationOrTrackId	isFinalPointInStation	isSiding	isUnusable
+XXX1	1121	false	20	false	false	false
+XXX2	1311	false	10	false	false	false
+XXX3	2010	false	10	false	false	false
+XXX4	2131	false	30	true	false	false
+XXX5	2133	false	30	true	false	false
+XXX6	3020	false	20	false	false	false
+XXX7	3141	false	40	false	false	false
+XXX8	3220	false	20	false	false	false
+XXX9	3341	false	40	false	false	false
+XXX10	4030	false	30	true	false	false
+XXX11	4032	false	30	true	false	false
+XXX12	4151	false	50	false	false	false
+XXX13	5040	false	40	false	false	false
+XXX14	5250	false	50	false	false	false

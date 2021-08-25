@@ -1,0 +1,5 @@
+trainStr	trainId	isDummy	initialRouteIdsCsv	finalRoute	crossingTrainIdsCsv	followerTrainIdsCsv	isSafePlaceBound	safePlaceRoute
+Y1	0	false	1121		1		false	
+Y2	1	false	9080		0		false	
+Y3	11	true	1311				false	
+Y4	90	true	9290				false	

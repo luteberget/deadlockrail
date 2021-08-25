@@ -1,0 +1,8 @@
+trainIdStr	trainId	isDummy	initialRouteIdsCsv	lastRouteIdsCsv	crossingTrainIdsCsv	followerTrainIdsCsv	isSafePlaceBound	safePlaceRoute
+0	0	false	101111		2,4	1,3	false	0
+1	1	false	121131		2,4	0,3	false	0
+2	2	false	160150		0,1,3	4	false	0
+3	3	false	171181		2,4	0,1	false	0
+4	4	false	200190		0,1,3	2	false	0
+101	101	true	103101				false	0
+210	210	true	212210				false	0
