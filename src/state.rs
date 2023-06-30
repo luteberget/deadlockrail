@@ -210,7 +210,7 @@ pub fn mk_state<L: Lit>(
                     //     .flat_map(|nxs| nxs.iter().map(|n| occ[n].has_value(&Some(t1))));
 
                     let length = problem.trains[t1].routes[r1].train_length
-                        - problem.trains[t1].routes[r1].switch_length;
+                        - problem.trains[t1].routes[r1].route_length_without_switch;
 
                     let t1_continued = has_progressed_by_length(s, problem, t1, r1, &occ, length);
 

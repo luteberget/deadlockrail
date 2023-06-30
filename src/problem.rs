@@ -21,7 +21,7 @@ pub struct Train {
 pub struct TrainRoute {
     pub train_length: u64,
     pub route_length: u64,
-    pub switch_length: u64,
+    pub route_length_without_switch: u64,
     pub unconditional_conflicts: Vec<RouteRef>,
     pub allocation_conflicts: Vec<RouteRef>,
     pub next_routes: Option<Vec<RouteRef>>,
@@ -120,18 +120,19 @@ pub fn convert_raw2021(problem: &raw2021_problem::Problem) -> Problem {
                 vec![]
             };
 
-            let switch_length = conflict_sets[1].length - conflict_sets[0].length;
-            assert!(switch_length == 1);
+            let route_length_without_switch = conflict_sets[0].length;
+            // assert!(switch_length == 1);
 
             routes.insert(
                 trainroute.route.clone(),
                 TrainRoute {
                     route_length: conflict_sets[1].length,
                     train_length: trainroute.length,
-                    switch_length,
+                    route_length_without_switch,
                     unconditional_conflicts,
                     allocation_conflicts,
-                    next_routes: (!trainroute.is_black_hole).then(|| trainroute.next_routes.clone()),
+                    next_routes: (!trainroute.is_black_hole)
+                        .then(|| trainroute.next_routes.clone()),
                 },
             );
         }
