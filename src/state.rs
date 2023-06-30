@@ -29,8 +29,12 @@ pub fn has_progressed_by_length<L: Lit>(
 ) -> Vec<Bool<L>> {
     if let Some(nexts) = problem.trains[train].routes[route].next_routes.as_ref() {
         let mut alternatives = vec![];
+        if nexts.is_empty() {
+            error!("Train {} route {} has empty nexts {:?}", train, route, problem.trains[train].routes[route]);
+        }
         assert!(!nexts.is_empty());
         for next in nexts.iter() {
+            trace!("train {} next {}", train, next);
             let next_route = &problem.trains[train].routes[next];
             let occupied = occ[next].has_value(&Some(train));
             if next_route.route_length >= length {
@@ -115,7 +119,7 @@ pub fn mk_state<L: Lit>(
                 FinSet::new(
                     s,
                     std::iter::once(None)
-                        .chain(t.clone().into_iter().map(Some))
+                        .chain(t.iter().copied().map(Some))
                         .collect(),
                 ),
             )
@@ -199,10 +203,10 @@ pub fn mk_state<L: Lit>(
                         continue; // no constraint between the same train
                     }
 
-                    // println!(
-                    //     "Cannot allocate r{} to t{} while t{} is in r{}",
-                    //     r2, t2, t1, r1
-                    // );
+                    println!(
+                        "Cannot allocate r{} to t{} while t{} is in r{}",
+                        r2, t2, t1, r1
+                    );
 
                     // let t1_continued = problem.trains[t1].routes[r1]
                     //     .next_routes

@@ -67,6 +67,19 @@ pub fn solve(
     let mut states = vec![initial_state(&mut s, problem)];
     let ub = ub_steps(problem);
 
+    let routenames = problem
+        .trains
+        .iter()
+        .flat_map(|t| t.routes.keys())
+        .collect::<std::collections::HashSet<_>>();
+    
+    warn!(
+        "PROBLEM_STATS: {} trains {} routes {} routenames",
+        problem.trains.len(),
+        problem.trains.iter().map(|t| t.routes.len()).sum::<usize>(),
+        routenames.len(),
+    );
+
     loop {
         info!("Solver {:?}", s);
         info!(" with {} states", states.len());

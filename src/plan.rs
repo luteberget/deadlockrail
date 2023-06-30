@@ -86,7 +86,8 @@ pub fn print_plan(plan: &Plan) -> (String, String) {
     }
     let commands = commands
         .into_iter()
-        .map(|c| c.join("\n"))
+        .enumerate()
+        .map(|(i,c)| format!("step{}:\n{}", i,c.join("\n")))
         .collect::<Vec<_>>()
         .join("\n\n");
     (summary, commands)
