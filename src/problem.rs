@@ -1,4 +1,5 @@
-use crate::raw_problem;
+use crate::raw2021_problem;
+use crate::raw2023_problem;
 use log::*;
 use std::collections::HashMap;
 
@@ -26,8 +27,47 @@ pub struct TrainRoute {
     pub next_routes: Option<Vec<RouteRef>>,
 }
 
+pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
 
-pub fn parse(problem: &raw_problem::Problem) -> Problem {
+
+    // Let's check a few assumptions first.
+    
+    // Are there more than two conflict sets (different 
+    // releases at different lengths) ?
+
+    for train in problem.trains.iter() {
+        if train.is_dummy {
+            trace!("Skipping dummy train {}/{}", train.id, train.name);
+            continue;
+        }
+        let trainroutes = problem
+            .train_routes
+            .iter()
+            .filter(|r| r.train == train.id)
+            .collect::<Vec<_>>();
+        for trainroute in trainroutes {
+            // A quirk in the input data is that there are two length specifications for each route correspondence.
+            // The first length is lower and lists unconditional conflicts.
+            // The second length is higher and lists conflicts that only apply when the train length exceeds the length in the exclusion row.
+
+            let conflict_sets = problem
+                .conflicts
+                .iter()
+                .filter(|c| c.route == trainroute.route)
+                .collect::<Vec<_>>();
+            if conflict_sets.is_empty() {
+                warn!("No conflicts found for route {}", trainroute.route);
+            } else if conflict_sets.len() != 2 {
+                println!("conflict sets:, {:?}", conflict_sets);
+                panic!("Conflicts should always be listed in two length levels.");
+            }
+        }
+    }
+
+    todo!()
+}
+
+pub fn convert_raw2021(problem: &raw2021_problem::Problem) -> Problem {
     for route in problem.routes.iter() {
         assert!(!route.is_multi_train, "Multi-train routes not supported");
         assert!(!route.is_siding, "Siding property not supported");

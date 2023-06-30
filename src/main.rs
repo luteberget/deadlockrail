@@ -2,7 +2,8 @@ use log::*;
 
 mod plan;
 mod problem;
-mod raw_problem;
+mod raw2021_problem;
+mod raw2023_problem;
 mod solver;
 mod state;
 
@@ -12,7 +13,8 @@ use structopt::StructOpt;
 
 #[derive(Debug)]
 pub enum FileFormat {
-    RawProblem,
+    Raw2021Problem,
+    Raw2023Problem,
     TrainsFormat,
 }
 
@@ -20,7 +22,8 @@ impl FromStr for FileFormat {
     type Err = &'static str;
     fn from_str(day: &str) -> Result<Self, Self::Err> {
         match day {
-            "raw" => Ok(FileFormat::RawProblem),
+            "raw2021" => Ok(FileFormat::Raw2021Problem),
+            "raw2023" => Ok(FileFormat::Raw2023Problem),
             "trains" => Ok(FileFormat::TrainsFormat),
             _ => Err("Could not parse file format type."),
         }
@@ -46,7 +49,7 @@ struct Opt {
 
     /// File format to read. "raw" reads the Sasso benchmark instances.
     /// "trains" reads the two train scaling benchmark instances.
-    #[structopt(long, default_value = "raw")]
+    #[structopt(long, default_value = "raw2021")]
     file_format: FileFormat,
 
     /// Choose between algorithms:
@@ -91,16 +94,32 @@ fn main() {
         let problem = {
             let _h = hprof::enter("parse");
             match opt.file_format {
-                FileFormat::RawProblem => {
+                FileFormat::Raw2021Problem => {
                     let problem = {
-                        let raw_problem: raw_problem::Problem =
+                        let raw_problem: raw2021_problem::Problem =
                             serde_json::from_str(&json_contents).unwrap();
                         trace!(
                             "Converting problem with {} trains {} routes",
                             raw_problem.trains.len(),
                             raw_problem.routes.len()
                         );
-                        problem::parse(&raw_problem)
+
+                        problem::convert_raw2021(&raw_problem)
+                    };
+                    problem
+                },
+                FileFormat::Raw2023Problem => {
+                    let problem = {
+                        let raw_problem: raw2023_problem::Problem =
+                            serde_json::from_str(&json_contents).unwrap();
+                        trace!(
+                            "Converting problem with {} trains {} routes",
+                            raw_problem.trains.len(),
+                            raw_problem.routes.len()
+                        );
+                        // trace!("{:?}", raw_problem);
+
+                        problem::convert_raw2023(&raw_problem)
                     };
                     problem
                 }

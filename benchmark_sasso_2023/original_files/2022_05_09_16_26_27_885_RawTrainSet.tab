@@ -1,0 +1,4 @@
+trainIdStr	trainId	isDummy	initialRouteIdsCsv	lastRouteIdsCsv	crossingTrainIdsCsv	followerTrainIdsCsv	alwaysWinAfterFirstWinTrainIdsCsv	isSafePlaceBound	safePlaceRouteIdOpt	initialMultitrainPrevTrainIdOpt
+T130110	130110	false	126112		130324, 130280			false		
+T130280	130280	false	126152		130110	130324	130324	false		
+T130324	130324	false	126136		130110	130280	130280	false		

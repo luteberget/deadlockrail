@@ -1,0 +1,10 @@
+trainIdStr	trainId	isDummy	initialRouteIdsCsv	lastRouteIdsCsv	crossingTrainIdsCsv	followerTrainIdsCsv	alwaysWinAfterFirstWinTrainIdsCsv	isSafePlaceBound	safePlaceRouteIdOpt	initialMultitrainPrevTrainIdOpt
+T77	77	false	126295		290, 342, 286, 287	336, 338, 302, 255	336, 338, 302, 255	false		
+T255	255	false	126265		290, 342, 287	336, 338, 77, 302	336, 338, 77, 302	false		
+T286	286	false	126269		336, 77	290, 342, 287	290, 342, 287	false		
+T287	287	false	125863		336, 338, 77, 302, 255	290, 342, 286	290, 342, 286	false		
+T290	290	false	125910		336, 338, 77, 302, 255	342, 286, 287	342, 286, 287	false		
+T302	302	false	126003		290, 342, 287	336, 338, 77, 255	336, 338, 77, 255	false		
+T336	336	false	126259		290, 342, 286, 287	338, 77, 302, 255	338, 77, 302, 255	false		
+T338	338	false	126187		290, 342, 287	336, 77, 302, 255	336, 77, 302, 255	false		
+T342	342	false	125815		336, 338, 77, 302, 255	290, 286, 287	290, 286, 287	false		

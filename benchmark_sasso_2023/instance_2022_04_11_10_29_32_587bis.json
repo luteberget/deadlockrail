@@ -1,0 +1,5115 @@
+{
+  "id": "1631201156401964",
+  "mode": "DEADLOCK_DETECTION",
+  "trains": [
+    {
+      "name": "T129866",
+      "id": "129866",
+      "is_dummy": false,
+      "initial_routes": [
+        "126128",
+        "126121"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "130133",
+        "129960"
+      ],
+      "follower_trains": [],
+      "always_win_after_first_win": [],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T129867",
+      "id": "129867",
+      "is_dummy": false,
+      "initial_routes": [
+        "126103",
+        "126112"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "130133",
+        "129960"
+      ],
+      "follower_trains": [],
+      "always_win_after_first_win": [],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T129960",
+      "id": "129960",
+      "is_dummy": false,
+      "initial_routes": [
+        "126100",
+        "126109"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129866",
+        "129867"
+      ],
+      "follower_trains": [
+        "130133"
+      ],
+      "always_win_after_first_win": [
+        "130133"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T130133",
+      "id": "130133",
+      "is_dummy": false,
+      "initial_routes": [
+        "126120"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129866",
+        "129867"
+      ],
+      "follower_trains": [
+        "129960"
+      ],
+      "always_win_after_first_win": [
+        "129960"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    }
+  ],
+  "routes": [
+    {
+      "name": "R126055",
+      "id": "126055",
+      "is_multi_train": true,
+      "final_point_id": "22207",
+      "final_point_container_id": "55390",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126056",
+      "id": "126056",
+      "is_multi_train": true,
+      "final_point_id": "22208",
+      "final_point_container_id": "55393",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126057",
+      "id": "126057",
+      "is_multi_train": true,
+      "final_point_id": "21280",
+      "final_point_container_id": "55366",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126058",
+      "id": "126058",
+      "is_multi_train": true,
+      "final_point_id": "21281",
+      "final_point_container_id": "55363",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126059",
+      "id": "126059",
+      "is_multi_train": true,
+      "final_point_id": "22207",
+      "final_point_container_id": "55390",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126060",
+      "id": "126060",
+      "is_multi_train": true,
+      "final_point_id": "22208",
+      "final_point_container_id": "55393",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126061",
+      "id": "126061",
+      "is_multi_train": true,
+      "final_point_id": "21280",
+      "final_point_container_id": "55366",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126062",
+      "id": "126062",
+      "is_multi_train": true,
+      "final_point_id": "21281",
+      "final_point_container_id": "55363",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126063",
+      "id": "126063",
+      "is_multi_train": true,
+      "final_point_id": "21892",
+      "final_point_container_id": "55366",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126064",
+      "id": "126064",
+      "is_multi_train": false,
+      "final_point_id": "-21275",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126065",
+      "id": "126065",
+      "is_multi_train": false,
+      "final_point_id": "-21276",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126066",
+      "id": "126066",
+      "is_multi_train": true,
+      "final_point_id": "21892",
+      "final_point_container_id": "55366",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126067",
+      "id": "126067",
+      "is_multi_train": false,
+      "final_point_id": "21275",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126068",
+      "id": "126068",
+      "is_multi_train": false,
+      "final_point_id": "21276",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126069",
+      "id": "126069",
+      "is_multi_train": true,
+      "final_point_id": "21893",
+      "final_point_container_id": "55363",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126070",
+      "id": "126070",
+      "is_multi_train": false,
+      "final_point_id": "21274",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126071",
+      "id": "126071",
+      "is_multi_train": false,
+      "final_point_id": "21277",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126072",
+      "id": "126072",
+      "is_multi_train": true,
+      "final_point_id": "21238",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126073",
+      "id": "126073",
+      "is_multi_train": false,
+      "final_point_id": "21275",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126074",
+      "id": "126074",
+      "is_multi_train": false,
+      "final_point_id": "21276",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126075",
+      "id": "126075",
+      "is_multi_train": true,
+      "final_point_id": "21893",
+      "final_point_container_id": "55363",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126076",
+      "id": "126076",
+      "is_multi_train": false,
+      "final_point_id": "21274",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126077",
+      "id": "126077",
+      "is_multi_train": false,
+      "final_point_id": "21277",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126078",
+      "id": "126078",
+      "is_multi_train": true,
+      "final_point_id": "21238",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126079",
+      "id": "126079",
+      "is_multi_train": false,
+      "final_point_id": "21275",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126080",
+      "id": "126080",
+      "is_multi_train": false,
+      "final_point_id": "21276",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126081",
+      "id": "126081",
+      "is_multi_train": true,
+      "final_point_id": "21893",
+      "final_point_container_id": "55363",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126082",
+      "id": "126082",
+      "is_multi_train": false,
+      "final_point_id": "21274",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126083",
+      "id": "126083",
+      "is_multi_train": false,
+      "final_point_id": "21277",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126084",
+      "id": "126084",
+      "is_multi_train": true,
+      "final_point_id": "21238",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126085",
+      "id": "126085",
+      "is_multi_train": true,
+      "final_point_id": "21278",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126086",
+      "id": "126086",
+      "is_multi_train": false,
+      "final_point_id": "-21232",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126087",
+      "id": "126087",
+      "is_multi_train": false,
+      "final_point_id": "-21233",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126088",
+      "id": "126088",
+      "is_multi_train": true,
+      "final_point_id": "21235",
+      "final_point_container_id": "46688",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126089",
+      "id": "126089",
+      "is_multi_train": true,
+      "final_point_id": "21278",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126090",
+      "id": "126090",
+      "is_multi_train": true,
+      "final_point_id": "21278",
+      "final_point_container_id": "55360",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126091",
+      "id": "126091",
+      "is_multi_train": false,
+      "final_point_id": "-21274",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126092",
+      "id": "126092",
+      "is_multi_train": false,
+      "final_point_id": "-21277",
+      "final_point_container_id": "21273",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126093",
+      "id": "126093",
+      "is_multi_train": true,
+      "final_point_id": "21239",
+      "final_point_container_id": "55346",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126094",
+      "id": "126094",
+      "is_multi_train": true,
+      "final_point_id": "21239",
+      "final_point_container_id": "55346",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126095",
+      "id": "126095",
+      "is_multi_train": true,
+      "final_point_id": "20950",
+      "final_point_container_id": "55317",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126096",
+      "id": "126096",
+      "is_multi_train": true,
+      "final_point_id": "20949",
+      "final_point_container_id": "55320",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126097",
+      "id": "126097",
+      "is_multi_train": false,
+      "final_point_id": "21233",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126098",
+      "id": "126098",
+      "is_multi_train": true,
+      "final_point_id": "21279",
+      "final_point_container_id": "55346",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126099",
+      "id": "126099",
+      "is_multi_train": false,
+      "final_point_id": "21232",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126100",
+      "id": "126100",
+      "is_multi_train": true,
+      "final_point_id": "20950",
+      "final_point_container_id": "55317",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126101",
+      "id": "126101",
+      "is_multi_train": true,
+      "final_point_id": "20949",
+      "final_point_container_id": "55320",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126102",
+      "id": "126102",
+      "is_multi_train": false,
+      "final_point_id": "21233",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126103",
+      "id": "126103",
+      "is_multi_train": true,
+      "final_point_id": "21279",
+      "final_point_container_id": "55346",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126104",
+      "id": "126104",
+      "is_multi_train": false,
+      "final_point_id": "21232",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126105",
+      "id": "126105",
+      "is_multi_train": true,
+      "final_point_id": "20950",
+      "final_point_container_id": "55317",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126106",
+      "id": "126106",
+      "is_multi_train": true,
+      "final_point_id": "20949",
+      "final_point_container_id": "55320",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126107",
+      "id": "126107",
+      "is_multi_train": true,
+      "final_point_id": "21236",
+      "final_point_container_id": "55317",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126108",
+      "id": "126108",
+      "is_multi_train": true,
+      "final_point_id": "21237",
+      "final_point_container_id": "55320",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126109",
+      "id": "126109",
+      "is_multi_train": true,
+      "final_point_id": "20944",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126110",
+      "id": "126110",
+      "is_multi_train": true,
+      "final_point_id": "20945",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126111",
+      "id": "126111",
+      "is_multi_train": true,
+      "final_point_id": "21236",
+      "final_point_container_id": "55317",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126112",
+      "id": "126112",
+      "is_multi_train": true,
+      "final_point_id": "21237",
+      "final_point_container_id": "55320",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126113",
+      "id": "126113",
+      "is_multi_train": true,
+      "final_point_id": "20944",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126114",
+      "id": "126114",
+      "is_multi_train": true,
+      "final_point_id": "20946",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126115",
+      "id": "126115",
+      "is_multi_train": true,
+      "final_point_id": "16845",
+      "final_point_container_id": "55314",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126116",
+      "id": "126116",
+      "is_multi_train": true,
+      "final_point_id": "-20944",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126117",
+      "id": "126117",
+      "is_multi_train": true,
+      "final_point_id": "-20945",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126118",
+      "id": "126118",
+      "is_multi_train": true,
+      "final_point_id": "16844",
+      "final_point_container_id": "55311",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126119",
+      "id": "126119",
+      "is_multi_train": true,
+      "final_point_id": "16845",
+      "final_point_container_id": "55314",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126120",
+      "id": "126120",
+      "is_multi_train": true,
+      "final_point_id": "16844",
+      "final_point_container_id": "55311",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126121",
+      "id": "126121",
+      "is_multi_train": true,
+      "final_point_id": "-20946",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126122",
+      "id": "126122",
+      "is_multi_train": true,
+      "final_point_id": "-20944",
+      "final_point_container_id": "20943",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126123",
+      "id": "126123",
+      "is_multi_train": true,
+      "final_point_id": "20947",
+      "final_point_container_id": "55311",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126124",
+      "id": "126124",
+      "is_multi_train": true,
+      "final_point_id": "20948",
+      "final_point_container_id": "55314",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126125",
+      "id": "126125",
+      "is_multi_train": true,
+      "final_point_id": "40583",
+      "final_point_container_id": "59271",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126126",
+      "id": "126126",
+      "is_multi_train": true,
+      "final_point_id": "40584",
+      "final_point_container_id": "59277",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126127",
+      "id": "126127",
+      "is_multi_train": true,
+      "final_point_id": "20947",
+      "final_point_container_id": "55311",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126128",
+      "id": "126128",
+      "is_multi_train": true,
+      "final_point_id": "20948",
+      "final_point_container_id": "55314",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126129",
+      "id": "126129",
+      "is_multi_train": true,
+      "final_point_id": "40583",
+      "final_point_container_id": "59271",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126130",
+      "id": "126130",
+      "is_multi_train": true,
+      "final_point_id": "40584",
+      "final_point_container_id": "59277",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126131",
+      "id": "126131",
+      "is_multi_train": true,
+      "final_point_id": "16842",
+      "final_point_container_id": "59271",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126132",
+      "id": "126132",
+      "is_multi_train": true,
+      "final_point_id": "21970",
+      "final_point_container_id": "59268",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126133",
+      "id": "126133",
+      "is_multi_train": true,
+      "final_point_id": "16843",
+      "final_point_container_id": "59277",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126134",
+      "id": "126134",
+      "is_multi_train": true,
+      "final_point_id": "21971",
+      "final_point_container_id": "59274",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126135",
+      "id": "126135",
+      "is_multi_train": true,
+      "final_point_id": "40581",
+      "final_point_container_id": "59268",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126136",
+      "id": "126136",
+      "is_multi_train": true,
+      "final_point_id": "40582",
+      "final_point_container_id": "59274",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126137",
+      "id": "126137",
+      "is_multi_train": true,
+      "final_point_id": "16832",
+      "final_point_container_id": "53776",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126138",
+      "id": "126138",
+      "is_multi_train": true,
+      "final_point_id": "21958",
+      "final_point_container_id": "53778",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126139",
+      "id": "126139",
+      "is_multi_train": true,
+      "final_point_id": "40581",
+      "final_point_container_id": "59268",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126140",
+      "id": "126140",
+      "is_multi_train": true,
+      "final_point_id": "40582",
+      "final_point_container_id": "59274",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126141",
+      "id": "126141",
+      "is_multi_train": true,
+      "final_point_id": "16832",
+      "final_point_container_id": "53776",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R126142",
+      "id": "126142",
+      "is_multi_train": true,
+      "final_point_id": "21958",
+      "final_point_container_id": "53778",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R129174",
+      "id": "129174",
+      "is_multi_train": true,
+      "final_point_id": "21234",
+      "final_point_container_id": "21231",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000147",
+      "id": "10000147",
+      "is_multi_train": true,
+      "final_point_id": "10000147",
+      "final_point_container_id": "11021967",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000148",
+      "id": "10000148",
+      "is_multi_train": true,
+      "final_point_id": "10000148",
+      "final_point_container_id": "11021967",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000149",
+      "id": "10000149",
+      "is_multi_train": true,
+      "final_point_id": "10000149",
+      "final_point_container_id": "11021891",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000150",
+      "id": "10000150",
+      "is_multi_train": true,
+      "final_point_id": "10000150",
+      "final_point_container_id": "11021891",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    }
+  ],
+  "train_routes": [
+    {
+      "train": "129866",
+      "route": "126063",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000149"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126066",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000149"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126067",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126063"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126068",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126066"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126069",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000150"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126073",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126063"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126074",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126066"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126075",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000150"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126091",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126067",
+        "126069",
+        "126068"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126092",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126073",
+        "126075",
+        "126074"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126103",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126091",
+        "126092"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126112",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126103"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126121",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126112"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126128",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126121"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "126133",
+      "length": 15422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126128"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "10000149",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129866",
+      "route": "10000150",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126063",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000149"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126066",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000149"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126067",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126063"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126068",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126066"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126069",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000150"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126073",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126063"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126074",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126066"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126075",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000150"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126091",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126067",
+        "126069",
+        "126068"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126092",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126073",
+        "126075",
+        "126074"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126103",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126091",
+        "126092"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126112",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126103"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "126121",
+      "length": 16422,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126112"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "10000149",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129867",
+      "route": "10000150",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126057",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126064"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126061",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126064"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126064",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126071"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126071",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126094"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126094",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126100"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126100",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126109"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126109",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126119",
+        "126118"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126118",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126125",
+        "126126"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126119",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126129",
+        "126130"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126125",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126132"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126126",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126134"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126129",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126132"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126130",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126134"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126132",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000147"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "126134",
+      "length": 16232,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000148"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "10000147",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129960",
+      "route": "10000148",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126095",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126110"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126100",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126110"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126105",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126110"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126110",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126120"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126120",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126125",
+        "126126"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126125",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126132"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126126",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "126134"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126132",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000147"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "126134",
+      "length": 16210,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000148"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "10000147",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "130133",
+      "route": "10000148",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "route": "126057",
+      "length": 30148,
+      "conflicts": [
+        "126066",
+        "126057",
+        "126061",
+        "126063"
+      ]
+    },
+    {
+      "route": "126057",
+      "length": 31151,
+      "conflicts": [
+        "126055",
+        "126056",
+        "126059",
+        "126058"
+      ]
+    },
+    {
+      "route": "126058",
+      "length": 41552,
+      "conflicts": [
+        "126081",
+        "126069",
+        "126075",
+        "126058",
+        "126062"
+      ]
+    },
+    {
+      "route": "126058",
+      "length": 42555,
+      "conflicts": [
+        "126055",
+        "126057",
+        "126056",
+        "126059",
+        "126061",
+        "126060"
+      ]
+    },
+    {
+      "route": "126061",
+      "length": 30148,
+      "conflicts": [
+        "126066",
+        "126057",
+        "126061",
+        "126063"
+      ]
+    },
+    {
+      "route": "126061",
+      "length": 31151,
+      "conflicts": [
+        "126055",
+        "126056",
+        "126059",
+        "126058",
+        "126060",
+        "126062"
+      ]
+    },
+    {
+      "route": "126062",
+      "length": 41552,
+      "conflicts": [
+        "126081",
+        "126069",
+        "126075",
+        "126058",
+        "126062"
+      ]
+    },
+    {
+      "route": "126062",
+      "length": 42555,
+      "conflicts": [
+        "126056",
+        "126059",
+        "126061",
+        "126060"
+      ]
+    },
+    {
+      "route": "126063",
+      "length": 30148,
+      "conflicts": [
+        "126066",
+        "126057",
+        "126061",
+        "126063"
+      ]
+    },
+    {
+      "route": "126063",
+      "length": 30992,
+      "conflicts": [
+        "126065",
+        "126064"
+      ]
+    },
+    {
+      "route": "126064",
+      "length": 10682,
+      "conflicts": [
+        "126064",
+        "126067",
+        "126073",
+        "126079"
+      ]
+    },
+    {
+      "route": "126064",
+      "length": 11526,
+      "conflicts": [
+        "126065",
+        "126066",
+        "126063"
+      ]
+    },
+    {
+      "route": "126065",
+      "length": 10682,
+      "conflicts": [
+        "126065",
+        "126080",
+        "126068",
+        "126074"
+      ]
+    },
+    {
+      "route": "126065",
+      "length": 11474,
+      "conflicts": [
+        "126064",
+        "126066",
+        "126063"
+      ]
+    },
+    {
+      "route": "126066",
+      "length": 30148,
+      "conflicts": [
+        "126066",
+        "126057",
+        "126061",
+        "126063"
+      ]
+    },
+    {
+      "route": "126066",
+      "length": 30940,
+      "conflicts": [
+        "126065",
+        "126064"
+      ]
+    },
+    {
+      "route": "126067",
+      "length": 10682,
+      "conflicts": [
+        "126064",
+        "126067",
+        "126073",
+        "126079"
+      ]
+    },
+    {
+      "route": "126067",
+      "length": 12688,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126082",
+        "126069",
+        "126068",
+        "126071",
+        "126070",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126076",
+        "126078"
+      ]
+    },
+    {
+      "route": "126068",
+      "length": 10682,
+      "conflicts": [
+        "126065",
+        "126080",
+        "126068",
+        "126074"
+      ]
+    },
+    {
+      "route": "126068",
+      "length": 12688,
+      "conflicts": [
+        "126083",
+        "126082",
+        "126067",
+        "126069",
+        "126071",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126077",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126069",
+      "length": 41552,
+      "conflicts": [
+        "126081",
+        "126069",
+        "126075",
+        "126058",
+        "126062"
+      ]
+    },
+    {
+      "route": "126069",
+      "length": 43557,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126082",
+        "126084",
+        "126067",
+        "126068",
+        "126071",
+        "126070",
+        "126073",
+        "126072",
+        "126074",
+        "126077",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126070",
+      "length": 11990,
+      "conflicts": [
+        "126082",
+        "126070",
+        "126091",
+        "126076"
+      ]
+    },
+    {
+      "route": "126070",
+      "length": 13996,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126067",
+        "126069",
+        "126068",
+        "126071",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126071",
+      "length": 11990,
+      "conflicts": [
+        "126083",
+        "126071",
+        "126077",
+        "126092"
+      ]
+    },
+    {
+      "route": "126071",
+      "length": 13996,
+      "conflicts": [
+        "126080",
+        "126082",
+        "126067",
+        "126069",
+        "126068",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126072",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126072",
+      "length": 5966,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126083",
+        "126082",
+        "126067",
+        "126069",
+        "126068",
+        "126071",
+        "126070",
+        "126073",
+        "126075",
+        "126074",
+        "126077",
+        "126076",
+        "126079"
+      ]
+    },
+    {
+      "route": "126073",
+      "length": 10682,
+      "conflicts": [
+        "126064",
+        "126067",
+        "126073",
+        "126079"
+      ]
+    },
+    {
+      "route": "126073",
+      "length": 12688,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126082",
+        "126069",
+        "126068",
+        "126071",
+        "126070",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126076",
+        "126078"
+      ]
+    },
+    {
+      "route": "126074",
+      "length": 10682,
+      "conflicts": [
+        "126065",
+        "126080",
+        "126068",
+        "126074"
+      ]
+    },
+    {
+      "route": "126074",
+      "length": 12688,
+      "conflicts": [
+        "126083",
+        "126082",
+        "126067",
+        "126069",
+        "126071",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126077",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126075",
+      "length": 41552,
+      "conflicts": [
+        "126081",
+        "126069",
+        "126075",
+        "126058",
+        "126062"
+      ]
+    },
+    {
+      "route": "126075",
+      "length": 43557,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126082",
+        "126084",
+        "126067",
+        "126068",
+        "126071",
+        "126070",
+        "126073",
+        "126072",
+        "126074",
+        "126077",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126076",
+      "length": 11990,
+      "conflicts": [
+        "126082",
+        "126070",
+        "126091",
+        "126076"
+      ]
+    },
+    {
+      "route": "126076",
+      "length": 13996,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126067",
+        "126069",
+        "126068",
+        "126071",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126077",
+      "length": 11990,
+      "conflicts": [
+        "126083",
+        "126071",
+        "126077",
+        "126092"
+      ]
+    },
+    {
+      "route": "126077",
+      "length": 13996,
+      "conflicts": [
+        "126080",
+        "126082",
+        "126067",
+        "126069",
+        "126068",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126078",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126078",
+      "length": 5966,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126083",
+        "126082",
+        "126067",
+        "126069",
+        "126068",
+        "126071",
+        "126070",
+        "126073",
+        "126075",
+        "126074",
+        "126077",
+        "126076",
+        "126079"
+      ]
+    },
+    {
+      "route": "126079",
+      "length": 10682,
+      "conflicts": [
+        "126064",
+        "126067",
+        "126073",
+        "126079"
+      ]
+    },
+    {
+      "route": "126079",
+      "length": 12688,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126083",
+        "126082",
+        "126084",
+        "126069",
+        "126068",
+        "126071",
+        "126070",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126076",
+        "126078"
+      ]
+    },
+    {
+      "route": "126080",
+      "length": 10682,
+      "conflicts": [
+        "126065",
+        "126080",
+        "126068",
+        "126074"
+      ]
+    },
+    {
+      "route": "126080",
+      "length": 12688,
+      "conflicts": [
+        "126081",
+        "126083",
+        "126082",
+        "126084",
+        "126067",
+        "126069",
+        "126071",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126077",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126081",
+      "length": 41552,
+      "conflicts": [
+        "126081",
+        "126069",
+        "126075",
+        "126058",
+        "126062"
+      ]
+    },
+    {
+      "route": "126081",
+      "length": 43558,
+      "conflicts": [
+        "126080",
+        "126083",
+        "126082",
+        "126084",
+        "126072",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126082",
+      "length": 11990,
+      "conflicts": [
+        "126082",
+        "126070",
+        "126091",
+        "126076"
+      ]
+    },
+    {
+      "route": "126082",
+      "length": 13995,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126083",
+        "126084",
+        "126067",
+        "126069",
+        "126068",
+        "126071",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126077",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126083",
+      "length": 11990,
+      "conflicts": [
+        "126083",
+        "126071",
+        "126077",
+        "126092"
+      ]
+    },
+    {
+      "route": "126083",
+      "length": 13995,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126082",
+        "126084",
+        "126067",
+        "126069",
+        "126068",
+        "126070",
+        "126073",
+        "126072",
+        "126075",
+        "126074",
+        "126076",
+        "126079",
+        "126078"
+      ]
+    },
+    {
+      "route": "126084",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126084",
+      "length": 5966,
+      "conflicts": [
+        "126081",
+        "126080",
+        "126083",
+        "126082",
+        "126069",
+        "126075",
+        "126079"
+      ]
+    },
+    {
+      "route": "126085",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126085",
+      "length": 4646,
+      "conflicts": [
+        "126087",
+        "126086",
+        "126088"
+      ]
+    },
+    {
+      "route": "126086",
+      "length": 18580,
+      "conflicts": [
+        "126099",
+        "126086",
+        "126104"
+      ]
+    },
+    {
+      "route": "126086",
+      "length": 19266,
+      "conflicts": [
+        "126085",
+        "126087",
+        "126089",
+        "126088",
+        "126090"
+      ]
+    },
+    {
+      "route": "126087",
+      "length": 18580,
+      "conflicts": [
+        "126097",
+        "126087",
+        "126102"
+      ]
+    },
+    {
+      "route": "126087",
+      "length": 19266,
+      "conflicts": [
+        "126085",
+        "126086",
+        "126089",
+        "126088",
+        "126090"
+      ]
+    },
+    {
+      "route": "126088",
+      "length": 1,
+      "conflicts": [
+        "126088"
+      ]
+    },
+    {
+      "route": "126088",
+      "length": 6177,
+      "conflicts": [
+        "126085",
+        "126087",
+        "126086",
+        "126089",
+        "126090"
+      ]
+    },
+    {
+      "route": "126089",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126089",
+      "length": 4646,
+      "conflicts": [
+        "126087",
+        "126086",
+        "126088"
+      ]
+    },
+    {
+      "route": "126090",
+      "length": 3960,
+      "conflicts": [
+        "126085",
+        "126084",
+        "126089",
+        "126072",
+        "126090",
+        "126078"
+      ]
+    },
+    {
+      "route": "126090",
+      "length": 4646,
+      "conflicts": [
+        "126087",
+        "126086",
+        "126088"
+      ]
+    },
+    {
+      "route": "126091",
+      "length": 11990,
+      "conflicts": [
+        "126082",
+        "126070",
+        "126091",
+        "126076"
+      ]
+    },
+    {
+      "route": "126091",
+      "length": 12412,
+      "conflicts": [
+        "126093",
+        "126092",
+        "126094"
+      ]
+    },
+    {
+      "route": "126092",
+      "length": 11990,
+      "conflicts": [
+        "126083",
+        "126071",
+        "126077",
+        "126092"
+      ]
+    },
+    {
+      "route": "126092",
+      "length": 12412,
+      "conflicts": [
+        "126091",
+        "126093",
+        "126094"
+      ]
+    },
+    {
+      "route": "126093",
+      "length": 11588,
+      "conflicts": [
+        "126098",
+        "126103",
+        "126093",
+        "126094"
+      ]
+    },
+    {
+      "route": "126093",
+      "length": 12010,
+      "conflicts": [
+        "126091",
+        "126092"
+      ]
+    },
+    {
+      "route": "126094",
+      "length": 11588,
+      "conflicts": [
+        "126098",
+        "126103",
+        "126093",
+        "126094"
+      ]
+    },
+    {
+      "route": "126094",
+      "length": 12010,
+      "conflicts": [
+        "126091",
+        "126092"
+      ]
+    },
+    {
+      "route": "126095",
+      "length": 72652,
+      "conflicts": [
+        "126100",
+        "126105",
+        "126107",
+        "126095",
+        "126111"
+      ]
+    },
+    {
+      "route": "126095",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126096",
+        "126099",
+        "126098",
+        "126101",
+        "126103",
+        "126102",
+        "126104",
+        "126106"
+      ]
+    },
+    {
+      "route": "126096",
+      "length": 72652,
+      "conflicts": [
+        "126096",
+        "126112",
+        "126101",
+        "126106",
+        "126108"
+      ]
+    },
+    {
+      "route": "126096",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126099",
+        "126103",
+        "126102",
+        "126105",
+        "126104",
+        "126095"
+      ]
+    },
+    {
+      "route": "126097",
+      "length": 18580,
+      "conflicts": [
+        "126097",
+        "126087",
+        "126102"
+      ]
+    },
+    {
+      "route": "126097",
+      "length": 20375,
+      "conflicts": [
+        "126096",
+        "126099",
+        "126098",
+        "126101",
+        "126100",
+        "126103",
+        "126105",
+        "126104",
+        "126106",
+        "126095"
+      ]
+    },
+    {
+      "route": "126098",
+      "length": 11588,
+      "conflicts": [
+        "126098",
+        "126103",
+        "126093",
+        "126094"
+      ]
+    },
+    {
+      "route": "126098",
+      "length": 13383,
+      "conflicts": [
+        "126097",
+        "126099",
+        "126101",
+        "126100",
+        "126105",
+        "126095"
+      ]
+    },
+    {
+      "route": "126099",
+      "length": 18580,
+      "conflicts": [
+        "126099",
+        "126086",
+        "126104"
+      ]
+    },
+    {
+      "route": "126099",
+      "length": 20375,
+      "conflicts": [
+        "126097",
+        "126096",
+        "126098",
+        "126101",
+        "126100",
+        "126103",
+        "126102",
+        "126105",
+        "126106",
+        "126095"
+      ]
+    },
+    {
+      "route": "126100",
+      "length": 72652,
+      "conflicts": [
+        "126100",
+        "126105",
+        "126107",
+        "126111",
+        "126095"
+      ]
+    },
+    {
+      "route": "126100",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126099",
+        "126098",
+        "126101",
+        "126103"
+      ]
+    },
+    {
+      "route": "126101",
+      "length": 72652,
+      "conflicts": [
+        "126096",
+        "126112",
+        "126101",
+        "126106",
+        "126108"
+      ]
+    },
+    {
+      "route": "126101",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126099",
+        "126098",
+        "126100",
+        "126103",
+        "126102",
+        "126105",
+        "126104",
+        "126095"
+      ]
+    },
+    {
+      "route": "126102",
+      "length": 18580,
+      "conflicts": [
+        "126097",
+        "126087",
+        "126102"
+      ]
+    },
+    {
+      "route": "126102",
+      "length": 20375,
+      "conflicts": [
+        "126096",
+        "126099",
+        "126101",
+        "126103",
+        "126105",
+        "126104",
+        "126106",
+        "126095"
+      ]
+    },
+    {
+      "route": "126103",
+      "length": 11588,
+      "conflicts": [
+        "126098",
+        "126103",
+        "126093",
+        "126094"
+      ]
+    },
+    {
+      "route": "126103",
+      "length": 13383,
+      "conflicts": [
+        "126097",
+        "126096",
+        "126099",
+        "126101",
+        "126100",
+        "126102",
+        "126105",
+        "126104",
+        "126106",
+        "126095"
+      ]
+    },
+    {
+      "route": "126104",
+      "length": 18580,
+      "conflicts": [
+        "126099",
+        "126086",
+        "126104"
+      ]
+    },
+    {
+      "route": "126104",
+      "length": 20375,
+      "conflicts": [
+        "126097",
+        "126096",
+        "126101",
+        "126103",
+        "126102",
+        "126105",
+        "126106",
+        "126095"
+      ]
+    },
+    {
+      "route": "126105",
+      "length": 72652,
+      "conflicts": [
+        "126100",
+        "126105",
+        "126107",
+        "126111",
+        "126095"
+      ]
+    },
+    {
+      "route": "126105",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126096",
+        "126099",
+        "126098",
+        "126101",
+        "126103",
+        "126102",
+        "126104",
+        "126106"
+      ]
+    },
+    {
+      "route": "126106",
+      "length": 72652,
+      "conflicts": [
+        "126096",
+        "126112",
+        "126101",
+        "126106",
+        "126108"
+      ]
+    },
+    {
+      "route": "126106",
+      "length": 74447,
+      "conflicts": [
+        "126097",
+        "126099",
+        "126103",
+        "126102",
+        "126105",
+        "126104",
+        "126095"
+      ]
+    },
+    {
+      "route": "126107",
+      "length": 72652,
+      "conflicts": [
+        "126100",
+        "126105",
+        "126107",
+        "126111",
+        "126095"
+      ]
+    },
+    {
+      "route": "126107",
+      "length": 73284,
+      "conflicts": [
+        "126113",
+        "126109",
+        "126108",
+        "126110"
+      ]
+    },
+    {
+      "route": "126108",
+      "length": 72652,
+      "conflicts": [
+        "126096",
+        "126112",
+        "126101",
+        "126106",
+        "126108"
+      ]
+    },
+    {
+      "route": "126108",
+      "length": 73285,
+      "conflicts": [
+        "126113",
+        "126114",
+        "126107",
+        "126109"
+      ]
+    },
+    {
+      "route": "126109",
+      "length": 12513,
+      "conflicts": [
+        "126113",
+        "126116",
+        "126122",
+        "126109"
+      ]
+    },
+    {
+      "route": "126109",
+      "length": 13145,
+      "conflicts": [
+        "126107",
+        "126108",
+        "126111",
+        "126110"
+      ]
+    },
+    {
+      "route": "126110",
+      "length": 12575,
+      "conflicts": [
+        "126117",
+        "126110"
+      ]
+    },
+    {
+      "route": "126110",
+      "length": 13208,
+      "conflicts": [
+        "126107",
+        "126109",
+        "126111"
+      ]
+    },
+    {
+      "route": "126111",
+      "length": 72652,
+      "conflicts": [
+        "126100",
+        "126105",
+        "126107",
+        "126111",
+        "126095"
+      ]
+    },
+    {
+      "route": "126111",
+      "length": 73285,
+      "conflicts": [
+        "126109",
+        "126110"
+      ]
+    },
+    {
+      "route": "126112",
+      "length": 72652,
+      "conflicts": [
+        "126112",
+        "126096",
+        "126101",
+        "126106",
+        "126108"
+      ]
+    },
+    {
+      "route": "126112",
+      "length": 73285,
+      "conflicts": [
+        "126113",
+        "126114"
+      ]
+    },
+    {
+      "route": "126113",
+      "length": 12513,
+      "conflicts": [
+        "126113",
+        "126116",
+        "126122",
+        "126109"
+      ]
+    },
+    {
+      "route": "126113",
+      "length": 13146,
+      "conflicts": [
+        "126112",
+        "126114",
+        "126107",
+        "126108"
+      ]
+    },
+    {
+      "route": "126114",
+      "length": 12566,
+      "conflicts": [
+        "126114",
+        "126121"
+      ]
+    },
+    {
+      "route": "126114",
+      "length": 13199,
+      "conflicts": [
+        "126113",
+        "126112",
+        "126108"
+      ]
+    },
+    {
+      "route": "126115",
+      "length": 40074,
+      "conflicts": [
+        "126128",
+        "126115",
+        "126119",
+        "126124"
+      ]
+    },
+    {
+      "route": "126115",
+      "length": 40760,
+      "conflicts": [
+        "126121",
+        "126122"
+      ]
+    },
+    {
+      "route": "126116",
+      "length": 12513,
+      "conflicts": [
+        "126113",
+        "126116",
+        "126122",
+        "126109"
+      ]
+    },
+    {
+      "route": "126116",
+      "length": 13251,
+      "conflicts": [
+        "126117",
+        "126119",
+        "126118",
+        "126120"
+      ]
+    },
+    {
+      "route": "126117",
+      "length": 12575,
+      "conflicts": [
+        "126117",
+        "126110"
+      ]
+    },
+    {
+      "route": "126117",
+      "length": 13261,
+      "conflicts": [
+        "126116",
+        "126118",
+        "126120"
+      ]
+    },
+    {
+      "route": "126118",
+      "length": 40074,
+      "conflicts": [
+        "126118",
+        "126120",
+        "126123",
+        "126127"
+      ]
+    },
+    {
+      "route": "126118",
+      "length": 40812,
+      "conflicts": [
+        "126117",
+        "126116",
+        "126119",
+        "126122"
+      ]
+    },
+    {
+      "route": "126119",
+      "length": 40074,
+      "conflicts": [
+        "126128",
+        "126115",
+        "126119",
+        "126124"
+      ]
+    },
+    {
+      "route": "126119",
+      "length": 40813,
+      "conflicts": [
+        "126116",
+        "126118",
+        "126121",
+        "126122"
+      ]
+    },
+    {
+      "route": "126120",
+      "length": 40074,
+      "conflicts": [
+        "126118",
+        "126120",
+        "126123",
+        "126127"
+      ]
+    },
+    {
+      "route": "126120",
+      "length": 40760,
+      "conflicts": [
+        "126117",
+        "126116"
+      ]
+    },
+    {
+      "route": "126121",
+      "length": 12566,
+      "conflicts": [
+        "126114",
+        "126121"
+      ]
+    },
+    {
+      "route": "126121",
+      "length": 13252,
+      "conflicts": [
+        "126115",
+        "126119",
+        "126122"
+      ]
+    },
+    {
+      "route": "126122",
+      "length": 12513,
+      "conflicts": [
+        "126113",
+        "126116",
+        "126122",
+        "126109"
+      ]
+    },
+    {
+      "route": "126122",
+      "length": 13252,
+      "conflicts": [
+        "126115",
+        "126119",
+        "126118",
+        "126121"
+      ]
+    },
+    {
+      "route": "126123",
+      "length": 40074,
+      "conflicts": [
+        "126118",
+        "126120",
+        "126123",
+        "126127"
+      ]
+    },
+    {
+      "route": "126123",
+      "length": 41394,
+      "conflicts": [
+        "126129",
+        "126125",
+        "126124",
+        "126126"
+      ]
+    },
+    {
+      "route": "126124",
+      "length": 40074,
+      "conflicts": [
+        "126128",
+        "126115",
+        "126119",
+        "126124"
+      ]
+    },
+    {
+      "route": "126124",
+      "length": 41393,
+      "conflicts": [
+        "126129",
+        "126130",
+        "126123",
+        "126125",
+        "126127",
+        "126126"
+      ]
+    },
+    {
+      "route": "126125",
+      "length": 30570,
+      "conflicts": [
+        "126129",
+        "126131",
+        "126125"
+      ]
+    },
+    {
+      "route": "126125",
+      "length": 31890,
+      "conflicts": [
+        "126123",
+        "126124",
+        "126127",
+        "126126"
+      ]
+    },
+    {
+      "route": "126126",
+      "length": 30570,
+      "conflicts": [
+        "126130",
+        "126133",
+        "126126"
+      ]
+    },
+    {
+      "route": "126126",
+      "length": 31889,
+      "conflicts": [
+        "126129",
+        "126128",
+        "126123",
+        "126125",
+        "126124",
+        "126127"
+      ]
+    },
+    {
+      "route": "126127",
+      "length": 40074,
+      "conflicts": [
+        "126118",
+        "126120",
+        "126123",
+        "126127"
+      ]
+    },
+    {
+      "route": "126127",
+      "length": 41393,
+      "conflicts": [
+        "126129",
+        "126128",
+        "126130",
+        "126125",
+        "126124",
+        "126126"
+      ]
+    },
+    {
+      "route": "126128",
+      "length": 40074,
+      "conflicts": [
+        "126128",
+        "126115",
+        "126119",
+        "126124"
+      ]
+    },
+    {
+      "route": "126128",
+      "length": 41394,
+      "conflicts": [
+        "126129",
+        "126130",
+        "126127",
+        "126126"
+      ]
+    },
+    {
+      "route": "126129",
+      "length": 30570,
+      "conflicts": [
+        "126129",
+        "126131",
+        "126125"
+      ]
+    },
+    {
+      "route": "126129",
+      "length": 31889,
+      "conflicts": [
+        "126128",
+        "126130",
+        "126123",
+        "126124",
+        "126127",
+        "126126"
+      ]
+    },
+    {
+      "route": "126130",
+      "length": 30570,
+      "conflicts": [
+        "126130",
+        "126133",
+        "126126"
+      ]
+    },
+    {
+      "route": "126130",
+      "length": 31890,
+      "conflicts": [
+        "126129",
+        "126128",
+        "126124",
+        "126127"
+      ]
+    },
+    {
+      "route": "126131",
+      "length": 30570,
+      "conflicts": [
+        "126129",
+        "126131",
+        "126125"
+      ]
+    },
+    {
+      "route": "126132",
+      "length": 29514,
+      "conflicts": [
+        "126132",
+        "126135",
+        "126139"
+      ]
+    },
+    {
+      "route": "126133",
+      "length": 30570,
+      "conflicts": [
+        "126130",
+        "126133",
+        "126126"
+      ]
+    },
+    {
+      "route": "126134",
+      "length": 29514,
+      "conflicts": [
+        "126134",
+        "126136",
+        "126140"
+      ]
+    },
+    {
+      "route": "126135",
+      "length": 29514,
+      "conflicts": [
+        "126132",
+        "126135",
+        "126139"
+      ]
+    },
+    {
+      "route": "126135",
+      "length": 30939,
+      "conflicts": [
+        "126137",
+        "126136",
+        "126138",
+        "126141"
+      ]
+    },
+    {
+      "route": "126136",
+      "length": 29514,
+      "conflicts": [
+        "126134",
+        "126136",
+        "126140"
+      ]
+    },
+    {
+      "route": "126136",
+      "length": 30938,
+      "conflicts": [
+        "126135",
+        "126137",
+        "126139",
+        "126138",
+        "126141",
+        "126142"
+      ]
+    },
+    {
+      "route": "126139",
+      "length": 29514,
+      "conflicts": [
+        "126132",
+        "126135",
+        "126139"
+      ]
+    },
+    {
+      "route": "126139",
+      "length": 30939,
+      "conflicts": [
+        "126137",
+        "126136",
+        "126138",
+        "126141",
+        "126140",
+        "126142"
+      ]
+    },
+    {
+      "route": "126140",
+      "length": 29514,
+      "conflicts": [
+        "126134",
+        "126136",
+        "126140"
+      ]
+    },
+    {
+      "route": "126140",
+      "length": 30939,
+      "conflicts": [
+        "126139",
+        "126138",
+        "126141",
+        "126142"
+      ]
+    },
+    {
+      "route": "129174",
+      "length": 5491,
+      "conflicts": [
+        "129174"
+      ]
+    }
+  ],
+  "train_exit_sequence_set": [
+    {
+      "black_hole_route_id": "10000147",
+      "train_id_exit_sequence": [
+        "130133",
+        "129960"
+      ]
+    },
+    {
+      "black_hole_route_id": "10000148",
+      "train_id_exit_sequence": []
+    },
+    {
+      "black_hole_route_id": "10000149",
+      "train_id_exit_sequence": [
+        "129866"
+      ]
+    },
+    {
+      "black_hole_route_id": "10000150",
+      "train_id_exit_sequence": []
+    }
+  ],
+  "safeplace_alt_path_set": [
+    {
+      "group_id": "0",
+      "route_id_sequence": [
+        "126058",
+        "126084"
+      ]
+    },
+    {
+      "group_id": "0",
+      "route_id_sequence": [
+        "126057",
+        "126065",
+        "126078"
+      ]
+    },
+    {
+      "group_id": "0",
+      "route_id_sequence": [
+        "126057",
+        "126064",
+        "126072"
+      ]
+    },
+    {
+      "group_id": "1",
+      "route_id_sequence": [
+        "126058",
+        "126082"
+      ]
+    },
+    {
+      "group_id": "1",
+      "route_id_sequence": [
+        "126057",
+        "126065",
+        "126076"
+      ]
+    },
+    {
+      "group_id": "1",
+      "route_id_sequence": [
+        "126057",
+        "126064",
+        "126070"
+      ]
+    },
+    {
+      "group_id": "2",
+      "route_id_sequence": [
+        "126058",
+        "126083"
+      ]
+    },
+    {
+      "group_id": "2",
+      "route_id_sequence": [
+        "126057",
+        "126065",
+        "126077"
+      ]
+    },
+    {
+      "group_id": "2",
+      "route_id_sequence": [
+        "126057",
+        "126064",
+        "126071"
+      ]
+    },
+    {
+      "group_id": "3",
+      "route_id_sequence": [
+        "126062",
+        "126084"
+      ]
+    },
+    {
+      "group_id": "3",
+      "route_id_sequence": [
+        "126061",
+        "126065",
+        "126078"
+      ]
+    },
+    {
+      "group_id": "3",
+      "route_id_sequence": [
+        "126061",
+        "126064",
+        "126072"
+      ]
+    },
+    {
+      "group_id": "4",
+      "route_id_sequence": [
+        "126062",
+        "126082"
+      ]
+    },
+    {
+      "group_id": "4",
+      "route_id_sequence": [
+        "126061",
+        "126065",
+        "126076"
+      ]
+    },
+    {
+      "group_id": "4",
+      "route_id_sequence": [
+        "126061",
+        "126064",
+        "126070"
+      ]
+    },
+    {
+      "group_id": "5",
+      "route_id_sequence": [
+        "126062",
+        "126083"
+      ]
+    },
+    {
+      "group_id": "5",
+      "route_id_sequence": [
+        "126061",
+        "126065",
+        "126077"
+      ]
+    },
+    {
+      "group_id": "5",
+      "route_id_sequence": [
+        "126061",
+        "126064",
+        "126071"
+      ]
+    },
+    {
+      "group_id": "6",
+      "route_id_sequence": [
+        "126065",
+        "126078"
+      ]
+    },
+    {
+      "group_id": "6",
+      "route_id_sequence": [
+        "126064",
+        "126072"
+      ]
+    },
+    {
+      "group_id": "7",
+      "route_id_sequence": [
+        "126065",
+        "126076"
+      ]
+    },
+    {
+      "group_id": "7",
+      "route_id_sequence": [
+        "126064",
+        "126070"
+      ]
+    },
+    {
+      "group_id": "8",
+      "route_id_sequence": [
+        "126065",
+        "126077"
+      ]
+    },
+    {
+      "group_id": "8",
+      "route_id_sequence": [
+        "126064",
+        "126071"
+      ]
+    },
+    {
+      "group_id": "9",
+      "route_id_sequence": [
+        "126069",
+        "126059"
+      ]
+    },
+    {
+      "group_id": "9",
+      "route_id_sequence": [
+        "126068",
+        "126066",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "9",
+      "route_id_sequence": [
+        "126067",
+        "126063",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "10",
+      "route_id_sequence": [
+        "126069",
+        "126060"
+      ]
+    },
+    {
+      "group_id": "10",
+      "route_id_sequence": [
+        "126068",
+        "126066",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "10",
+      "route_id_sequence": [
+        "126067",
+        "126063",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "11",
+      "route_id_sequence": [
+        "126068",
+        "126066"
+      ]
+    },
+    {
+      "group_id": "11",
+      "route_id_sequence": [
+        "126067",
+        "126063"
+      ]
+    },
+    {
+      "group_id": "12",
+      "route_id_sequence": [
+        "126071",
+        "126094"
+      ]
+    },
+    {
+      "group_id": "12",
+      "route_id_sequence": [
+        "126070",
+        "126093"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "126070",
+        "126093",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "126071",
+        "126094",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "126072",
+        "126087",
+        "126095"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "126072",
+        "126086",
+        "126105"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "126070",
+        "126093",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "126071",
+        "126094",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "126072",
+        "126087",
+        "126096"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "126072",
+        "126086",
+        "126106"
+      ]
+    },
+    {
+      "group_id": "15",
+      "route_id_sequence": [
+        "126073",
+        "126063",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "15",
+      "route_id_sequence": [
+        "126075",
+        "126059"
+      ]
+    },
+    {
+      "group_id": "15",
+      "route_id_sequence": [
+        "126074",
+        "126066",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "16",
+      "route_id_sequence": [
+        "126073",
+        "126063",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "16",
+      "route_id_sequence": [
+        "126075",
+        "126060"
+      ]
+    },
+    {
+      "group_id": "16",
+      "route_id_sequence": [
+        "126074",
+        "126066",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "17",
+      "route_id_sequence": [
+        "126074",
+        "126066"
+      ]
+    },
+    {
+      "group_id": "17",
+      "route_id_sequence": [
+        "126073",
+        "126063"
+      ]
+    },
+    {
+      "group_id": "18",
+      "route_id_sequence": [
+        "126077",
+        "126094"
+      ]
+    },
+    {
+      "group_id": "18",
+      "route_id_sequence": [
+        "126076",
+        "126093"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "126077",
+        "126094",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "126078",
+        "126087",
+        "126095"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "126078",
+        "126086",
+        "126105"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "126076",
+        "126093",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "126077",
+        "126094",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "126078",
+        "126087",
+        "126096"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "126078",
+        "126086",
+        "126106"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "126076",
+        "126093",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "21",
+      "route_id_sequence": [
+        "126080",
+        "126066",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "21",
+      "route_id_sequence": [
+        "126079",
+        "126063",
+        "126055"
+      ]
+    },
+    {
+      "group_id": "21",
+      "route_id_sequence": [
+        "126081",
+        "126059"
+      ]
+    },
+    {
+      "group_id": "22",
+      "route_id_sequence": [
+        "126080",
+        "126066",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "22",
+      "route_id_sequence": [
+        "126079",
+        "126063",
+        "126056"
+      ]
+    },
+    {
+      "group_id": "22",
+      "route_id_sequence": [
+        "126081",
+        "126060"
+      ]
+    },
+    {
+      "group_id": "23",
+      "route_id_sequence": [
+        "126080",
+        "126066"
+      ]
+    },
+    {
+      "group_id": "23",
+      "route_id_sequence": [
+        "126079",
+        "126063"
+      ]
+    },
+    {
+      "group_id": "24",
+      "route_id_sequence": [
+        "126083",
+        "126094"
+      ]
+    },
+    {
+      "group_id": "24",
+      "route_id_sequence": [
+        "126082",
+        "126093"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "126082",
+        "126093",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "126083",
+        "126094",
+        "126100"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "126084",
+        "126087",
+        "126095"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "126084",
+        "126086",
+        "126105"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "126082",
+        "126093",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "126083",
+        "126094",
+        "126101"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "126084",
+        "126087",
+        "126096"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "126084",
+        "126086",
+        "126106"
+      ]
+    },
+    {
+      "group_id": "27",
+      "route_id_sequence": [
+        "126087",
+        "126095"
+      ]
+    },
+    {
+      "group_id": "27",
+      "route_id_sequence": [
+        "126086",
+        "126105"
+      ]
+    },
+    {
+      "group_id": "28",
+      "route_id_sequence": [
+        "126087",
+        "126096"
+      ]
+    },
+    {
+      "group_id": "28",
+      "route_id_sequence": [
+        "126086",
+        "126106"
+      ]
+    },
+    {
+      "group_id": "29",
+      "route_id_sequence": [
+        "126092",
+        "126075"
+      ]
+    },
+    {
+      "group_id": "29",
+      "route_id_sequence": [
+        "126091",
+        "126069"
+      ]
+    },
+    {
+      "group_id": "30",
+      "route_id_sequence": [
+        "126092",
+        "126073"
+      ]
+    },
+    {
+      "group_id": "30",
+      "route_id_sequence": [
+        "126091",
+        "126067"
+      ]
+    },
+    {
+      "group_id": "31",
+      "route_id_sequence": [
+        "126092",
+        "126074"
+      ]
+    },
+    {
+      "group_id": "31",
+      "route_id_sequence": [
+        "126091",
+        "126068"
+      ]
+    },
+    {
+      "group_id": "32",
+      "route_id_sequence": [
+        "126095",
+        "126109"
+      ]
+    },
+    {
+      "group_id": "32",
+      "route_id_sequence": [
+        "126096",
+        "126113"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "126098",
+        "126092",
+        "126075"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "126099",
+        "126085",
+        "126081"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "126097",
+        "126089",
+        "126081"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "126098",
+        "126091",
+        "126069"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "126098",
+        "126092",
+        "126073"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "126097",
+        "126089",
+        "126079"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "126099",
+        "126085",
+        "126079"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "126098",
+        "126091",
+        "126067"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "126098",
+        "126092",
+        "126074"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "126097",
+        "126089",
+        "126080"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "126099",
+        "126085",
+        "126080"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "126098",
+        "126091",
+        "126068"
+      ]
+    },
+    {
+      "group_id": "36",
+      "route_id_sequence": [
+        "126099",
+        "126085"
+      ]
+    },
+    {
+      "group_id": "36",
+      "route_id_sequence": [
+        "126097",
+        "126089"
+      ]
+    },
+    {
+      "group_id": "37",
+      "route_id_sequence": [
+        "126101",
+        "126113"
+      ]
+    },
+    {
+      "group_id": "37",
+      "route_id_sequence": [
+        "126100",
+        "126109"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "126103",
+        "126092",
+        "126075"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "126104",
+        "126085",
+        "126081"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "126103",
+        "126091",
+        "126069"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "126102",
+        "126089",
+        "126081"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "126103",
+        "126091",
+        "126067"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "126103",
+        "126092",
+        "126073"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "126104",
+        "126085",
+        "126079"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "126102",
+        "126089",
+        "126079"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "126103",
+        "126091",
+        "126068"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "126103",
+        "126092",
+        "126074"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "126104",
+        "126085",
+        "126080"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "126102",
+        "126089",
+        "126080"
+      ]
+    },
+    {
+      "group_id": "41",
+      "route_id_sequence": [
+        "126102",
+        "126089"
+      ]
+    },
+    {
+      "group_id": "41",
+      "route_id_sequence": [
+        "126104",
+        "126085"
+      ]
+    },
+    {
+      "group_id": "42",
+      "route_id_sequence": [
+        "126106",
+        "126113"
+      ]
+    },
+    {
+      "group_id": "42",
+      "route_id_sequence": [
+        "126105",
+        "126109"
+      ]
+    },
+    {
+      "group_id": "43",
+      "route_id_sequence": [
+        "126108",
+        "126104"
+      ]
+    },
+    {
+      "group_id": "43",
+      "route_id_sequence": [
+        "126107",
+        "126099"
+      ]
+    },
+    {
+      "group_id": "44",
+      "route_id_sequence": [
+        "126108",
+        "126102"
+      ]
+    },
+    {
+      "group_id": "44",
+      "route_id_sequence": [
+        "126107",
+        "126097"
+      ]
+    },
+    {
+      "group_id": "45",
+      "route_id_sequence": [
+        "126108",
+        "126103"
+      ]
+    },
+    {
+      "group_id": "45",
+      "route_id_sequence": [
+        "126107",
+        "126098"
+      ]
+    },
+    {
+      "group_id": "46",
+      "route_id_sequence": [
+        "126109",
+        "126118"
+      ]
+    },
+    {
+      "group_id": "46",
+      "route_id_sequence": [
+        "126110",
+        "126120"
+      ]
+    },
+    {
+      "group_id": "47",
+      "route_id_sequence": [
+        "126109",
+        "126119",
+        "126129"
+      ]
+    },
+    {
+      "group_id": "47",
+      "route_id_sequence": [
+        "126109",
+        "126118",
+        "126125"
+      ]
+    },
+    {
+      "group_id": "47",
+      "route_id_sequence": [
+        "126110",
+        "126120",
+        "126125"
+      ]
+    },
+    {
+      "group_id": "48",
+      "route_id_sequence": [
+        "126109",
+        "126119",
+        "126130"
+      ]
+    },
+    {
+      "group_id": "48",
+      "route_id_sequence": [
+        "126109",
+        "126118",
+        "126126"
+      ]
+    },
+    {
+      "group_id": "48",
+      "route_id_sequence": [
+        "126110",
+        "126120",
+        "126126"
+      ]
+    },
+    {
+      "group_id": "49",
+      "route_id_sequence": [
+        "126114",
+        "126115"
+      ]
+    },
+    {
+      "group_id": "49",
+      "route_id_sequence": [
+        "126113",
+        "126119"
+      ]
+    },
+    {
+      "group_id": "50",
+      "route_id_sequence": [
+        "126114",
+        "126115",
+        "126129"
+      ]
+    },
+    {
+      "group_id": "50",
+      "route_id_sequence": [
+        "126113",
+        "126119",
+        "126129"
+      ]
+    },
+    {
+      "group_id": "50",
+      "route_id_sequence": [
+        "126113",
+        "126118",
+        "126125"
+      ]
+    },
+    {
+      "group_id": "51",
+      "route_id_sequence": [
+        "126114",
+        "126115",
+        "126130"
+      ]
+    },
+    {
+      "group_id": "51",
+      "route_id_sequence": [
+        "126113",
+        "126119",
+        "126130"
+      ]
+    },
+    {
+      "group_id": "51",
+      "route_id_sequence": [
+        "126113",
+        "126118",
+        "126126"
+      ]
+    },
+    {
+      "group_id": "52",
+      "route_id_sequence": [
+        "126116",
+        "126108",
+        "126104"
+      ]
+    },
+    {
+      "group_id": "52",
+      "route_id_sequence": [
+        "126116",
+        "126107",
+        "126099"
+      ]
+    },
+    {
+      "group_id": "52",
+      "route_id_sequence": [
+        "126117",
+        "126111",
+        "126099"
+      ]
+    },
+    {
+      "group_id": "53",
+      "route_id_sequence": [
+        "126116",
+        "126108",
+        "126102"
+      ]
+    },
+    {
+      "group_id": "53",
+      "route_id_sequence": [
+        "126116",
+        "126107",
+        "126097"
+      ]
+    },
+    {
+      "group_id": "53",
+      "route_id_sequence": [
+        "126117",
+        "126111",
+        "126097"
+      ]
+    },
+    {
+      "group_id": "54",
+      "route_id_sequence": [
+        "126116",
+        "126108",
+        "126103"
+      ]
+    },
+    {
+      "group_id": "54",
+      "route_id_sequence": [
+        "126116",
+        "126107",
+        "126098"
+      ]
+    },
+    {
+      "group_id": "54",
+      "route_id_sequence": [
+        "126117",
+        "126111",
+        "126098"
+      ]
+    },
+    {
+      "group_id": "55",
+      "route_id_sequence": [
+        "126116",
+        "126107"
+      ]
+    },
+    {
+      "group_id": "55",
+      "route_id_sequence": [
+        "126117",
+        "126111"
+      ]
+    },
+    {
+      "group_id": "56",
+      "route_id_sequence": [
+        "126119",
+        "126129"
+      ]
+    },
+    {
+      "group_id": "56",
+      "route_id_sequence": [
+        "126118",
+        "126125"
+      ]
+    },
+    {
+      "group_id": "57",
+      "route_id_sequence": [
+        "126119",
+        "126130"
+      ]
+    },
+    {
+      "group_id": "57",
+      "route_id_sequence": [
+        "126118",
+        "126126"
+      ]
+    },
+    {
+      "group_id": "58",
+      "route_id_sequence": [
+        "126122",
+        "126108",
+        "126104"
+      ]
+    },
+    {
+      "group_id": "58",
+      "route_id_sequence": [
+        "126122",
+        "126107",
+        "126099"
+      ]
+    },
+    {
+      "group_id": "58",
+      "route_id_sequence": [
+        "126121",
+        "126112",
+        "126104"
+      ]
+    },
+    {
+      "group_id": "59",
+      "route_id_sequence": [
+        "126122",
+        "126108",
+        "126102"
+      ]
+    },
+    {
+      "group_id": "59",
+      "route_id_sequence": [
+        "126122",
+        "126107",
+        "126097"
+      ]
+    },
+    {
+      "group_id": "59",
+      "route_id_sequence": [
+        "126121",
+        "126112",
+        "126102"
+      ]
+    },
+    {
+      "group_id": "60",
+      "route_id_sequence": [
+        "126122",
+        "126108",
+        "126103"
+      ]
+    },
+    {
+      "group_id": "60",
+      "route_id_sequence": [
+        "126122",
+        "126107",
+        "126098"
+      ]
+    },
+    {
+      "group_id": "60",
+      "route_id_sequence": [
+        "126121",
+        "126112",
+        "126103"
+      ]
+    },
+    {
+      "group_id": "61",
+      "route_id_sequence": [
+        "126122",
+        "126108"
+      ]
+    },
+    {
+      "group_id": "61",
+      "route_id_sequence": [
+        "126121",
+        "126112"
+      ]
+    },
+    {
+      "group_id": "62",
+      "route_id_sequence": [
+        "126124",
+        "126122"
+      ]
+    },
+    {
+      "group_id": "62",
+      "route_id_sequence": [
+        "126123",
+        "126116"
+      ]
+    },
+    {
+      "group_id": "63",
+      "route_id_sequence": [
+        "126126",
+        "126134",
+        "126141"
+      ]
+    },
+    {
+      "group_id": "63",
+      "route_id_sequence": [
+        "126125",
+        "126132",
+        "126137"
+      ]
+    },
+    {
+      "group_id": "64",
+      "route_id_sequence": [
+        "126126",
+        "126134",
+        "126142"
+      ]
+    },
+    {
+      "group_id": "64",
+      "route_id_sequence": [
+        "126125",
+        "126132",
+        "126138"
+      ]
+    },
+    {
+      "group_id": "65",
+      "route_id_sequence": [
+        "126128",
+        "126122"
+      ]
+    },
+    {
+      "group_id": "65",
+      "route_id_sequence": [
+        "126127",
+        "126116"
+      ]
+    },
+    {
+      "group_id": "66",
+      "route_id_sequence": [
+        "126129",
+        "126132",
+        "126137"
+      ]
+    },
+    {
+      "group_id": "66",
+      "route_id_sequence": [
+        "126130",
+        "126134",
+        "126141"
+      ]
+    },
+    {
+      "group_id": "67",
+      "route_id_sequence": [
+        "126129",
+        "126132",
+        "126138"
+      ]
+    },
+    {
+      "group_id": "67",
+      "route_id_sequence": [
+        "126130",
+        "126134",
+        "126142"
+      ]
+    },
+    {
+      "group_id": "68",
+      "route_id_sequence": [
+        "126136",
+        "126133",
+        "126127"
+      ]
+    },
+    {
+      "group_id": "68",
+      "route_id_sequence": [
+        "126135",
+        "126131",
+        "126123"
+      ]
+    },
+    {
+      "group_id": "69",
+      "route_id_sequence": [
+        "126136",
+        "126133",
+        "126128"
+      ]
+    },
+    {
+      "group_id": "69",
+      "route_id_sequence": [
+        "126135",
+        "126131",
+        "126124"
+      ]
+    },
+    {
+      "group_id": "70",
+      "route_id_sequence": [
+        "126140",
+        "126133",
+        "126127"
+      ]
+    },
+    {
+      "group_id": "70",
+      "route_id_sequence": [
+        "126139",
+        "126131",
+        "126123"
+      ]
+    },
+    {
+      "group_id": "71",
+      "route_id_sequence": [
+        "126140",
+        "126133",
+        "126128"
+      ]
+    },
+    {
+      "group_id": "71",
+      "route_id_sequence": [
+        "126139",
+        "126131",
+        "126124"
+      ]
+    }
+  ]
+}

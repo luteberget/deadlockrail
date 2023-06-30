@@ -1,0 +1,8949 @@
+{
+  "id": "367805173872700",
+  "mode": "DEADLOCK_DETECTION",
+  "trains": [
+    {
+      "name": "T129934",
+      "id": "129934",
+      "is_dummy": false,
+      "initial_routes": [
+        "106376"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129942"
+      ],
+      "follower_trains": [
+        "129939",
+        "129940"
+      ],
+      "always_win_after_first_win": [
+        "129939",
+        "129940"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T129939",
+      "id": "129939",
+      "is_dummy": false,
+      "initial_routes": [
+        "106467",
+        "106472"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129942"
+      ],
+      "follower_trains": [
+        "129940",
+        "129934"
+      ],
+      "always_win_after_first_win": [
+        "129940",
+        "129934"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T129940",
+      "id": "129940",
+      "is_dummy": false,
+      "initial_routes": [
+        "106398"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129942"
+      ],
+      "follower_trains": [
+        "129939",
+        "129934"
+      ],
+      "always_win_after_first_win": [
+        "129939",
+        "129934"
+      ],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    },
+    {
+      "name": "T129942",
+      "id": "129942",
+      "is_dummy": false,
+      "initial_routes": [
+        "106329"
+      ],
+      "final_routes": [],
+      "crossing_trains": [
+        "129939",
+        "129940",
+        "129934"
+      ],
+      "follower_trains": [],
+      "always_win_after_first_win": [],
+      "is_safe_place_bound": false,
+      "safe_place_route": [],
+      "initial_multitrain_prev_trainid": []
+    }
+  ],
+  "routes": [
+    {
+      "name": "R106316",
+      "id": "106316",
+      "is_multi_train": true,
+      "final_point_id": "9777",
+      "final_point_container_id": "54667",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106317",
+      "id": "106317",
+      "is_multi_train": true,
+      "final_point_id": "9778",
+      "final_point_container_id": "54669",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106318",
+      "id": "106318",
+      "is_multi_train": true,
+      "final_point_id": "9777",
+      "final_point_container_id": "54667",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106319",
+      "id": "106319",
+      "is_multi_train": true,
+      "final_point_id": "9778",
+      "final_point_container_id": "54669",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106320",
+      "id": "106320",
+      "is_multi_train": false,
+      "final_point_id": "4097",
+      "final_point_container_id": "44152",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106321",
+      "id": "106321",
+      "is_multi_train": true,
+      "final_point_id": "4176",
+      "final_point_container_id": "54679",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106322",
+      "id": "106322",
+      "is_multi_train": true,
+      "final_point_id": "4177",
+      "final_point_container_id": "54681",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106323",
+      "id": "106323",
+      "is_multi_train": true,
+      "final_point_id": "9777",
+      "final_point_container_id": "54667",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106324",
+      "id": "106324",
+      "is_multi_train": true,
+      "final_point_id": "9778",
+      "final_point_container_id": "54669",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106325",
+      "id": "106325",
+      "is_multi_train": false,
+      "final_point_id": "4097",
+      "final_point_container_id": "44152",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106326",
+      "id": "106326",
+      "is_multi_train": true,
+      "final_point_id": "4176",
+      "final_point_container_id": "54679",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106327",
+      "id": "106327",
+      "is_multi_train": true,
+      "final_point_id": "4177",
+      "final_point_container_id": "54681",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106328",
+      "id": "106328",
+      "is_multi_train": true,
+      "final_point_id": "9790",
+      "final_point_container_id": "54671",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106329",
+      "id": "106329",
+      "is_multi_train": true,
+      "final_point_id": "9791",
+      "final_point_container_id": "54673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106330",
+      "id": "106330",
+      "is_multi_train": true,
+      "final_point_id": "4098",
+      "final_point_container_id": "54667",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106331",
+      "id": "106331",
+      "is_multi_train": true,
+      "final_point_id": "4099",
+      "final_point_container_id": "54669",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106332",
+      "id": "106332",
+      "is_multi_train": true,
+      "final_point_id": "9790",
+      "final_point_container_id": "54671",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106333",
+      "id": "106333",
+      "is_multi_train": true,
+      "final_point_id": "9791",
+      "final_point_container_id": "54673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106334",
+      "id": "106334",
+      "is_multi_train": true,
+      "final_point_id": "4098",
+      "final_point_container_id": "54667",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106335",
+      "id": "106335",
+      "is_multi_train": true,
+      "final_point_id": "4099",
+      "final_point_container_id": "54669",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106336",
+      "id": "106336",
+      "is_multi_train": true,
+      "final_point_id": "2579",
+      "final_point_container_id": "51769",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106337",
+      "id": "106337",
+      "is_multi_train": true,
+      "final_point_id": "9780",
+      "final_point_container_id": "54673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106338",
+      "id": "106338",
+      "is_multi_train": true,
+      "final_point_id": "9779",
+      "final_point_container_id": "54671",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106339",
+      "id": "106339",
+      "is_multi_train": true,
+      "final_point_id": "2579",
+      "final_point_container_id": "51769",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106340",
+      "id": "106340",
+      "is_multi_train": false,
+      "final_point_id": "-2577",
+      "final_point_container_id": "2576",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106341",
+      "id": "106341",
+      "is_multi_train": false,
+      "final_point_id": "-2578",
+      "final_point_container_id": "2576",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106342",
+      "id": "106342",
+      "is_multi_train": true,
+      "final_point_id": "9792",
+      "final_point_container_id": "51769",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106343",
+      "id": "106343",
+      "is_multi_train": true,
+      "final_point_id": "9792",
+      "final_point_container_id": "51769",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106344",
+      "id": "106344",
+      "is_multi_train": false,
+      "final_point_id": "2578",
+      "final_point_container_id": "2576",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106345",
+      "id": "106345",
+      "is_multi_train": false,
+      "final_point_id": "2577",
+      "final_point_container_id": "2576",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106346",
+      "id": "106346",
+      "is_multi_train": true,
+      "final_point_id": "2592",
+      "final_point_container_id": "51673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106347",
+      "id": "106347",
+      "is_multi_train": true,
+      "final_point_id": "2592",
+      "final_point_container_id": "51673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106348",
+      "id": "106348",
+      "is_multi_train": false,
+      "final_point_id": "-2590",
+      "final_point_container_id": "2589",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106349",
+      "id": "106349",
+      "is_multi_train": false,
+      "final_point_id": "2591",
+      "final_point_container_id": "2589",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106350",
+      "id": "106350",
+      "is_multi_train": true,
+      "final_point_id": "2580",
+      "final_point_container_id": "51673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106351",
+      "id": "106351",
+      "is_multi_train": true,
+      "final_point_id": "2580",
+      "final_point_container_id": "51673",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106352",
+      "id": "106352",
+      "is_multi_train": false,
+      "final_point_id": "-2591",
+      "final_point_container_id": "2589",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106353",
+      "id": "106353",
+      "is_multi_train": false,
+      "final_point_id": "2590",
+      "final_point_container_id": "2589",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106354",
+      "id": "106354",
+      "is_multi_train": true,
+      "final_point_id": "2605",
+      "final_point_container_id": "51704",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106355",
+      "id": "106355",
+      "is_multi_train": true,
+      "final_point_id": "2605",
+      "final_point_container_id": "51704",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106356",
+      "id": "106356",
+      "is_multi_train": false,
+      "final_point_id": "2603",
+      "final_point_container_id": "2602",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106357",
+      "id": "106357",
+      "is_multi_train": false,
+      "final_point_id": "2604",
+      "final_point_container_id": "2602",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106358",
+      "id": "106358",
+      "is_multi_train": true,
+      "final_point_id": "2593",
+      "final_point_container_id": "51704",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106359",
+      "id": "106359",
+      "is_multi_train": true,
+      "final_point_id": "2593",
+      "final_point_container_id": "51704",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106360",
+      "id": "106360",
+      "is_multi_train": false,
+      "final_point_id": "-2604",
+      "final_point_container_id": "2602",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106361",
+      "id": "106361",
+      "is_multi_train": false,
+      "final_point_id": "-2603",
+      "final_point_container_id": "2602",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106362",
+      "id": "106362",
+      "is_multi_train": true,
+      "final_point_id": "2618",
+      "final_point_container_id": "51707",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106363",
+      "id": "106363",
+      "is_multi_train": true,
+      "final_point_id": "2618",
+      "final_point_container_id": "51707",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106364",
+      "id": "106364",
+      "is_multi_train": false,
+      "final_point_id": "2616",
+      "final_point_container_id": "2615",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106365",
+      "id": "106365",
+      "is_multi_train": false,
+      "final_point_id": "2617",
+      "final_point_container_id": "2615",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106366",
+      "id": "106366",
+      "is_multi_train": true,
+      "final_point_id": "2606",
+      "final_point_container_id": "51707",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106367",
+      "id": "106367",
+      "is_multi_train": true,
+      "final_point_id": "2606",
+      "final_point_container_id": "51707",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106368",
+      "id": "106368",
+      "is_multi_train": false,
+      "final_point_id": "-2617",
+      "final_point_container_id": "2615",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106369",
+      "id": "106369",
+      "is_multi_train": false,
+      "final_point_id": "-2616",
+      "final_point_container_id": "2615",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106370",
+      "id": "106370",
+      "is_multi_train": true,
+      "final_point_id": "2631",
+      "final_point_container_id": "50793",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106371",
+      "id": "106371",
+      "is_multi_train": true,
+      "final_point_id": "2631",
+      "final_point_container_id": "50793",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106372",
+      "id": "106372",
+      "is_multi_train": false,
+      "final_point_id": "-2629",
+      "final_point_container_id": "2628",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106373",
+      "id": "106373",
+      "is_multi_train": false,
+      "final_point_id": "-2630",
+      "final_point_container_id": "2628",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106374",
+      "id": "106374",
+      "is_multi_train": true,
+      "final_point_id": "2619",
+      "final_point_container_id": "50793",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106375",
+      "id": "106375",
+      "is_multi_train": true,
+      "final_point_id": "2619",
+      "final_point_container_id": "50793",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106376",
+      "id": "106376",
+      "is_multi_train": false,
+      "final_point_id": "2630",
+      "final_point_container_id": "2628",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106377",
+      "id": "106377",
+      "is_multi_train": false,
+      "final_point_id": "2629",
+      "final_point_container_id": "2628",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106378",
+      "id": "106378",
+      "is_multi_train": true,
+      "final_point_id": "2644",
+      "final_point_container_id": "52600",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106379",
+      "id": "106379",
+      "is_multi_train": true,
+      "final_point_id": "2644",
+      "final_point_container_id": "52600",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106380",
+      "id": "106380",
+      "is_multi_train": false,
+      "final_point_id": "2642",
+      "final_point_container_id": "2641",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106381",
+      "id": "106381",
+      "is_multi_train": false,
+      "final_point_id": "2643",
+      "final_point_container_id": "2641",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106382",
+      "id": "106382",
+      "is_multi_train": true,
+      "final_point_id": "2632",
+      "final_point_container_id": "52600",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106383",
+      "id": "106383",
+      "is_multi_train": true,
+      "final_point_id": "2632",
+      "final_point_container_id": "52600",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106384",
+      "id": "106384",
+      "is_multi_train": false,
+      "final_point_id": "-2643",
+      "final_point_container_id": "2641",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106385",
+      "id": "106385",
+      "is_multi_train": false,
+      "final_point_id": "-2642",
+      "final_point_container_id": "2641",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106386",
+      "id": "106386",
+      "is_multi_train": true,
+      "final_point_id": "2657",
+      "final_point_container_id": "50796",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106387",
+      "id": "106387",
+      "is_multi_train": true,
+      "final_point_id": "2657",
+      "final_point_container_id": "50796",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106388",
+      "id": "106388",
+      "is_multi_train": false,
+      "final_point_id": "2655",
+      "final_point_container_id": "2654",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106389",
+      "id": "106389",
+      "is_multi_train": false,
+      "final_point_id": "2656",
+      "final_point_container_id": "2654",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106390",
+      "id": "106390",
+      "is_multi_train": true,
+      "final_point_id": "2645",
+      "final_point_container_id": "50796",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106391",
+      "id": "106391",
+      "is_multi_train": true,
+      "final_point_id": "2645",
+      "final_point_container_id": "50796",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106392",
+      "id": "106392",
+      "is_multi_train": false,
+      "final_point_id": "-2656",
+      "final_point_container_id": "2654",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106393",
+      "id": "106393",
+      "is_multi_train": false,
+      "final_point_id": "-2655",
+      "final_point_container_id": "2654",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106394",
+      "id": "106394",
+      "is_multi_train": true,
+      "final_point_id": "2670",
+      "final_point_container_id": "52845",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106395",
+      "id": "106395",
+      "is_multi_train": true,
+      "final_point_id": "2670",
+      "final_point_container_id": "52845",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106396",
+      "id": "106396",
+      "is_multi_train": false,
+      "final_point_id": "2668",
+      "final_point_container_id": "2667",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106397",
+      "id": "106397",
+      "is_multi_train": false,
+      "final_point_id": "-2669",
+      "final_point_container_id": "2667",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106398",
+      "id": "106398",
+      "is_multi_train": true,
+      "final_point_id": "2658",
+      "final_point_container_id": "52845",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106399",
+      "id": "106399",
+      "is_multi_train": true,
+      "final_point_id": "2658",
+      "final_point_container_id": "52845",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106400",
+      "id": "106400",
+      "is_multi_train": false,
+      "final_point_id": "2669",
+      "final_point_container_id": "2667",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106401",
+      "id": "106401",
+      "is_multi_train": false,
+      "final_point_id": "-2668",
+      "final_point_container_id": "2667",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106402",
+      "id": "106402",
+      "is_multi_train": true,
+      "final_point_id": "3790",
+      "final_point_container_id": "50799",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106403",
+      "id": "106403",
+      "is_multi_train": true,
+      "final_point_id": "3790",
+      "final_point_container_id": "50799",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106404",
+      "id": "106404",
+      "is_multi_train": false,
+      "final_point_id": "3787",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106405",
+      "id": "106405",
+      "is_multi_train": false,
+      "final_point_id": "-3788",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106406",
+      "id": "106406",
+      "is_multi_train": false,
+      "final_point_id": "-3789",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106407",
+      "id": "106407",
+      "is_multi_train": true,
+      "final_point_id": "2671",
+      "final_point_container_id": "50799",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106408",
+      "id": "106408",
+      "is_multi_train": true,
+      "final_point_id": "2671",
+      "final_point_container_id": "50799",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106409",
+      "id": "106409",
+      "is_multi_train": true,
+      "final_point_id": "2671",
+      "final_point_container_id": "50799",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106410",
+      "id": "106410",
+      "is_multi_train": true,
+      "final_point_id": "2683",
+      "final_point_container_id": "50801",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106411",
+      "id": "106411",
+      "is_multi_train": false,
+      "final_point_id": "-3787",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106412",
+      "id": "106412",
+      "is_multi_train": false,
+      "final_point_id": "3788",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106413",
+      "id": "106413",
+      "is_multi_train": false,
+      "final_point_id": "3789",
+      "final_point_container_id": "3786",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106414",
+      "id": "106414",
+      "is_multi_train": true,
+      "final_point_id": "2683",
+      "final_point_container_id": "50801",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106415",
+      "id": "106415",
+      "is_multi_train": true,
+      "final_point_id": "2683",
+      "final_point_container_id": "50801",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106416",
+      "id": "106416",
+      "is_multi_train": false,
+      "final_point_id": "-2681",
+      "final_point_container_id": "2680",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106417",
+      "id": "106417",
+      "is_multi_train": false,
+      "final_point_id": "-2682",
+      "final_point_container_id": "2680",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106418",
+      "id": "106418",
+      "is_multi_train": true,
+      "final_point_id": "3791",
+      "final_point_container_id": "50801",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106419",
+      "id": "106419",
+      "is_multi_train": true,
+      "final_point_id": "3791",
+      "final_point_container_id": "50801",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106420",
+      "id": "106420",
+      "is_multi_train": false,
+      "final_point_id": "2682",
+      "final_point_container_id": "2680",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106421",
+      "id": "106421",
+      "is_multi_train": false,
+      "final_point_id": "2681",
+      "final_point_container_id": "2680",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106422",
+      "id": "106422",
+      "is_multi_train": true,
+      "final_point_id": "2696",
+      "final_point_container_id": "50803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106423",
+      "id": "106423",
+      "is_multi_train": true,
+      "final_point_id": "2696",
+      "final_point_container_id": "50803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106424",
+      "id": "106424",
+      "is_multi_train": false,
+      "final_point_id": "-2694",
+      "final_point_container_id": "2693",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106425",
+      "id": "106425",
+      "is_multi_train": false,
+      "final_point_id": "2695",
+      "final_point_container_id": "2693",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106426",
+      "id": "106426",
+      "is_multi_train": true,
+      "final_point_id": "2684",
+      "final_point_container_id": "50803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106427",
+      "id": "106427",
+      "is_multi_train": true,
+      "final_point_id": "2684",
+      "final_point_container_id": "50803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106428",
+      "id": "106428",
+      "is_multi_train": false,
+      "final_point_id": "-2695",
+      "final_point_container_id": "2693",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106429",
+      "id": "106429",
+      "is_multi_train": false,
+      "final_point_id": "2694",
+      "final_point_container_id": "2693",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106430",
+      "id": "106430",
+      "is_multi_train": true,
+      "final_point_id": "2709",
+      "final_point_container_id": "50805",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106431",
+      "id": "106431",
+      "is_multi_train": true,
+      "final_point_id": "2709",
+      "final_point_container_id": "50805",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106432",
+      "id": "106432",
+      "is_multi_train": false,
+      "final_point_id": "-2707",
+      "final_point_container_id": "2706",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106433",
+      "id": "106433",
+      "is_multi_train": false,
+      "final_point_id": "-2708",
+      "final_point_container_id": "2706",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106434",
+      "id": "106434",
+      "is_multi_train": true,
+      "final_point_id": "2697",
+      "final_point_container_id": "50805",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106435",
+      "id": "106435",
+      "is_multi_train": true,
+      "final_point_id": "2697",
+      "final_point_container_id": "50805",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106436",
+      "id": "106436",
+      "is_multi_train": false,
+      "final_point_id": "2708",
+      "final_point_container_id": "2706",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106437",
+      "id": "106437",
+      "is_multi_train": false,
+      "final_point_id": "2707",
+      "final_point_container_id": "2706",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106438",
+      "id": "106438",
+      "is_multi_train": true,
+      "final_point_id": "2722",
+      "final_point_container_id": "50807",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106439",
+      "id": "106439",
+      "is_multi_train": true,
+      "final_point_id": "2722",
+      "final_point_container_id": "50807",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106440",
+      "id": "106440",
+      "is_multi_train": false,
+      "final_point_id": "-2720",
+      "final_point_container_id": "2719",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106441",
+      "id": "106441",
+      "is_multi_train": false,
+      "final_point_id": "-2721",
+      "final_point_container_id": "2719",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106442",
+      "id": "106442",
+      "is_multi_train": true,
+      "final_point_id": "2710",
+      "final_point_container_id": "50807",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106443",
+      "id": "106443",
+      "is_multi_train": true,
+      "final_point_id": "2710",
+      "final_point_container_id": "50807",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106444",
+      "id": "106444",
+      "is_multi_train": false,
+      "final_point_id": "2721",
+      "final_point_container_id": "2719",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106445",
+      "id": "106445",
+      "is_multi_train": false,
+      "final_point_id": "2720",
+      "final_point_container_id": "2719",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106446",
+      "id": "106446",
+      "is_multi_train": true,
+      "final_point_id": "2733",
+      "final_point_container_id": "50809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106447",
+      "id": "106447",
+      "is_multi_train": true,
+      "final_point_id": "2733",
+      "final_point_container_id": "50809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106448",
+      "id": "106448",
+      "is_multi_train": true,
+      "final_point_id": "2743",
+      "final_point_container_id": "50811",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106449",
+      "id": "106449",
+      "is_multi_train": true,
+      "final_point_id": "2744",
+      "final_point_container_id": "52803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106450",
+      "id": "106450",
+      "is_multi_train": true,
+      "final_point_id": "2723",
+      "final_point_container_id": "50809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106451",
+      "id": "106451",
+      "is_multi_train": true,
+      "final_point_id": "2723",
+      "final_point_container_id": "50809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106452",
+      "id": "106452",
+      "is_multi_train": true,
+      "final_point_id": "2735",
+      "final_point_container_id": "50811",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106453",
+      "id": "106453",
+      "is_multi_train": true,
+      "final_point_id": "2735",
+      "final_point_container_id": "50811",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106454",
+      "id": "106454",
+      "is_multi_train": false,
+      "final_point_id": "2741",
+      "final_point_container_id": "2740",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106455",
+      "id": "106455",
+      "is_multi_train": false,
+      "final_point_id": "2742",
+      "final_point_container_id": "2740",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106456",
+      "id": "106456",
+      "is_multi_train": true,
+      "final_point_id": "2759",
+      "final_point_container_id": "50813",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106457",
+      "id": "106457",
+      "is_multi_train": false,
+      "final_point_id": "-2741",
+      "final_point_container_id": "2740",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106458",
+      "id": "106458",
+      "is_multi_train": false,
+      "final_point_id": "-2742",
+      "final_point_container_id": "2740",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106459",
+      "id": "106459",
+      "is_multi_train": true,
+      "final_point_id": "2734",
+      "final_point_container_id": "52803",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106460",
+      "id": "106460",
+      "is_multi_train": true,
+      "final_point_id": "2759",
+      "final_point_container_id": "50813",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106461",
+      "id": "106461",
+      "is_multi_train": true,
+      "final_point_id": "2759",
+      "final_point_container_id": "50813",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106462",
+      "id": "106462",
+      "is_multi_train": false,
+      "final_point_id": "2757",
+      "final_point_container_id": "2756",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106463",
+      "id": "106463",
+      "is_multi_train": false,
+      "final_point_id": "-2758",
+      "final_point_container_id": "2756",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106464",
+      "id": "106464",
+      "is_multi_train": true,
+      "final_point_id": "2745",
+      "final_point_container_id": "50813",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106465",
+      "id": "106465",
+      "is_multi_train": true,
+      "final_point_id": "2745",
+      "final_point_container_id": "50813",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106466",
+      "id": "106466",
+      "is_multi_train": false,
+      "final_point_id": "2758",
+      "final_point_container_id": "2756",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106467",
+      "id": "106467",
+      "is_multi_train": false,
+      "final_point_id": "-2757",
+      "final_point_container_id": "2756",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106468",
+      "id": "106468",
+      "is_multi_train": true,
+      "final_point_id": "2772",
+      "final_point_container_id": "52764",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106469",
+      "id": "106469",
+      "is_multi_train": true,
+      "final_point_id": "2772",
+      "final_point_container_id": "52764",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106470",
+      "id": "106470",
+      "is_multi_train": false,
+      "final_point_id": "2770",
+      "final_point_container_id": "2769",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106471",
+      "id": "106471",
+      "is_multi_train": false,
+      "final_point_id": "-2771",
+      "final_point_container_id": "2769",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106472",
+      "id": "106472",
+      "is_multi_train": true,
+      "final_point_id": "2760",
+      "final_point_container_id": "52764",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106473",
+      "id": "106473",
+      "is_multi_train": true,
+      "final_point_id": "2760",
+      "final_point_container_id": "52764",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106474",
+      "id": "106474",
+      "is_multi_train": false,
+      "final_point_id": "2771",
+      "final_point_container_id": "2769",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106475",
+      "id": "106475",
+      "is_multi_train": false,
+      "final_point_id": "-2770",
+      "final_point_container_id": "2769",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106476",
+      "id": "106476",
+      "is_multi_train": true,
+      "final_point_id": "2785",
+      "final_point_container_id": "50815",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106477",
+      "id": "106477",
+      "is_multi_train": true,
+      "final_point_id": "2785",
+      "final_point_container_id": "50815",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106478",
+      "id": "106478",
+      "is_multi_train": false,
+      "final_point_id": "-2783",
+      "final_point_container_id": "2782",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106479",
+      "id": "106479",
+      "is_multi_train": false,
+      "final_point_id": "-2784",
+      "final_point_container_id": "2782",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106480",
+      "id": "106480",
+      "is_multi_train": true,
+      "final_point_id": "2773",
+      "final_point_container_id": "50815",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106481",
+      "id": "106481",
+      "is_multi_train": true,
+      "final_point_id": "2773",
+      "final_point_container_id": "50815",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106482",
+      "id": "106482",
+      "is_multi_train": false,
+      "final_point_id": "2784",
+      "final_point_container_id": "2782",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106483",
+      "id": "106483",
+      "is_multi_train": false,
+      "final_point_id": "2783",
+      "final_point_container_id": "2782",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106484",
+      "id": "106484",
+      "is_multi_train": true,
+      "final_point_id": "2798",
+      "final_point_container_id": "52767",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106485",
+      "id": "106485",
+      "is_multi_train": true,
+      "final_point_id": "2798",
+      "final_point_container_id": "52767",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106486",
+      "id": "106486",
+      "is_multi_train": false,
+      "final_point_id": "2796",
+      "final_point_container_id": "2795",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106487",
+      "id": "106487",
+      "is_multi_train": false,
+      "final_point_id": "2797",
+      "final_point_container_id": "2795",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106488",
+      "id": "106488",
+      "is_multi_train": true,
+      "final_point_id": "2786",
+      "final_point_container_id": "52767",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106489",
+      "id": "106489",
+      "is_multi_train": true,
+      "final_point_id": "2786",
+      "final_point_container_id": "52767",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106490",
+      "id": "106490",
+      "is_multi_train": false,
+      "final_point_id": "-2797",
+      "final_point_container_id": "2795",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106491",
+      "id": "106491",
+      "is_multi_train": false,
+      "final_point_id": "-2796",
+      "final_point_container_id": "2795",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106492",
+      "id": "106492",
+      "is_multi_train": true,
+      "final_point_id": "2811",
+      "final_point_container_id": "52806",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106493",
+      "id": "106493",
+      "is_multi_train": true,
+      "final_point_id": "2811",
+      "final_point_container_id": "52806",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106494",
+      "id": "106494",
+      "is_multi_train": false,
+      "final_point_id": "2809",
+      "final_point_container_id": "2808",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106495",
+      "id": "106495",
+      "is_multi_train": false,
+      "final_point_id": "2810",
+      "final_point_container_id": "2808",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106496",
+      "id": "106496",
+      "is_multi_train": true,
+      "final_point_id": "2799",
+      "final_point_container_id": "52806",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106497",
+      "id": "106497",
+      "is_multi_train": true,
+      "final_point_id": "2799",
+      "final_point_container_id": "52806",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106498",
+      "id": "106498",
+      "is_multi_train": false,
+      "final_point_id": "-2810",
+      "final_point_container_id": "2808",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106499",
+      "id": "106499",
+      "is_multi_train": false,
+      "final_point_id": "-2809",
+      "final_point_container_id": "2808",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106500",
+      "id": "106500",
+      "is_multi_train": true,
+      "final_point_id": "2824",
+      "final_point_container_id": "52809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106501",
+      "id": "106501",
+      "is_multi_train": true,
+      "final_point_id": "2824",
+      "final_point_container_id": "52809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106502",
+      "id": "106502",
+      "is_multi_train": false,
+      "final_point_id": "2822",
+      "final_point_container_id": "2821",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106503",
+      "id": "106503",
+      "is_multi_train": false,
+      "final_point_id": "-2823",
+      "final_point_container_id": "2821",
+      "is_final_point_in_station": true,
+      "is_siding": true,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106504",
+      "id": "106504",
+      "is_multi_train": true,
+      "final_point_id": "2812",
+      "final_point_container_id": "52809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R106505",
+      "id": "106505",
+      "is_multi_train": true,
+      "final_point_id": "2812",
+      "final_point_container_id": "52809",
+      "is_final_point_in_station": false,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000000",
+      "id": "10000000",
+      "is_multi_train": true,
+      "final_point_id": "10000000",
+      "final_point_container_id": "11004093",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    },
+    {
+      "name": "R10000001",
+      "id": "10000001",
+      "is_multi_train": true,
+      "final_point_id": "10000001",
+      "final_point_container_id": "11002821",
+      "is_final_point_in_station": true,
+      "is_siding": false,
+      "is_unusable": false,
+      "is_no_meet_pass": false,
+      "is_only_track_blocked": false
+    }
+  ],
+  "train_routes": [
+    {
+      "train": "129934",
+      "route": "106335",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000000"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106337",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106335"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106342",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106343",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106344",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106343"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106345",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106342"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106350",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106351",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106352",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106351"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106353",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106350"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106358",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106353",
+        "106352"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106361",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106358"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106366",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106367",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106368",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106367"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106369",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106366"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106375",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106369",
+        "106368"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106376",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106375"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106382",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106376"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106385",
+      "length": 8508,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106382"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106390",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "106391",
+      "length": 8508,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129934",
+      "route": "10000000",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106335",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000000"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106337",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106335"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106342",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106343",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106344",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106343"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106345",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106342"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106350",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106351",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106352",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106351"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106353",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106350"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106358",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106353",
+        "106352"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106359",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106353",
+        "106352"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106360",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106359"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106361",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106358"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106366",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361",
+        "106360"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106367",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361",
+        "106360"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106368",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106367"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106369",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106366"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106374",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106369",
+        "106368"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106375",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106369",
+        "106368"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106376",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106375"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106377",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106374"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106382",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106377",
+        "106376"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106383",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106377",
+        "106376"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106384",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106383"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106385",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106382"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106390",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385",
+        "106384"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106391",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385",
+        "106384"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106392",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106391"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106393",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106390"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106398",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106393",
+        "106392"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106399",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106393",
+        "106392"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106400",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106399"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106401",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106398"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106407",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106401",
+        "106400"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106408",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106401",
+        "106400"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106409",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106401",
+        "106400"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106411",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106407"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106412",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106408"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106413",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106409"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106418",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106411",
+        "106413",
+        "106412"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106419",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106411",
+        "106413",
+        "106412"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106420",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106419"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106421",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106418"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106426",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106421",
+        "106420"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106429",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106426"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106434",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106429"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106435",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106429"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106436",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106435"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106437",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106434"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106442",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106437",
+        "106436"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106443",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106437",
+        "106436"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106444",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106443"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106445",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106442"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106450",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106445",
+        "106444"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106452",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106450"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106453",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106450"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106457",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106452"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106458",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106453"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106464",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106457",
+        "106458"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106467",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106464"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106472",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106467"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106475",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106472"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106480",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106475"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106483",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106480"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106488",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106483"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106491",
+      "length": 9242,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106488"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106496",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106491"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "106497",
+      "length": 9242,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106491"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129939",
+      "route": "10000000",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106335",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000000"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106337",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106335"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106342",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106343",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106337"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106344",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106343"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106345",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106342"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106350",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106351",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106345",
+        "106344"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106352",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106351"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106353",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106350"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106358",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106353",
+        "106352"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106359",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106353",
+        "106352"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106360",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106359"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106361",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106358"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106366",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361",
+        "106360"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106367",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106361",
+        "106360"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106368",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106367"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106369",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106366"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106374",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106369",
+        "106368"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106375",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106369",
+        "106368"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106376",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106375"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106377",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106374"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106382",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106377",
+        "106376"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106383",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106377",
+        "106376"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106384",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106383"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106385",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106382"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106390",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385",
+        "106384"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106391",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106385",
+        "106384"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106392",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106391"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106393",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106390"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106398",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106393",
+        "106392"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106401",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106398"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106407",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106401"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106411",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106407"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106418",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106411"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106421",
+      "length": 14637,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106418"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106426",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106421"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "106427",
+      "length": 14637,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106421"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129940",
+      "route": "10000000",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106329",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106336"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106333",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106336"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106336",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106341",
+        "106340"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106340",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106347"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106341",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106346"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106346",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106349",
+        "106348"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106347",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106349",
+        "106348"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106348",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106355"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106349",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106354"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106354",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106357",
+        "106356"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106355",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106357",
+        "106356"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106356",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106363"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106357",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106362"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106362",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106365",
+        "106364"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106363",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106365",
+        "106364"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106364",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106371"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106365",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106370"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106370",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106373",
+        "106372"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106371",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106373",
+        "106372"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106372",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106379"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106373",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106378"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106378",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106380"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106379",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106380"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106380",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106387"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106387",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106389",
+        "106388"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106388",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106395"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106389",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106394"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106394",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106397",
+        "106396"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106395",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106397",
+        "106396"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106396",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106403"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106397",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106402"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106402",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106405",
+        "106404",
+        "106406"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106403",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106405",
+        "106404",
+        "106406"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106404",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106410"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106405",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106414"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106406",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106415"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106410",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106417",
+        "106416"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106414",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106417",
+        "106416"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106415",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106417",
+        "106416"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106416",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106423"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106417",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106422"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106422",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106424"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106423",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106424"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106424",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106431"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106431",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106433",
+        "106432"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106432",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106439"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106433",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106438"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106438",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106441",
+        "106440"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106439",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106441",
+        "106440"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106440",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106447"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106441",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106446"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106446",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106449",
+        "106448"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106447",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106449",
+        "106448"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106448",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106455",
+        "106454"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106449",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106461"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106454",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106456"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106455",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106460"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106456",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106463",
+        "106462"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106460",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106463",
+        "106462"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106461",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106463",
+        "106462"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106462",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106469"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106463",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106468"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106468",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106471",
+        "106470"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106469",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106471",
+        "106470"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106470",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106477"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106471",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106476"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106476",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106479",
+        "106478"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106477",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106479",
+        "106478"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106478",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106485"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106479",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106484"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106484",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106487",
+        "106486"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106485",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106487",
+        "106486"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106486",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106493"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106487",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106492"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106492",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106495",
+        "106494"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106493",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "106495",
+        "106494"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106494",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106501"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106495",
+      "length": 5050,
+      "is_potential_safe_place": true,
+      "is_black_hole": false,
+      "next_routes": [
+        "106500"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106500",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000001"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "106501",
+      "length": 5050,
+      "is_potential_safe_place": false,
+      "is_black_hole": false,
+      "next_routes": [
+        "10000001"
+      ],
+      "time_in_opt": ""
+    },
+    {
+      "train": "129942",
+      "route": "10000001",
+      "length": 1,
+      "is_potential_safe_place": true,
+      "is_black_hole": true,
+      "next_routes": [],
+      "time_in_opt": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "route": "106316",
+      "length": 12355,
+      "conflicts": [
+        "106323",
+        "106330",
+        "106316",
+        "106334",
+        "106318"
+      ]
+    },
+    {
+      "route": "106316",
+      "length": 13357,
+      "conflicts": [
+        "106321",
+        "106320",
+        "106322",
+        "106325",
+        "106324",
+        "106327",
+        "106326",
+        "106317",
+        "106319"
+      ]
+    },
+    {
+      "route": "106317",
+      "length": 12355,
+      "conflicts": [
+        "106324",
+        "106331",
+        "106317",
+        "106319",
+        "106335"
+      ]
+    },
+    {
+      "route": "106317",
+      "length": 13358,
+      "conflicts": [
+        "106320",
+        "106323",
+        "106322",
+        "106325",
+        "106327",
+        "106326",
+        "106316"
+      ]
+    },
+    {
+      "route": "106318",
+      "length": 12355,
+      "conflicts": [
+        "106323",
+        "106330",
+        "106316",
+        "106318",
+        "106334"
+      ]
+    },
+    {
+      "route": "106318",
+      "length": 13675,
+      "conflicts": [
+        "106321",
+        "106320",
+        "106322",
+        "106326",
+        "106319"
+      ]
+    },
+    {
+      "route": "106319",
+      "length": 12355,
+      "conflicts": [
+        "106324",
+        "106331",
+        "106317",
+        "106319",
+        "106335"
+      ]
+    },
+    {
+      "route": "106319",
+      "length": 13674,
+      "conflicts": [
+        "106321",
+        "106320",
+        "106323",
+        "106322",
+        "106325",
+        "106327",
+        "106326",
+        "106316",
+        "106318"
+      ]
+    },
+    {
+      "route": "106323",
+      "length": 12355,
+      "conflicts": [
+        "106323",
+        "106330",
+        "106316",
+        "106334",
+        "106318"
+      ]
+    },
+    {
+      "route": "106323",
+      "length": 13674,
+      "conflicts": [
+        "106321",
+        "106320",
+        "106322",
+        "106325",
+        "106324",
+        "106327",
+        "106326",
+        "106317",
+        "106319"
+      ]
+    },
+    {
+      "route": "106324",
+      "length": 12355,
+      "conflicts": [
+        "106324",
+        "106331",
+        "106317",
+        "106319",
+        "106335"
+      ]
+    },
+    {
+      "route": "106324",
+      "length": 13675,
+      "conflicts": [
+        "106320",
+        "106323",
+        "106322",
+        "106325",
+        "106327",
+        "106326",
+        "106316"
+      ]
+    },
+    {
+      "route": "106328",
+      "length": 10771,
+      "conflicts": [
+        "106338",
+        "106328",
+        "106332"
+      ]
+    },
+    {
+      "route": "106328",
+      "length": 11879,
+      "conflicts": [
+        "106329",
+        "106331",
+        "106330",
+        "106334"
+      ]
+    },
+    {
+      "route": "106329",
+      "length": 10771,
+      "conflicts": [
+        "106337",
+        "106329",
+        "106333"
+      ]
+    },
+    {
+      "route": "106329",
+      "length": 11879,
+      "conflicts": [
+        "106328",
+        "106331",
+        "106330",
+        "106332",
+        "106335",
+        "106334"
+      ]
+    },
+    {
+      "route": "106330",
+      "length": 12355,
+      "conflicts": [
+        "106323",
+        "106330",
+        "106316",
+        "106318",
+        "106334"
+      ]
+    },
+    {
+      "route": "106330",
+      "length": 13463,
+      "conflicts": [
+        "106329",
+        "106328",
+        "106331",
+        "106332"
+      ]
+    },
+    {
+      "route": "106331",
+      "length": 12355,
+      "conflicts": [
+        "106324",
+        "106331",
+        "106317",
+        "106319",
+        "106335"
+      ]
+    },
+    {
+      "route": "106331",
+      "length": 13463,
+      "conflicts": [
+        "106329",
+        "106328",
+        "106330",
+        "106333",
+        "106332",
+        "106334"
+      ]
+    },
+    {
+      "route": "106332",
+      "length": 10771,
+      "conflicts": [
+        "106338",
+        "106328",
+        "106332"
+      ]
+    },
+    {
+      "route": "106332",
+      "length": 11879,
+      "conflicts": [
+        "106329",
+        "106331",
+        "106330",
+        "106333",
+        "106335",
+        "106334"
+      ]
+    },
+    {
+      "route": "106333",
+      "length": 10771,
+      "conflicts": [
+        "106337",
+        "106329",
+        "106333"
+      ]
+    },
+    {
+      "route": "106333",
+      "length": 11879,
+      "conflicts": [
+        "106331",
+        "106332",
+        "106335",
+        "106334"
+      ]
+    },
+    {
+      "route": "106334",
+      "length": 12355,
+      "conflicts": [
+        "106323",
+        "106330",
+        "106316",
+        "106334",
+        "106318"
+      ]
+    },
+    {
+      "route": "106334",
+      "length": 13463,
+      "conflicts": [
+        "106329",
+        "106328",
+        "106331",
+        "106333",
+        "106332",
+        "106335"
+      ]
+    },
+    {
+      "route": "106335",
+      "length": 12355,
+      "conflicts": [
+        "106324",
+        "106331",
+        "106317",
+        "106335",
+        "106319"
+      ]
+    },
+    {
+      "route": "106335",
+      "length": 13463,
+      "conflicts": [
+        "106329",
+        "106333",
+        "106332",
+        "106334"
+      ]
+    },
+    {
+      "route": "106336",
+      "length": 43559,
+      "conflicts": [
+        "106336",
+        "106339",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106336",
+      "length": 44351,
+      "conflicts": [
+        "106337",
+        "106338"
+      ]
+    },
+    {
+      "route": "106337",
+      "length": 10771,
+      "conflicts": [
+        "106337",
+        "106329",
+        "106333"
+      ]
+    },
+    {
+      "route": "106337",
+      "length": 11563,
+      "conflicts": [
+        "106336",
+        "106339",
+        "106338"
+      ]
+    },
+    {
+      "route": "106338",
+      "length": 10771,
+      "conflicts": [
+        "106338",
+        "106328",
+        "106332"
+      ]
+    },
+    {
+      "route": "106338",
+      "length": 11563,
+      "conflicts": [
+        "106337",
+        "106336",
+        "106339"
+      ]
+    },
+    {
+      "route": "106339",
+      "length": 43559,
+      "conflicts": [
+        "106336",
+        "106339",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106339",
+      "length": 44351,
+      "conflicts": [
+        "106337",
+        "106338"
+      ]
+    },
+    {
+      "route": "106340",
+      "length": 5775,
+      "conflicts": [
+        "106340",
+        "106345"
+      ]
+    },
+    {
+      "route": "106340",
+      "length": 6197,
+      "conflicts": [
+        "106341",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106341",
+      "length": 5775,
+      "conflicts": [
+        "106341",
+        "106344"
+      ]
+    },
+    {
+      "route": "106341",
+      "length": 6197,
+      "conflicts": [
+        "106340",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106342",
+      "length": 43559,
+      "conflicts": [
+        "106336",
+        "106339",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106342",
+      "length": 43981,
+      "conflicts": [
+        "106341",
+        "106340"
+      ]
+    },
+    {
+      "route": "106343",
+      "length": 43559,
+      "conflicts": [
+        "106336",
+        "106339",
+        "106343",
+        "106342"
+      ]
+    },
+    {
+      "route": "106343",
+      "length": 43981,
+      "conflicts": [
+        "106341",
+        "106340"
+      ]
+    },
+    {
+      "route": "106344",
+      "length": 5775,
+      "conflicts": [
+        "106341",
+        "106344"
+      ]
+    },
+    {
+      "route": "106344",
+      "length": 6197,
+      "conflicts": [
+        "106345",
+        "106347",
+        "106346"
+      ]
+    },
+    {
+      "route": "106345",
+      "length": 5775,
+      "conflicts": [
+        "106340",
+        "106345"
+      ]
+    },
+    {
+      "route": "106345",
+      "length": 6197,
+      "conflicts": [
+        "106344",
+        "106347",
+        "106346"
+      ]
+    },
+    {
+      "route": "106346",
+      "length": 18585,
+      "conflicts": [
+        "106347",
+        "106346",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106346",
+      "length": 19007,
+      "conflicts": [
+        "106345",
+        "106344"
+      ]
+    },
+    {
+      "route": "106347",
+      "length": 18585,
+      "conflicts": [
+        "106347",
+        "106346",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106347",
+      "length": 19007,
+      "conflicts": [
+        "106345",
+        "106344"
+      ]
+    },
+    {
+      "route": "106348",
+      "length": 5760,
+      "conflicts": [
+        "106353",
+        "106348"
+      ]
+    },
+    {
+      "route": "106348",
+      "length": 6235,
+      "conflicts": [
+        "106349",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106349",
+      "length": 5760,
+      "conflicts": [
+        "106352",
+        "106349"
+      ]
+    },
+    {
+      "route": "106349",
+      "length": 6235,
+      "conflicts": [
+        "106348",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106350",
+      "length": 18585,
+      "conflicts": [
+        "106347",
+        "106346",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106350",
+      "length": 19060,
+      "conflicts": [
+        "106349",
+        "106348"
+      ]
+    },
+    {
+      "route": "106351",
+      "length": 18585,
+      "conflicts": [
+        "106347",
+        "106346",
+        "106351",
+        "106350"
+      ]
+    },
+    {
+      "route": "106351",
+      "length": 19060,
+      "conflicts": [
+        "106349",
+        "106348"
+      ]
+    },
+    {
+      "route": "106352",
+      "length": 5760,
+      "conflicts": [
+        "106352",
+        "106349"
+      ]
+    },
+    {
+      "route": "106352",
+      "length": 6129,
+      "conflicts": [
+        "106353",
+        "106355",
+        "106354"
+      ]
+    },
+    {
+      "route": "106353",
+      "length": 5760,
+      "conflicts": [
+        "106353",
+        "106348"
+      ]
+    },
+    {
+      "route": "106353",
+      "length": 6129,
+      "conflicts": [
+        "106352",
+        "106355",
+        "106354"
+      ]
+    },
+    {
+      "route": "106354",
+      "length": 16525,
+      "conflicts": [
+        "106355",
+        "106354",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106354",
+      "length": 16894,
+      "conflicts": [
+        "106353",
+        "106352"
+      ]
+    },
+    {
+      "route": "106355",
+      "length": 16525,
+      "conflicts": [
+        "106355",
+        "106354",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106355",
+      "length": 16894,
+      "conflicts": [
+        "106353",
+        "106352"
+      ]
+    },
+    {
+      "route": "106356",
+      "length": 9529,
+      "conflicts": [
+        "106356",
+        "106361"
+      ]
+    },
+    {
+      "route": "106356",
+      "length": 9951,
+      "conflicts": [
+        "106357",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106357",
+      "length": 9529,
+      "conflicts": [
+        "106357",
+        "106360"
+      ]
+    },
+    {
+      "route": "106357",
+      "length": 9951,
+      "conflicts": [
+        "106356",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106358",
+      "length": 16525,
+      "conflicts": [
+        "106355",
+        "106354",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106358",
+      "length": 16947,
+      "conflicts": [
+        "106357",
+        "106356"
+      ]
+    },
+    {
+      "route": "106359",
+      "length": 16525,
+      "conflicts": [
+        "106355",
+        "106354",
+        "106359",
+        "106358"
+      ]
+    },
+    {
+      "route": "106359",
+      "length": 16947,
+      "conflicts": [
+        "106357",
+        "106356"
+      ]
+    },
+    {
+      "route": "106360",
+      "length": 9529,
+      "conflicts": [
+        "106357",
+        "106360"
+      ]
+    },
+    {
+      "route": "106360",
+      "length": 9898,
+      "conflicts": [
+        "106361",
+        "106363",
+        "106362"
+      ]
+    },
+    {
+      "route": "106361",
+      "length": 9529,
+      "conflicts": [
+        "106356",
+        "106361"
+      ]
+    },
+    {
+      "route": "106361",
+      "length": 9898,
+      "conflicts": [
+        "106360",
+        "106363",
+        "106362"
+      ]
+    },
+    {
+      "route": "106362",
+      "length": 43612,
+      "conflicts": [
+        "106363",
+        "106362",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106362",
+      "length": 43981,
+      "conflicts": [
+        "106361",
+        "106360"
+      ]
+    },
+    {
+      "route": "106363",
+      "length": 43612,
+      "conflicts": [
+        "106363",
+        "106362",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106363",
+      "length": 43981,
+      "conflicts": [
+        "106361",
+        "106360"
+      ]
+    },
+    {
+      "route": "106364",
+      "length": 6196,
+      "conflicts": [
+        "106369",
+        "106364"
+      ]
+    },
+    {
+      "route": "106364",
+      "length": 6565,
+      "conflicts": [
+        "106365",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106365",
+      "length": 6196,
+      "conflicts": [
+        "106368",
+        "106365"
+      ]
+    },
+    {
+      "route": "106365",
+      "length": 6565,
+      "conflicts": [
+        "106364",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106366",
+      "length": 43612,
+      "conflicts": [
+        "106363",
+        "106362",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106366",
+      "length": 43981,
+      "conflicts": [
+        "106365",
+        "106364"
+      ]
+    },
+    {
+      "route": "106367",
+      "length": 43612,
+      "conflicts": [
+        "106363",
+        "106362",
+        "106367",
+        "106366"
+      ]
+    },
+    {
+      "route": "106367",
+      "length": 43981,
+      "conflicts": [
+        "106365",
+        "106364"
+      ]
+    },
+    {
+      "route": "106368",
+      "length": 6196,
+      "conflicts": [
+        "106368",
+        "106365"
+      ]
+    },
+    {
+      "route": "106368",
+      "length": 6618,
+      "conflicts": [
+        "106369",
+        "106371",
+        "106370"
+      ]
+    },
+    {
+      "route": "106369",
+      "length": 6196,
+      "conflicts": [
+        "106369",
+        "106364"
+      ]
+    },
+    {
+      "route": "106369",
+      "length": 6618,
+      "conflicts": [
+        "106368",
+        "106371",
+        "106370"
+      ]
+    },
+    {
+      "route": "106370",
+      "length": 22968,
+      "conflicts": [
+        "106371",
+        "106370",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106370",
+      "length": 23390,
+      "conflicts": [
+        "106369",
+        "106368"
+      ]
+    },
+    {
+      "route": "106371",
+      "length": 22968,
+      "conflicts": [
+        "106371",
+        "106370",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106371",
+      "length": 23390,
+      "conflicts": [
+        "106369",
+        "106368"
+      ]
+    },
+    {
+      "route": "106372",
+      "length": 10200,
+      "conflicts": [
+        "106372",
+        "106377"
+      ]
+    },
+    {
+      "route": "106372",
+      "length": 10675,
+      "conflicts": [
+        "106373",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106373",
+      "length": 10200,
+      "conflicts": [
+        "106373",
+        "106376"
+      ]
+    },
+    {
+      "route": "106373",
+      "length": 10675,
+      "conflicts": [
+        "106372",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106374",
+      "length": 22968,
+      "conflicts": [
+        "106371",
+        "106370",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106374",
+      "length": 23443,
+      "conflicts": [
+        "106373",
+        "106372"
+      ]
+    },
+    {
+      "route": "106375",
+      "length": 22968,
+      "conflicts": [
+        "106371",
+        "106370",
+        "106375",
+        "106374"
+      ]
+    },
+    {
+      "route": "106375",
+      "length": 23443,
+      "conflicts": [
+        "106373",
+        "106372"
+      ]
+    },
+    {
+      "route": "106376",
+      "length": 10200,
+      "conflicts": [
+        "106373",
+        "106376"
+      ]
+    },
+    {
+      "route": "106376",
+      "length": 10569,
+      "conflicts": [
+        "106377",
+        "106379",
+        "106378"
+      ]
+    },
+    {
+      "route": "106377",
+      "length": 10200,
+      "conflicts": [
+        "106372",
+        "106377"
+      ]
+    },
+    {
+      "route": "106377",
+      "length": 10569,
+      "conflicts": [
+        "106376",
+        "106379",
+        "106378"
+      ]
+    },
+    {
+      "route": "106378",
+      "length": 35903,
+      "conflicts": [
+        "106379",
+        "106378",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106378",
+      "length": 36272,
+      "conflicts": [
+        "106377",
+        "106376"
+      ]
+    },
+    {
+      "route": "106379",
+      "length": 35903,
+      "conflicts": [
+        "106379",
+        "106378",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106379",
+      "length": 36272,
+      "conflicts": [
+        "106377",
+        "106376"
+      ]
+    },
+    {
+      "route": "106380",
+      "length": 5765,
+      "conflicts": [
+        "106385",
+        "106380"
+      ]
+    },
+    {
+      "route": "106380",
+      "length": 6240,
+      "conflicts": [
+        "106381",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106381",
+      "length": 5765,
+      "conflicts": [
+        "106384",
+        "106381"
+      ]
+    },
+    {
+      "route": "106381",
+      "length": 6240,
+      "conflicts": [
+        "106380",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106382",
+      "length": 35903,
+      "conflicts": [
+        "106379",
+        "106378",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106382",
+      "length": 36378,
+      "conflicts": [
+        "106381",
+        "106380"
+      ]
+    },
+    {
+      "route": "106383",
+      "length": 35903,
+      "conflicts": [
+        "106379",
+        "106378",
+        "106383",
+        "106382"
+      ]
+    },
+    {
+      "route": "106383",
+      "length": 36378,
+      "conflicts": [
+        "106381",
+        "106380"
+      ]
+    },
+    {
+      "route": "106384",
+      "length": 5765,
+      "conflicts": [
+        "106384",
+        "106381"
+      ]
+    },
+    {
+      "route": "106384",
+      "length": 6081,
+      "conflicts": [
+        "106385",
+        "106387",
+        "106386"
+      ]
+    },
+    {
+      "route": "106385",
+      "length": 5765,
+      "conflicts": [
+        "106385",
+        "106380"
+      ]
+    },
+    {
+      "route": "106385",
+      "length": 6134,
+      "conflicts": [
+        "106384",
+        "106387",
+        "106386"
+      ]
+    },
+    {
+      "route": "106386",
+      "length": 28828,
+      "conflicts": [
+        "106387",
+        "106386",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106386",
+      "length": 29144,
+      "conflicts": [
+        "106385",
+        "106384"
+      ]
+    },
+    {
+      "route": "106387",
+      "length": 28828,
+      "conflicts": [
+        "106387",
+        "106386",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106387",
+      "length": 29197,
+      "conflicts": [
+        "106385",
+        "106384"
+      ]
+    },
+    {
+      "route": "106388",
+      "length": 9017,
+      "conflicts": [
+        "106388",
+        "106393"
+      ]
+    },
+    {
+      "route": "106388",
+      "length": 9439,
+      "conflicts": [
+        "106389",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106389",
+      "length": 9017,
+      "conflicts": [
+        "106389",
+        "106392"
+      ]
+    },
+    {
+      "route": "106389",
+      "length": 9439,
+      "conflicts": [
+        "106388",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106390",
+      "length": 28828,
+      "conflicts": [
+        "106387",
+        "106386",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106390",
+      "length": 29250,
+      "conflicts": [
+        "106389",
+        "106388"
+      ]
+    },
+    {
+      "route": "106391",
+      "length": 28828,
+      "conflicts": [
+        "106387",
+        "106386",
+        "106391",
+        "106390"
+      ]
+    },
+    {
+      "route": "106391",
+      "length": 29250,
+      "conflicts": [
+        "106389",
+        "106388"
+      ]
+    },
+    {
+      "route": "106392",
+      "length": 9017,
+      "conflicts": [
+        "106389",
+        "106392"
+      ]
+    },
+    {
+      "route": "106392",
+      "length": 9439,
+      "conflicts": [
+        "106393",
+        "106395",
+        "106394"
+      ]
+    },
+    {
+      "route": "106393",
+      "length": 9017,
+      "conflicts": [
+        "106388",
+        "106393"
+      ]
+    },
+    {
+      "route": "106393",
+      "length": 9439,
+      "conflicts": [
+        "106392",
+        "106395",
+        "106394"
+      ]
+    },
+    {
+      "route": "106394",
+      "length": 30993,
+      "conflicts": [
+        "106395",
+        "106394",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106394",
+      "length": 31415,
+      "conflicts": [
+        "106393",
+        "106392"
+      ]
+    },
+    {
+      "route": "106395",
+      "length": 30993,
+      "conflicts": [
+        "106395",
+        "106394",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106395",
+      "length": 31415,
+      "conflicts": [
+        "106393",
+        "106392"
+      ]
+    },
+    {
+      "route": "106396",
+      "length": 5754,
+      "conflicts": [
+        "106401",
+        "106396"
+      ]
+    },
+    {
+      "route": "106396",
+      "length": 6176,
+      "conflicts": [
+        "106397",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106397",
+      "length": 5754,
+      "conflicts": [
+        "106400",
+        "106397"
+      ]
+    },
+    {
+      "route": "106397",
+      "length": 6176,
+      "conflicts": [
+        "106396",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106398",
+      "length": 30993,
+      "conflicts": [
+        "106395",
+        "106394",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106398",
+      "length": 31415,
+      "conflicts": [
+        "106397",
+        "106396"
+      ]
+    },
+    {
+      "route": "106399",
+      "length": 30993,
+      "conflicts": [
+        "106395",
+        "106394",
+        "106399",
+        "106398"
+      ]
+    },
+    {
+      "route": "106399",
+      "length": 31415,
+      "conflicts": [
+        "106397",
+        "106396"
+      ]
+    },
+    {
+      "route": "106400",
+      "length": 5754,
+      "conflicts": [
+        "106400",
+        "106397"
+      ]
+    },
+    {
+      "route": "106400",
+      "length": 6176,
+      "conflicts": [
+        "106401",
+        "106403",
+        "106402"
+      ]
+    },
+    {
+      "route": "106401",
+      "length": 5754,
+      "conflicts": [
+        "106401",
+        "106396"
+      ]
+    },
+    {
+      "route": "106401",
+      "length": 6176,
+      "conflicts": [
+        "106400",
+        "106403",
+        "106402"
+      ]
+    },
+    {
+      "route": "106402",
+      "length": 41394,
+      "conflicts": [
+        "106403",
+        "106402",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106402",
+      "length": 41816,
+      "conflicts": [
+        "106401",
+        "106400"
+      ]
+    },
+    {
+      "route": "106403",
+      "length": 41394,
+      "conflicts": [
+        "106403",
+        "106402",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106403",
+      "length": 41816,
+      "conflicts": [
+        "106401",
+        "106400"
+      ]
+    },
+    {
+      "route": "106404",
+      "length": 9190,
+      "conflicts": [
+        "106404",
+        "106411"
+      ]
+    },
+    {
+      "route": "106404",
+      "length": 10034,
+      "conflicts": [
+        "106405",
+        "106407",
+        "106406",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106405",
+      "length": 9190,
+      "conflicts": [
+        "106405",
+        "106412"
+      ]
+    },
+    {
+      "route": "106405",
+      "length": 10034,
+      "conflicts": [
+        "106404",
+        "106407",
+        "106406",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106406",
+      "length": 9190,
+      "conflicts": [
+        "106406",
+        "106413"
+      ]
+    },
+    {
+      "route": "106406",
+      "length": 10034,
+      "conflicts": [
+        "106405",
+        "106404",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106407",
+      "length": 41394,
+      "conflicts": [
+        "106403",
+        "106402",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106407",
+      "length": 42238,
+      "conflicts": [
+        "106405",
+        "106404",
+        "106406"
+      ]
+    },
+    {
+      "route": "106408",
+      "length": 41394,
+      "conflicts": [
+        "106403",
+        "106402",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106408",
+      "length": 42238,
+      "conflicts": [
+        "106405",
+        "106404",
+        "106406"
+      ]
+    },
+    {
+      "route": "106409",
+      "length": 41394,
+      "conflicts": [
+        "106403",
+        "106402",
+        "106407",
+        "106409",
+        "106408"
+      ]
+    },
+    {
+      "route": "106409",
+      "length": 42238,
+      "conflicts": [
+        "106405",
+        "106404",
+        "106406"
+      ]
+    },
+    {
+      "route": "106410",
+      "length": 11193,
+      "conflicts": [
+        "106419",
+        "106418",
+        "106410",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106410",
+      "length": 11932,
+      "conflicts": [
+        "106411",
+        "106413",
+        "106412"
+      ]
+    },
+    {
+      "route": "106411",
+      "length": 9190,
+      "conflicts": [
+        "106404",
+        "106411"
+      ]
+    },
+    {
+      "route": "106411",
+      "length": 9929,
+      "conflicts": [
+        "106410",
+        "106413",
+        "106412",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106412",
+      "length": 9190,
+      "conflicts": [
+        "106405",
+        "106412"
+      ]
+    },
+    {
+      "route": "106412",
+      "length": 9929,
+      "conflicts": [
+        "106411",
+        "106410",
+        "106413",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106413",
+      "length": 9190,
+      "conflicts": [
+        "106406",
+        "106413"
+      ]
+    },
+    {
+      "route": "106413",
+      "length": 9929,
+      "conflicts": [
+        "106411",
+        "106410",
+        "106412",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106414",
+      "length": 11193,
+      "conflicts": [
+        "106419",
+        "106418",
+        "106410",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106414",
+      "length": 11932,
+      "conflicts": [
+        "106411",
+        "106413",
+        "106412"
+      ]
+    },
+    {
+      "route": "106415",
+      "length": 11193,
+      "conflicts": [
+        "106419",
+        "106418",
+        "106410",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106415",
+      "length": 11932,
+      "conflicts": [
+        "106411",
+        "106413",
+        "106412"
+      ]
+    },
+    {
+      "route": "106416",
+      "length": 5780,
+      "conflicts": [
+        "106416",
+        "106421"
+      ]
+    },
+    {
+      "route": "106416",
+      "length": 6202,
+      "conflicts": [
+        "106417",
+        "106419",
+        "106418"
+      ]
+    },
+    {
+      "route": "106417",
+      "length": 5780,
+      "conflicts": [
+        "106417",
+        "106420"
+      ]
+    },
+    {
+      "route": "106417",
+      "length": 6149,
+      "conflicts": [
+        "106416",
+        "106419",
+        "106418"
+      ]
+    },
+    {
+      "route": "106418",
+      "length": 11193,
+      "conflicts": [
+        "106419",
+        "106418",
+        "106410",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106418",
+      "length": 11615,
+      "conflicts": [
+        "106417",
+        "106416"
+      ]
+    },
+    {
+      "route": "106419",
+      "length": 11193,
+      "conflicts": [
+        "106419",
+        "106418",
+        "106410",
+        "106415",
+        "106414"
+      ]
+    },
+    {
+      "route": "106419",
+      "length": 11562,
+      "conflicts": [
+        "106417",
+        "106416"
+      ]
+    },
+    {
+      "route": "106420",
+      "length": 5780,
+      "conflicts": [
+        "106417",
+        "106420"
+      ]
+    },
+    {
+      "route": "106420",
+      "length": 6202,
+      "conflicts": [
+        "106421",
+        "106423",
+        "106422"
+      ]
+    },
+    {
+      "route": "106421",
+      "length": 5780,
+      "conflicts": [
+        "106416",
+        "106421"
+      ]
+    },
+    {
+      "route": "106421",
+      "length": 6202,
+      "conflicts": [
+        "106420",
+        "106423",
+        "106422"
+      ]
+    },
+    {
+      "route": "106422",
+      "length": 10665,
+      "conflicts": [
+        "106423",
+        "106422",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106422",
+      "length": 11087,
+      "conflicts": [
+        "106421",
+        "106420"
+      ]
+    },
+    {
+      "route": "106423",
+      "length": 10665,
+      "conflicts": [
+        "106423",
+        "106422",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106423",
+      "length": 11087,
+      "conflicts": [
+        "106421",
+        "106420"
+      ]
+    },
+    {
+      "route": "106424",
+      "length": 9025,
+      "conflicts": [
+        "106424",
+        "106429"
+      ]
+    },
+    {
+      "route": "106424",
+      "length": 9447,
+      "conflicts": [
+        "106425",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106425",
+      "length": 9025,
+      "conflicts": [
+        "106425",
+        "106428"
+      ]
+    },
+    {
+      "route": "106425",
+      "length": 9447,
+      "conflicts": [
+        "106424",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106426",
+      "length": 10665,
+      "conflicts": [
+        "106423",
+        "106422",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106426",
+      "length": 11087,
+      "conflicts": [
+        "106425",
+        "106424"
+      ]
+    },
+    {
+      "route": "106427",
+      "length": 10665,
+      "conflicts": [
+        "106423",
+        "106422",
+        "106427",
+        "106426"
+      ]
+    },
+    {
+      "route": "106427",
+      "length": 11087,
+      "conflicts": [
+        "106425",
+        "106424"
+      ]
+    },
+    {
+      "route": "106428",
+      "length": 9025,
+      "conflicts": [
+        "106425",
+        "106428"
+      ]
+    },
+    {
+      "route": "106428",
+      "length": 9447,
+      "conflicts": [
+        "106429",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106429",
+      "length": 9025,
+      "conflicts": [
+        "106424",
+        "106429"
+      ]
+    },
+    {
+      "route": "106429",
+      "length": 9447,
+      "conflicts": [
+        "106428",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106430",
+      "length": 14572,
+      "conflicts": [
+        "106435",
+        "106434",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106430",
+      "length": 14994,
+      "conflicts": [
+        "106429",
+        "106428"
+      ]
+    },
+    {
+      "route": "106431",
+      "length": 14572,
+      "conflicts": [
+        "106435",
+        "106434",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106431",
+      "length": 14994,
+      "conflicts": [
+        "106429",
+        "106428"
+      ]
+    },
+    {
+      "route": "106432",
+      "length": 5780,
+      "conflicts": [
+        "106432",
+        "106437"
+      ]
+    },
+    {
+      "route": "106432",
+      "length": 6255,
+      "conflicts": [
+        "106433",
+        "106435",
+        "106434"
+      ]
+    },
+    {
+      "route": "106433",
+      "length": 5780,
+      "conflicts": [
+        "106433",
+        "106436"
+      ]
+    },
+    {
+      "route": "106433",
+      "length": 6255,
+      "conflicts": [
+        "106432",
+        "106435",
+        "106434"
+      ]
+    },
+    {
+      "route": "106434",
+      "length": 14572,
+      "conflicts": [
+        "106435",
+        "106434",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106434",
+      "length": 15047,
+      "conflicts": [
+        "106433",
+        "106432"
+      ]
+    },
+    {
+      "route": "106435",
+      "length": 14572,
+      "conflicts": [
+        "106435",
+        "106434",
+        "106431",
+        "106430"
+      ]
+    },
+    {
+      "route": "106435",
+      "length": 15047,
+      "conflicts": [
+        "106433",
+        "106432"
+      ]
+    },
+    {
+      "route": "106436",
+      "length": 5780,
+      "conflicts": [
+        "106433",
+        "106436"
+      ]
+    },
+    {
+      "route": "106436",
+      "length": 6202,
+      "conflicts": [
+        "106437",
+        "106439",
+        "106438"
+      ]
+    },
+    {
+      "route": "106437",
+      "length": 5780,
+      "conflicts": [
+        "106432",
+        "106437"
+      ]
+    },
+    {
+      "route": "106437",
+      "length": 6202,
+      "conflicts": [
+        "106436",
+        "106439",
+        "106438"
+      ]
+    },
+    {
+      "route": "106438",
+      "length": 10084,
+      "conflicts": [
+        "106439",
+        "106438",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106438",
+      "length": 10506,
+      "conflicts": [
+        "106437",
+        "106436"
+      ]
+    },
+    {
+      "route": "106439",
+      "length": 10084,
+      "conflicts": [
+        "106439",
+        "106438",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106439",
+      "length": 10506,
+      "conflicts": [
+        "106437",
+        "106436"
+      ]
+    },
+    {
+      "route": "106440",
+      "length": 5765,
+      "conflicts": [
+        "106440",
+        "106445"
+      ]
+    },
+    {
+      "route": "106440",
+      "length": 6134,
+      "conflicts": [
+        "106441",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106441",
+      "length": 5765,
+      "conflicts": [
+        "106441",
+        "106444"
+      ]
+    },
+    {
+      "route": "106441",
+      "length": 6134,
+      "conflicts": [
+        "106440",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106442",
+      "length": 10084,
+      "conflicts": [
+        "106439",
+        "106438",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106442",
+      "length": 10453,
+      "conflicts": [
+        "106441",
+        "106440"
+      ]
+    },
+    {
+      "route": "106443",
+      "length": 10084,
+      "conflicts": [
+        "106439",
+        "106438",
+        "106443",
+        "106442"
+      ]
+    },
+    {
+      "route": "106443",
+      "length": 10453,
+      "conflicts": [
+        "106441",
+        "106440"
+      ]
+    },
+    {
+      "route": "106444",
+      "length": 5765,
+      "conflicts": [
+        "106441",
+        "106444"
+      ]
+    },
+    {
+      "route": "106444",
+      "length": 6187,
+      "conflicts": [
+        "106445",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106445",
+      "length": 5765,
+      "conflicts": [
+        "106440",
+        "106445"
+      ]
+    },
+    {
+      "route": "106445",
+      "length": 6187,
+      "conflicts": [
+        "106444",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106446",
+      "length": 8131,
+      "conflicts": [
+        "106451",
+        "106450",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106446",
+      "length": 8553,
+      "conflicts": [
+        "106445",
+        "106444"
+      ]
+    },
+    {
+      "route": "106447",
+      "length": 8131,
+      "conflicts": [
+        "106451",
+        "106450",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106447",
+      "length": 8553,
+      "conflicts": [
+        "106445",
+        "106444"
+      ]
+    },
+    {
+      "route": "106448",
+      "length": 2904,
+      "conflicts": [
+        "106448",
+        "106453",
+        "106452"
+      ]
+    },
+    {
+      "route": "106448",
+      "length": 3379,
+      "conflicts": [
+        "106449",
+        "106451",
+        "106450"
+      ]
+    },
+    {
+      "route": "106449",
+      "length": 9661,
+      "conflicts": [
+        "106449",
+        "106459"
+      ]
+    },
+    {
+      "route": "106449",
+      "length": 10136,
+      "conflicts": [
+        "106448",
+        "106451",
+        "106450"
+      ]
+    },
+    {
+      "route": "106450",
+      "length": 8131,
+      "conflicts": [
+        "106451",
+        "106450",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106450",
+      "length": 8606,
+      "conflicts": [
+        "106449",
+        "106448"
+      ]
+    },
+    {
+      "route": "106451",
+      "length": 8131,
+      "conflicts": [
+        "106451",
+        "106450",
+        "106447",
+        "106446"
+      ]
+    },
+    {
+      "route": "106451",
+      "length": 8606,
+      "conflicts": [
+        "106449",
+        "106448"
+      ]
+    },
+    {
+      "route": "106452",
+      "length": 2904,
+      "conflicts": [
+        "106448",
+        "106453",
+        "106452"
+      ]
+    },
+    {
+      "route": "106452",
+      "length": 3537,
+      "conflicts": [
+        "106455",
+        "106454"
+      ]
+    },
+    {
+      "route": "106453",
+      "length": 2904,
+      "conflicts": [
+        "106448",
+        "106453",
+        "106452"
+      ]
+    },
+    {
+      "route": "106453",
+      "length": 3537,
+      "conflicts": [
+        "106455",
+        "106454"
+      ]
+    },
+    {
+      "route": "106454",
+      "length": 6266,
+      "conflicts": [
+        "106454",
+        "106457"
+      ]
+    },
+    {
+      "route": "106454",
+      "length": 6899,
+      "conflicts": [
+        "106453",
+        "106452",
+        "106455"
+      ]
+    },
+    {
+      "route": "106455",
+      "length": 6266,
+      "conflicts": [
+        "106455",
+        "106458"
+      ]
+    },
+    {
+      "route": "106455",
+      "length": 6899,
+      "conflicts": [
+        "106453",
+        "106452",
+        "106454"
+      ]
+    },
+    {
+      "route": "106456",
+      "length": 13411,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106456",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106456",
+      "length": 13939,
+      "conflicts": [
+        "106457",
+        "106459",
+        "106458"
+      ]
+    },
+    {
+      "route": "106457",
+      "length": 6266,
+      "conflicts": [
+        "106454",
+        "106457"
+      ]
+    },
+    {
+      "route": "106457",
+      "length": 6794,
+      "conflicts": [
+        "106456",
+        "106459",
+        "106458",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106458",
+      "length": 6266,
+      "conflicts": [
+        "106455",
+        "106458"
+      ]
+    },
+    {
+      "route": "106458",
+      "length": 6794,
+      "conflicts": [
+        "106457",
+        "106456",
+        "106459",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106459",
+      "length": 9661,
+      "conflicts": [
+        "106449",
+        "106459"
+      ]
+    },
+    {
+      "route": "106459",
+      "length": 10189,
+      "conflicts": [
+        "106457",
+        "106456",
+        "106458",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106460",
+      "length": 13411,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106456",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106460",
+      "length": 13939,
+      "conflicts": [
+        "106457",
+        "106459",
+        "106458"
+      ]
+    },
+    {
+      "route": "106461",
+      "length": 13411,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106456",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106461",
+      "length": 13939,
+      "conflicts": [
+        "106457",
+        "106459",
+        "106458"
+      ]
+    },
+    {
+      "route": "106462",
+      "length": 6066,
+      "conflicts": [
+        "106467",
+        "106462"
+      ]
+    },
+    {
+      "route": "106462",
+      "length": 6541,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106463"
+      ]
+    },
+    {
+      "route": "106463",
+      "length": 6066,
+      "conflicts": [
+        "106466",
+        "106463"
+      ]
+    },
+    {
+      "route": "106463",
+      "length": 6541,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106462"
+      ]
+    },
+    {
+      "route": "106464",
+      "length": 13411,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106456",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106464",
+      "length": 13886,
+      "conflicts": [
+        "106463",
+        "106462"
+      ]
+    },
+    {
+      "route": "106465",
+      "length": 13411,
+      "conflicts": [
+        "106465",
+        "106464",
+        "106456",
+        "106461",
+        "106460"
+      ]
+    },
+    {
+      "route": "106465",
+      "length": 13886,
+      "conflicts": [
+        "106463",
+        "106462"
+      ]
+    },
+    {
+      "route": "106466",
+      "length": 6066,
+      "conflicts": [
+        "106466",
+        "106463"
+      ]
+    },
+    {
+      "route": "106466",
+      "length": 6488,
+      "conflicts": [
+        "106467",
+        "106469",
+        "106468"
+      ]
+    },
+    {
+      "route": "106467",
+      "length": 6066,
+      "conflicts": [
+        "106467",
+        "106462"
+      ]
+    },
+    {
+      "route": "106467",
+      "length": 6488,
+      "conflicts": [
+        "106466",
+        "106469",
+        "106468"
+      ]
+    },
+    {
+      "route": "106468",
+      "length": 21806,
+      "conflicts": [
+        "106469",
+        "106468",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106468",
+      "length": 22228,
+      "conflicts": [
+        "106467",
+        "106466"
+      ]
+    },
+    {
+      "route": "106469",
+      "length": 21806,
+      "conflicts": [
+        "106469",
+        "106468",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106469",
+      "length": 22228,
+      "conflicts": [
+        "106467",
+        "106466"
+      ]
+    },
+    {
+      "route": "106470",
+      "length": 5751,
+      "conflicts": [
+        "106470",
+        "106475"
+      ]
+    },
+    {
+      "route": "106470",
+      "length": 6173,
+      "conflicts": [
+        "106471",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106471",
+      "length": 5751,
+      "conflicts": [
+        "106471",
+        "106474"
+      ]
+    },
+    {
+      "route": "106471",
+      "length": 6120,
+      "conflicts": [
+        "106470",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106472",
+      "length": 21806,
+      "conflicts": [
+        "106469",
+        "106468",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106472",
+      "length": 22228,
+      "conflicts": [
+        "106471",
+        "106470"
+      ]
+    },
+    {
+      "route": "106473",
+      "length": 21806,
+      "conflicts": [
+        "106469",
+        "106468",
+        "106473",
+        "106472"
+      ]
+    },
+    {
+      "route": "106473",
+      "length": 22175,
+      "conflicts": [
+        "106471",
+        "106470"
+      ]
+    },
+    {
+      "route": "106474",
+      "length": 5751,
+      "conflicts": [
+        "106471",
+        "106474"
+      ]
+    },
+    {
+      "route": "106474",
+      "length": 6173,
+      "conflicts": [
+        "106475",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106475",
+      "length": 5751,
+      "conflicts": [
+        "106470",
+        "106475"
+      ]
+    },
+    {
+      "route": "106475",
+      "length": 6173,
+      "conflicts": [
+        "106474",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106476",
+      "length": 11299,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106476",
+      "length": 11721,
+      "conflicts": [
+        "106475",
+        "106474"
+      ]
+    },
+    {
+      "route": "106477",
+      "length": 11299,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106477",
+      "length": 11721,
+      "conflicts": [
+        "106475",
+        "106474"
+      ]
+    },
+    {
+      "route": "106478",
+      "length": 9835,
+      "conflicts": [
+        "106483",
+        "106478"
+      ]
+    },
+    {
+      "route": "106478",
+      "length": 10257,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106479"
+      ]
+    },
+    {
+      "route": "106479",
+      "length": 9835,
+      "conflicts": [
+        "106482",
+        "106479"
+      ]
+    },
+    {
+      "route": "106479",
+      "length": 10257,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106478"
+      ]
+    },
+    {
+      "route": "106480",
+      "length": 11299,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106480",
+      "length": 11721,
+      "conflicts": [
+        "106479",
+        "106478"
+      ]
+    },
+    {
+      "route": "106481",
+      "length": 11299,
+      "conflicts": [
+        "106481",
+        "106480",
+        "106477",
+        "106476"
+      ]
+    },
+    {
+      "route": "106481",
+      "length": 11721,
+      "conflicts": [
+        "106479",
+        "106478"
+      ]
+    },
+    {
+      "route": "106482",
+      "length": 9835,
+      "conflicts": [
+        "106482",
+        "106479"
+      ]
+    },
+    {
+      "route": "106482",
+      "length": 10310,
+      "conflicts": [
+        "106483",
+        "106485",
+        "106484"
+      ]
+    },
+    {
+      "route": "106483",
+      "length": 9835,
+      "conflicts": [
+        "106483",
+        "106478"
+      ]
+    },
+    {
+      "route": "106483",
+      "length": 10310,
+      "conflicts": [
+        "106482",
+        "106485",
+        "106484"
+      ]
+    },
+    {
+      "route": "106484",
+      "length": 19746,
+      "conflicts": [
+        "106485",
+        "106484",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106484",
+      "length": 20221,
+      "conflicts": [
+        "106483",
+        "106482"
+      ]
+    },
+    {
+      "route": "106485",
+      "length": 19746,
+      "conflicts": [
+        "106485",
+        "106484",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106485",
+      "length": 20221,
+      "conflicts": [
+        "106483",
+        "106482"
+      ]
+    },
+    {
+      "route": "106486",
+      "length": 5765,
+      "conflicts": [
+        "106486",
+        "106491"
+      ]
+    },
+    {
+      "route": "106486",
+      "length": 6134,
+      "conflicts": [
+        "106487",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106487",
+      "length": 5765,
+      "conflicts": [
+        "106487",
+        "106490"
+      ]
+    },
+    {
+      "route": "106487",
+      "length": 6081,
+      "conflicts": [
+        "106486",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106488",
+      "length": 19746,
+      "conflicts": [
+        "106485",
+        "106484",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106488",
+      "length": 20115,
+      "conflicts": [
+        "106487",
+        "106486"
+      ]
+    },
+    {
+      "route": "106489",
+      "length": 19746,
+      "conflicts": [
+        "106485",
+        "106484",
+        "106489",
+        "106488"
+      ]
+    },
+    {
+      "route": "106489",
+      "length": 20062,
+      "conflicts": [
+        "106487",
+        "106486"
+      ]
+    },
+    {
+      "route": "106490",
+      "length": 5765,
+      "conflicts": [
+        "106487",
+        "106490"
+      ]
+    },
+    {
+      "route": "106490",
+      "length": 6187,
+      "conflicts": [
+        "106491",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106491",
+      "length": 5765,
+      "conflicts": [
+        "106486",
+        "106491"
+      ]
+    },
+    {
+      "route": "106491",
+      "length": 6187,
+      "conflicts": [
+        "106490",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106492",
+      "length": 20380,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106492",
+      "length": 20802,
+      "conflicts": [
+        "106491",
+        "106490"
+      ]
+    },
+    {
+      "route": "106493",
+      "length": 20380,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106493",
+      "length": 20802,
+      "conflicts": [
+        "106491",
+        "106490"
+      ]
+    },
+    {
+      "route": "106494",
+      "length": 5767,
+      "conflicts": [
+        "106499",
+        "106494"
+      ]
+    },
+    {
+      "route": "106494",
+      "length": 6189,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106495"
+      ]
+    },
+    {
+      "route": "106495",
+      "length": 5767,
+      "conflicts": [
+        "106498",
+        "106495"
+      ]
+    },
+    {
+      "route": "106495",
+      "length": 6189,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106494"
+      ]
+    },
+    {
+      "route": "106496",
+      "length": 20380,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106496",
+      "length": 20802,
+      "conflicts": [
+        "106495",
+        "106494"
+      ]
+    },
+    {
+      "route": "106497",
+      "length": 20380,
+      "conflicts": [
+        "106497",
+        "106496",
+        "106493",
+        "106492"
+      ]
+    },
+    {
+      "route": "106497",
+      "length": 20802,
+      "conflicts": [
+        "106495",
+        "106494"
+      ]
+    },
+    {
+      "route": "106498",
+      "length": 5767,
+      "conflicts": [
+        "106498",
+        "106495"
+      ]
+    },
+    {
+      "route": "106498",
+      "length": 6189,
+      "conflicts": [
+        "106499",
+        "106501",
+        "106500"
+      ]
+    },
+    {
+      "route": "106499",
+      "length": 5767,
+      "conflicts": [
+        "106499",
+        "106494"
+      ]
+    },
+    {
+      "route": "106499",
+      "length": 6189,
+      "conflicts": [
+        "106498",
+        "106501",
+        "106500"
+      ]
+    },
+    {
+      "route": "106500",
+      "length": 46622,
+      "conflicts": [
+        "106501",
+        "106500",
+        "106505",
+        "106504"
+      ]
+    },
+    {
+      "route": "106500",
+      "length": 47044,
+      "conflicts": [
+        "106499",
+        "106498"
+      ]
+    },
+    {
+      "route": "106501",
+      "length": 46622,
+      "conflicts": [
+        "106501",
+        "106500",
+        "106505",
+        "106504"
+      ]
+    },
+    {
+      "route": "106501",
+      "length": 47044,
+      "conflicts": [
+        "106499",
+        "106498"
+      ]
+    },
+    {
+      "route": "106504",
+      "length": 46622,
+      "conflicts": [
+        "106501",
+        "106500",
+        "106505",
+        "106504"
+      ]
+    },
+    {
+      "route": "106504",
+      "length": 47097,
+      "conflicts": [
+        "106503",
+        "106502"
+      ]
+    },
+    {
+      "route": "106505",
+      "length": 46622,
+      "conflicts": [
+        "106501",
+        "106500",
+        "106505",
+        "106504"
+      ]
+    },
+    {
+      "route": "106505",
+      "length": 47097,
+      "conflicts": [
+        "106503",
+        "106502"
+      ]
+    }
+  ],
+  "train_exit_sequence_set": [
+    {
+      "black_hole_route_id": "10000000",
+      "train_id_exit_sequence": [
+        "129940"
+      ]
+    },
+    {
+      "black_hole_route_id": "10000001",
+      "train_id_exit_sequence": []
+    }
+  ],
+  "safeplace_alt_path_set": [
+    {
+      "group_id": "0",
+      "route_id_sequence": [
+        "106317",
+        "106333"
+      ]
+    },
+    {
+      "group_id": "0",
+      "route_id_sequence": [
+        "106316",
+        "106329"
+      ]
+    },
+    {
+      "group_id": "1",
+      "route_id_sequence": [
+        "106317",
+        "106332"
+      ]
+    },
+    {
+      "group_id": "1",
+      "route_id_sequence": [
+        "106316",
+        "106328"
+      ]
+    },
+    {
+      "group_id": "2",
+      "route_id_sequence": [
+        "106319",
+        "106333"
+      ]
+    },
+    {
+      "group_id": "2",
+      "route_id_sequence": [
+        "106318",
+        "106329"
+      ]
+    },
+    {
+      "group_id": "3",
+      "route_id_sequence": [
+        "106319",
+        "106332"
+      ]
+    },
+    {
+      "group_id": "3",
+      "route_id_sequence": [
+        "106318",
+        "106328"
+      ]
+    },
+    {
+      "group_id": "4",
+      "route_id_sequence": [
+        "106323",
+        "106329"
+      ]
+    },
+    {
+      "group_id": "4",
+      "route_id_sequence": [
+        "106324",
+        "106333"
+      ]
+    },
+    {
+      "group_id": "5",
+      "route_id_sequence": [
+        "106323",
+        "106328"
+      ]
+    },
+    {
+      "group_id": "5",
+      "route_id_sequence": [
+        "106324",
+        "106332"
+      ]
+    },
+    {
+      "group_id": "6",
+      "route_id_sequence": [
+        "106329",
+        "106336"
+      ]
+    },
+    {
+      "group_id": "6",
+      "route_id_sequence": [
+        "106328",
+        "106339"
+      ]
+    },
+    {
+      "group_id": "7",
+      "route_id_sequence": [
+        "106331",
+        "106325"
+      ]
+    },
+    {
+      "group_id": "7",
+      "route_id_sequence": [
+        "106330",
+        "106320"
+      ]
+    },
+    {
+      "group_id": "8",
+      "route_id_sequence": [
+        "106331",
+        "106326"
+      ]
+    },
+    {
+      "group_id": "8",
+      "route_id_sequence": [
+        "106330",
+        "106321"
+      ]
+    },
+    {
+      "group_id": "9",
+      "route_id_sequence": [
+        "106331",
+        "106327"
+      ]
+    },
+    {
+      "group_id": "9",
+      "route_id_sequence": [
+        "106330",
+        "106322"
+      ]
+    },
+    {
+      "group_id": "10",
+      "route_id_sequence": [
+        "106333",
+        "106336"
+      ]
+    },
+    {
+      "group_id": "10",
+      "route_id_sequence": [
+        "106332",
+        "106339"
+      ]
+    },
+    {
+      "group_id": "11",
+      "route_id_sequence": [
+        "106334",
+        "106320"
+      ]
+    },
+    {
+      "group_id": "11",
+      "route_id_sequence": [
+        "106335",
+        "106325"
+      ]
+    },
+    {
+      "group_id": "12",
+      "route_id_sequence": [
+        "106334",
+        "106321"
+      ]
+    },
+    {
+      "group_id": "12",
+      "route_id_sequence": [
+        "106335",
+        "106326"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "106334",
+        "106322"
+      ]
+    },
+    {
+      "group_id": "13",
+      "route_id_sequence": [
+        "106335",
+        "106327"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "106338",
+        "106330"
+      ]
+    },
+    {
+      "group_id": "14",
+      "route_id_sequence": [
+        "106337",
+        "106334"
+      ]
+    },
+    {
+      "group_id": "15",
+      "route_id_sequence": [
+        "106338",
+        "106331"
+      ]
+    },
+    {
+      "group_id": "15",
+      "route_id_sequence": [
+        "106337",
+        "106335"
+      ]
+    },
+    {
+      "group_id": "16",
+      "route_id_sequence": [
+        "106341",
+        "106346"
+      ]
+    },
+    {
+      "group_id": "16",
+      "route_id_sequence": [
+        "106340",
+        "106347"
+      ]
+    },
+    {
+      "group_id": "17",
+      "route_id_sequence": [
+        "106345",
+        "106342"
+      ]
+    },
+    {
+      "group_id": "17",
+      "route_id_sequence": [
+        "106344",
+        "106343"
+      ]
+    },
+    {
+      "group_id": "18",
+      "route_id_sequence": [
+        "106349",
+        "106354"
+      ]
+    },
+    {
+      "group_id": "18",
+      "route_id_sequence": [
+        "106348",
+        "106355"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "106353",
+        "106350"
+      ]
+    },
+    {
+      "group_id": "19",
+      "route_id_sequence": [
+        "106352",
+        "106351"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "106357",
+        "106362"
+      ]
+    },
+    {
+      "group_id": "20",
+      "route_id_sequence": [
+        "106356",
+        "106363"
+      ]
+    },
+    {
+      "group_id": "21",
+      "route_id_sequence": [
+        "106361",
+        "106358"
+      ]
+    },
+    {
+      "group_id": "21",
+      "route_id_sequence": [
+        "106360",
+        "106359"
+      ]
+    },
+    {
+      "group_id": "22",
+      "route_id_sequence": [
+        "106365",
+        "106370"
+      ]
+    },
+    {
+      "group_id": "22",
+      "route_id_sequence": [
+        "106364",
+        "106371"
+      ]
+    },
+    {
+      "group_id": "23",
+      "route_id_sequence": [
+        "106369",
+        "106366"
+      ]
+    },
+    {
+      "group_id": "23",
+      "route_id_sequence": [
+        "106368",
+        "106367"
+      ]
+    },
+    {
+      "group_id": "24",
+      "route_id_sequence": [
+        "106373",
+        "106378"
+      ]
+    },
+    {
+      "group_id": "24",
+      "route_id_sequence": [
+        "106372",
+        "106379"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "106377",
+        "106374"
+      ]
+    },
+    {
+      "group_id": "25",
+      "route_id_sequence": [
+        "106376",
+        "106375"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "106381",
+        "106386"
+      ]
+    },
+    {
+      "group_id": "26",
+      "route_id_sequence": [
+        "106380",
+        "106387"
+      ]
+    },
+    {
+      "group_id": "27",
+      "route_id_sequence": [
+        "106385",
+        "106382"
+      ]
+    },
+    {
+      "group_id": "27",
+      "route_id_sequence": [
+        "106384",
+        "106383"
+      ]
+    },
+    {
+      "group_id": "28",
+      "route_id_sequence": [
+        "106389",
+        "106394"
+      ]
+    },
+    {
+      "group_id": "28",
+      "route_id_sequence": [
+        "106388",
+        "106395"
+      ]
+    },
+    {
+      "group_id": "29",
+      "route_id_sequence": [
+        "106393",
+        "106390"
+      ]
+    },
+    {
+      "group_id": "29",
+      "route_id_sequence": [
+        "106392",
+        "106391"
+      ]
+    },
+    {
+      "group_id": "30",
+      "route_id_sequence": [
+        "106397",
+        "106402"
+      ]
+    },
+    {
+      "group_id": "30",
+      "route_id_sequence": [
+        "106396",
+        "106403"
+      ]
+    },
+    {
+      "group_id": "31",
+      "route_id_sequence": [
+        "106401",
+        "106398"
+      ]
+    },
+    {
+      "group_id": "31",
+      "route_id_sequence": [
+        "106400",
+        "106399"
+      ]
+    },
+    {
+      "group_id": "32",
+      "route_id_sequence": [
+        "106405",
+        "106414"
+      ]
+    },
+    {
+      "group_id": "32",
+      "route_id_sequence": [
+        "106404",
+        "106410"
+      ]
+    },
+    {
+      "group_id": "32",
+      "route_id_sequence": [
+        "106406",
+        "106415"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "106412",
+        "106408"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "106411",
+        "106407"
+      ]
+    },
+    {
+      "group_id": "33",
+      "route_id_sequence": [
+        "106413",
+        "106409"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "106417",
+        "106422"
+      ]
+    },
+    {
+      "group_id": "34",
+      "route_id_sequence": [
+        "106416",
+        "106423"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "106421",
+        "106418"
+      ]
+    },
+    {
+      "group_id": "35",
+      "route_id_sequence": [
+        "106420",
+        "106419"
+      ]
+    },
+    {
+      "group_id": "36",
+      "route_id_sequence": [
+        "106425",
+        "106430"
+      ]
+    },
+    {
+      "group_id": "36",
+      "route_id_sequence": [
+        "106424",
+        "106431"
+      ]
+    },
+    {
+      "group_id": "37",
+      "route_id_sequence": [
+        "106429",
+        "106426"
+      ]
+    },
+    {
+      "group_id": "37",
+      "route_id_sequence": [
+        "106428",
+        "106427"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "106433",
+        "106438"
+      ]
+    },
+    {
+      "group_id": "38",
+      "route_id_sequence": [
+        "106432",
+        "106439"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "106437",
+        "106434"
+      ]
+    },
+    {
+      "group_id": "39",
+      "route_id_sequence": [
+        "106436",
+        "106435"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "106441",
+        "106446"
+      ]
+    },
+    {
+      "group_id": "40",
+      "route_id_sequence": [
+        "106440",
+        "106447"
+      ]
+    },
+    {
+      "group_id": "41",
+      "route_id_sequence": [
+        "106445",
+        "106442"
+      ]
+    },
+    {
+      "group_id": "41",
+      "route_id_sequence": [
+        "106444",
+        "106443"
+      ]
+    },
+    {
+      "group_id": "42",
+      "route_id_sequence": [
+        "106448",
+        "106455",
+        "106460"
+      ]
+    },
+    {
+      "group_id": "42",
+      "route_id_sequence": [
+        "106448",
+        "106454",
+        "106456"
+      ]
+    },
+    {
+      "group_id": "42",
+      "route_id_sequence": [
+        "106449",
+        "106461"
+      ]
+    },
+    {
+      "group_id": "43",
+      "route_id_sequence": [
+        "106455",
+        "106460"
+      ]
+    },
+    {
+      "group_id": "43",
+      "route_id_sequence": [
+        "106454",
+        "106456"
+      ]
+    },
+    {
+      "group_id": "44",
+      "route_id_sequence": [
+        "106458",
+        "106453",
+        "106450"
+      ]
+    },
+    {
+      "group_id": "44",
+      "route_id_sequence": [
+        "106459",
+        "106451"
+      ]
+    },
+    {
+      "group_id": "44",
+      "route_id_sequence": [
+        "106457",
+        "106452",
+        "106450"
+      ]
+    },
+    {
+      "group_id": "45",
+      "route_id_sequence": [
+        "106458",
+        "106453"
+      ]
+    },
+    {
+      "group_id": "45",
+      "route_id_sequence": [
+        "106457",
+        "106452"
+      ]
+    },
+    {
+      "group_id": "46",
+      "route_id_sequence": [
+        "106463",
+        "106468"
+      ]
+    },
+    {
+      "group_id": "46",
+      "route_id_sequence": [
+        "106462",
+        "106469"
+      ]
+    },
+    {
+      "group_id": "47",
+      "route_id_sequence": [
+        "106467",
+        "106464"
+      ]
+    },
+    {
+      "group_id": "47",
+      "route_id_sequence": [
+        "106466",
+        "106465"
+      ]
+    },
+    {
+      "group_id": "48",
+      "route_id_sequence": [
+        "106471",
+        "106476"
+      ]
+    },
+    {
+      "group_id": "48",
+      "route_id_sequence": [
+        "106470",
+        "106477"
+      ]
+    },
+    {
+      "group_id": "49",
+      "route_id_sequence": [
+        "106475",
+        "106472"
+      ]
+    },
+    {
+      "group_id": "49",
+      "route_id_sequence": [
+        "106474",
+        "106473"
+      ]
+    },
+    {
+      "group_id": "50",
+      "route_id_sequence": [
+        "106479",
+        "106484"
+      ]
+    },
+    {
+      "group_id": "50",
+      "route_id_sequence": [
+        "106478",
+        "106485"
+      ]
+    },
+    {
+      "group_id": "51",
+      "route_id_sequence": [
+        "106483",
+        "106480"
+      ]
+    },
+    {
+      "group_id": "51",
+      "route_id_sequence": [
+        "106482",
+        "106481"
+      ]
+    },
+    {
+      "group_id": "52",
+      "route_id_sequence": [
+        "106487",
+        "106492"
+      ]
+    },
+    {
+      "group_id": "52",
+      "route_id_sequence": [
+        "106486",
+        "106493"
+      ]
+    },
+    {
+      "group_id": "53",
+      "route_id_sequence": [
+        "106491",
+        "106488"
+      ]
+    },
+    {
+      "group_id": "53",
+      "route_id_sequence": [
+        "106490",
+        "106489"
+      ]
+    },
+    {
+      "group_id": "54",
+      "route_id_sequence": [
+        "106495",
+        "106500"
+      ]
+    },
+    {
+      "group_id": "54",
+      "route_id_sequence": [
+        "106494",
+        "106501"
+      ]
+    },
+    {
+      "group_id": "55",
+      "route_id_sequence": [
+        "106499",
+        "106496"
+      ]
+    },
+    {
+      "group_id": "55",
+      "route_id_sequence": [
+        "106498",
+        "106497"
+      ]
+    }
+  ]
+}
