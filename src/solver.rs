@@ -72,7 +72,7 @@ pub fn solve(
         .iter()
         .flat_map(|t| t.routes.keys())
         .collect::<std::collections::HashSet<_>>();
-    
+
     warn!(
         "PROBLEM_STATS: {} trains {} routes {} routenames",
         problem.trains.len(),
@@ -128,7 +128,7 @@ pub fn solve(
         //
         // No conclusion, we need to add another state.
         //
-        if states.len() < ub {
+        if states.len() - 1 < ub {
             let _p = hprof::enter("add step");
             states.push(mk_state(
                 &mut s,

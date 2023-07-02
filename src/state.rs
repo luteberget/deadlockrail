@@ -30,7 +30,10 @@ pub fn has_progressed_by_length<L: Lit>(
     if let Some(nexts) = problem.trains[train].routes[route].next_routes.as_ref() {
         let mut alternatives = vec![];
         if nexts.is_empty() {
-            error!("Train {} route {} has empty nexts {:?}", train, route, problem.trains[train].routes[route]);
+            error!(
+                "Train {} route {} has empty nexts {:?}",
+                train, route, problem.trains[train].routes[route]
+            );
         }
         assert!(!nexts.is_empty());
         for next in nexts.iter() {
@@ -203,10 +206,10 @@ pub fn mk_state<L: Lit>(
                         continue; // no constraint between the same train
                     }
 
-                    println!(
-                        "Cannot allocate r{} to t{} while t{} is in r{}",
-                        r2, t2, t1, r1
-                    );
+                    // println!(
+                    //     "Cannot allocate r{} to t{} while t{} is in r{}",
+                    //     r2, t2, t1, r1
+                    // );
 
                     // let t1_continued = problem.trains[t1].routes[r1]
                     //     .next_routes
@@ -286,10 +289,7 @@ pub fn mk_state<L: Lit>(
             ]);
 
             all_allocations.push(allocated);
-            s.add_clause(iter![
-                !allocated,
-                ..alt_lits.iter().copied()
-            ]);
+            s.add_clause(iter![!allocated, ..alt_lits.iter().copied()]);
 
             // // When de-allocating, the prevs must also be deallocated.
             // if !settings.local_early_progress_constraint {
@@ -364,11 +364,14 @@ pub fn mk_state<L: Lit>(
             .map(|set| set.has_value(&Some(train_id)));
 
         let finished = s.new_var();
-        s.add_clause(
-            once(!finished)
-                .chain(once(prev.trains_finished[&train_id]))
-                .chain(alternatives),
-        );
+
+        let finished_clause = once(!finished)
+            .chain(once(prev.trains_finished[&train_id]))
+            .chain(alternatives)
+            .collect::<Vec<_>>();
+
+        s.add_clause(finished_clause);
+
         trains_finished.insert(train_id, finished);
     }
 

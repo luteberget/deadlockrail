@@ -30,7 +30,7 @@ pub struct TrainRoute {
 pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
     // Let's check a few assumptions first.
 
-    warn!("multi_initial Train {}", problem.trains.len());
+    trace!("multi_initial Train {}", problem.trains.len());
     // Are there more than two conflict sets (different
     // releases at different lengths) ?
 
@@ -42,20 +42,19 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
         }
     }
     multi_initial.retain(|_k, v| v.len() > 1);
-    warn!(
+    trace!(
         "multi_initial map {:?}",
         multi_initial
             .values()
             .map(|v| v.iter().map(|t| t.id.clone()).collect::<Vec<_>>())
             .collect::<Vec<_>>()
     );
-    warn!("multi_initial map {:?}", multi_initial);
+    trace!("multi_initial map {:?}", multi_initial);
 
     let multi_initial_trains = multi_initial
         .into_values()
         .flat_map(move |t| t.into_iter().map(move |t| t.id.clone()))
         .collect::<std::collections::HashSet<_>>();
-
 
     let mut trains: Vec<Train> = Vec::new();
 
@@ -73,11 +72,12 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
 
         let mut routes: HashMap<String, TrainRoute> = HashMap::new();
 
-        let use_multi_initial = multi_initial_trains.contains(&train.id)
+        let use_multi_initial = multi_initial_trains
+            .contains(&train.id)
             .then(|| format!("init_{}", train.id));
 
         let initial_routes = if let Some(init) = use_multi_initial.as_ref() {
-            warn!("Train {} uses multi_initial", train.id);
+            trace!("Train {} uses multi_initial", train.id);
             routes.insert(
                 init.clone(),
                 TrainRoute {
@@ -93,6 +93,8 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
         } else {
             train.initial_routes.clone()
         };
+
+        let _h = hprof::enter("trainroute");
 
         let trainroutes = problem
             .train_routes
@@ -120,7 +122,7 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
 
             let extra_conflict_set;
             if conflict_sets.len() == 1 {
-                warn!(
+                trace!(
                     "Only one conflict set t{}-r{}: {:?}",
                     trainroute.train, trainroute.route, conflict_sets
                 );
@@ -140,6 +142,7 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
                 .unwrap();
 
             assert!(!route.is_unusable);
+
             if is_dummy_route {
                 assert!(trainroute.is_black_hole);
                 routes.insert(
@@ -151,13 +154,14 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
                         unconditional_conflicts: vec![],
                         allocation_conflicts: vec![],
                         next_routes: None,
+                        is_multi_train: false,
                     },
                 );
             } else {
                 assert!(conflict_sets[0].conflicts.contains(&trainroute.route));
 
                 if conflict_sets.len() != 2 {
-                    warn!(
+                    trace!(
                         "Cnflicts sets for route {}: {:?}",
                         trainroute.route, conflict_sets
                     );

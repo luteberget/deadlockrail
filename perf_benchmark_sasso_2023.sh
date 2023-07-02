@@ -1,6 +1,6 @@
 #!/bin/bash
 cargo build --release
-for alg in 3; do 
+for alg in 1; do 
 echo \#
 echo \# ALGORITHM $alg
 echo \#

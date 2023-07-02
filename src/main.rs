@@ -110,6 +110,8 @@ fn main() {
                 },
                 FileFormat::Raw2023Problem => {
                     let problem = {
+                        let h = hprof::enter("raw parse");
+
                         let raw_problem: raw2023_problem::Problem =
                             serde_json::from_str(&json_contents).unwrap();
                         trace!(
@@ -117,6 +119,9 @@ fn main() {
                             raw_problem.trains.len(),
                             raw_problem.routes.len()
                         );
+
+                        drop(h);
+                        let _h = hprof::enter("convert");
                         // trace!("{:?}", raw_problem);
 
                         problem::convert_raw2023(&raw_problem)
