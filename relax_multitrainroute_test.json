@@ -1,0 +1,123 @@
+{
+    "trains": [
+        {
+            "name": "t1",
+            "initial_routes": [
+                "t1_init"
+            ],
+            "routes": {
+                "t1_init": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t3_out"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1_t2_station"
+                    ],
+                    "is_multi_train": false
+                },
+                "t1_t2_station": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1_t2_out"
+                    ],
+                    "is_multi_train": true
+                },
+                "t1_t2_out": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t3_init"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        },
+        {
+            "name": "t2",
+            "initial_routes": [
+                "t2_init"
+            ],
+            "routes": {
+                "t2_init": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t3_out"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1_t2_station"
+                    ],
+                    "is_multi_train": false
+                },
+                "t1_t2_station": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1_t2_out"
+                    ],
+                    "is_multi_train": true
+                },
+                "t1_t2_out": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t3_init"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        },
+        {
+            "name": "t3",
+            "initial_routes": [
+                "t3_init"
+            ],
+            "routes": {
+                "t3_init": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t1_t2_out"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t3_out"
+                    ],
+                    "is_multi_train": false
+                },
+                "t3_out": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t1_init",
+                        "t2_init"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        }
+    ]
+}

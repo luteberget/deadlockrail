@@ -1,0 +1,32 @@
+{
+    "trains": [
+        {
+            "name": "t3",
+            "initial_routes": [
+                "t3_init"
+            ],
+            "routes": {
+                "t3_init": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t3_out"
+                    ],
+                    "is_multi_train": false
+                },
+                "t3_out": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        }
+    ]
+}
