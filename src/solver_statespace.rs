@@ -67,8 +67,6 @@ pub fn solve(
     let mut s = satcoder::solvers::minisat::Solver::new();
     let mut states = vec![initial_state(&mut s, problem)];
 
-    println!("FINISHED INITIAL {:?}", states[0].trains_finished);
-
     let ub = ub_steps(problem);
 
     let routenames = problem

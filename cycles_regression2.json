@@ -1,0 +1,90 @@
+{
+    "trains": [
+        {
+            "name": "t1",
+            "initial_routes": [
+                "t1a"
+            ],
+            "routes": {
+                "t1a": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t2a"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1b"
+                    ],
+                    "is_multi_train": false
+                },
+                "t1b": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t1c"
+                    ],
+                    "is_multi_train": false
+                },
+                "t1c": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t2c"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        },
+        {
+            "name": "t2",
+            "initial_routes": [
+                "t2c"
+            ],
+            "routes": {
+                "t2c": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t1c"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t2b"
+                    ],
+                    "is_multi_train": false
+                },
+                "t2b": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [],
+                    "allocation_conflicts": [],
+                    "next_routes": [
+                        "t2a"
+                    ],
+                    "is_multi_train": false
+                },
+                "t2a": {
+                    "train_length": 1,
+                    "route_length": 2,
+                    "route_length_without_switch": 2,
+                    "unconditional_conflicts": [
+                        "t1a"
+                    ],
+                    "allocation_conflicts": [],
+                    "next_routes": null,
+                    "is_multi_train": false
+                }
+            }
+        }
+    ]
+}

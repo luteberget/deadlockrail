@@ -4,11 +4,14 @@ mod plan;
 mod problem;
 mod raw2021_problem;
 mod raw2023_problem;
+mod solver_cycles;
 mod solver_statespace;
 mod state;
 
 use std::path::PathBuf;
+use std::rc::Rc;
 use std::str::FromStr;
+use std::sync::{mpsc, Arc};
 use structopt::StructOpt;
 
 #[derive(Debug)]
@@ -60,6 +63,7 @@ struct Opt {
     ///     has been reached.
     /// 3 = extends 2 by adding local progress constraints which forces allocation
     ///     and freeing to happen as early as possible.
+    /// 4 = alternative graph cycle checker
     #[structopt(long)]
     algorithm: Option<u8>,
 }
@@ -70,7 +74,7 @@ fn main() {
     let opt = Opt::from_args();
     let level = if opt.verbose {
         if cfg!(debug_assertions) {
-            LevelFilter::Trace
+            LevelFilter::Debug
         } else {
             LevelFilter::Info
         }
@@ -107,7 +111,7 @@ fn main() {
                         problem::convert_raw2021(&raw_problem)
                     };
                     problem
-                },
+                }
                 FileFormat::Raw2023Problem => {
                     let problem = {
                         let h = hprof::enter("raw parse");
@@ -140,10 +144,27 @@ fn main() {
     {
         let _h = hprof::enter("deadlockcheck");
 
-        let result = match opt.algorithm.unwrap_or(3) {
-            1 => solver_statespace::solve_1_using_num_states_bound(&problem),
-            2 => solver_statespace::solve_2_using_global_progress(&problem),
-            3 => solver_statespace::solve_3_using_local_and_global_progress(&problem),
+        let result = match opt.algorithm {
+            // None => {
+            //     let (result2, tx) = mpsc::channel();
+            //     let result1 = result2.clone();
+            //     let rc1 = Arc::new(problem);
+            //     let rc2 = rc1.clone();
+            //     std::thread::spawn(move || {
+            //         let _ = result1.send(solver_statespace::solve_1_using_num_states_bound(&*rc1));
+            //     });
+            //     std::thread::spawn(move || {
+            //         let _ = result2.send(
+            //             solver_statespace::solve_3_using_local_and_global_progress(&*rc2),
+            //         );
+            //     });
+
+            //     tx.recv().unwrap()
+            // }
+            Some(1) => solver_statespace::solve_1_using_num_states_bound(&problem),
+            Some(2) => solver_statespace::solve_2_using_global_progress(&problem),
+            Some(3) => solver_statespace::solve_3_using_local_and_global_progress(&problem),
+            Some(4) => solver_cycles::solve(&problem),
             _ => panic!("Invalid algorithm {:?}", opt.algorithm),
         };
 
