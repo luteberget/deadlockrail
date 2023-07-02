@@ -25,6 +25,7 @@ pub struct TrainRoute {
     pub unconditional_conflicts: Vec<RouteRef>,
     pub allocation_conflicts: Vec<RouteRef>,
     pub next_routes: Option<Vec<RouteRef>>,
+    pub is_multi_train: bool,
 }
 
 pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
@@ -87,6 +88,7 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
                     unconditional_conflicts: vec![],
                     allocation_conflicts: vec![],
                     next_routes: Some(vec![]),
+                    is_multi_train: false,
                 },
             );
             vec![init.clone()]
@@ -231,6 +233,7 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
                                     unconditional_conflicts: vec![],
                                     allocation_conflicts: vec![],
                                     next_routes: Some(vec![]),
+                                    is_multi_train: false,
                                 },
                             );
 
@@ -260,6 +263,7 @@ pub fn convert_raw2023(problem: &raw2023_problem::Problem) -> Problem {
                         allocation_conflicts,
                         next_routes: (!trainroute.next_routes.is_empty())
                             .then(|| trainroute.next_routes.clone()),
+                        is_multi_train: route.is_multi_train,
                     },
                 );
             }
@@ -373,6 +377,12 @@ pub fn convert_raw2021(problem: &raw2021_problem::Problem) -> Problem {
             let route_length_without_switch = conflict_sets[0].length;
             // assert!(switch_length == 1);
 
+            let route = problem
+                .routes
+                .iter()
+                .find(|r| r.id == trainroute.route)
+                .unwrap();
+
             routes.insert(
                 trainroute.route.clone(),
                 TrainRoute {
@@ -383,6 +393,10 @@ pub fn convert_raw2021(problem: &raw2021_problem::Problem) -> Problem {
                     allocation_conflicts,
                     next_routes: (!trainroute.is_black_hole)
                         .then(|| trainroute.next_routes.clone()),
+                    is_multi_train: {
+                        assert!(!route.is_multi_train);
+                        route.is_multi_train
+                    },
                 },
             );
         }

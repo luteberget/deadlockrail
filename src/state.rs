@@ -113,19 +113,39 @@ pub fn mk_state<L: Lit>(
     }
     let routes = routes.into_iter().collect::<Vec<_>>();
     trace!("Routes {:?}", routes);
+
     // Each route selects a train (or none)
     let occ = routes
         .iter()
         .map(|(r, t)| {
-            (
-                r.clone(),
-                FinSet::new(
+            (r.clone(), {
+                let f = FinSet::new(
                     s,
                     std::iter::once(None)
                         .chain(t.iter().copied().map(Some))
                         .collect(),
-                ),
-            )
+                );
+
+                assert!(t
+                    .iter()
+                    .all(|ti| problem.trains[*ti].routes[r].is_multi_train
+                        == problem.trains[t[0]].routes[r].is_multi_train));
+                let problemroute = &problem.trains[t[0]].routes[r];
+
+                const ALLOW_USE_MULTI_ROUTE: bool = false;
+
+                if !ALLOW_USE_MULTI_ROUTE || !problemroute.is_multi_train || f.domain().count() <= 2
+                {
+                    s.assert_exactly_one(f.domain().map(|v| f.has_value(v)));
+                } else {
+                    println!("MULTITRAIN {:?}", t);
+                    for x in f.domain().filter_map(|x| *x) {
+                        s.add_clause(iter![!f.has_value(&Some(x)), !f.has_value(&None)]);
+                    }
+                }
+
+                f
+            })
         })
         .collect::<HashMap<RouteId, FinSet<L, Option<TrainId>>>>();
 
