@@ -4,7 +4,7 @@ mod plan;
 mod problem;
 mod raw2021_problem;
 mod raw2023_problem;
-mod solver;
+mod solver_statespace;
 mod state;
 
 use std::path::PathBuf;
@@ -141,9 +141,9 @@ fn main() {
         let _h = hprof::enter("deadlockcheck");
 
         let result = match opt.algorithm.unwrap_or(3) {
-            1 => solver::solve_1_using_num_states_bound(&problem),
-            2 => solver::solve_2_using_global_progress(&problem),
-            3 => solver::solve_3_using_local_and_global_progress(&problem),
+            1 => solver_statespace::solve_1_using_num_states_bound(&problem),
+            2 => solver_statespace::solve_2_using_global_progress(&problem),
+            3 => solver_statespace::solve_3_using_local_and_global_progress(&problem),
             _ => panic!("Invalid algorithm {:?}", opt.algorithm),
         };
 
