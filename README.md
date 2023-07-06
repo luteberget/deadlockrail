@@ -15,11 +15,11 @@ The directory `benchmark_sasso` contains example problem instances originally us
 
 A performance measurement script can be run by executing:
 
- > ./perf_benchmark_sasso.sh
+ > ./scripts/perf_benchmark_sasso.sh
 
 The directory `benchmark_twotrainscaling` contains a set of instances with two trains and a number of stations. The performance can be measured by executing:
 
- > ./perf_benchmark_twotrainscaling.sh
+ > ./scripts/perf_benchmark_twotrainscaling.sh
 
 
 ## Usage
