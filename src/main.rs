@@ -9,9 +9,7 @@ mod solver_statespace;
 mod state;
 
 use std::path::PathBuf;
-use std::rc::Rc;
 use std::str::FromStr;
-use std::sync::{mpsc, Arc};
 use structopt::StructOpt;
 
 #[derive(Debug)]
@@ -164,7 +162,13 @@ fn main() {
             Some(1) => solver_statespace::solve_1_using_num_states_bound(&problem),
             Some(2) => solver_statespace::solve_2_using_global_progress(&problem),
             Some(3) => solver_statespace::solve_3_using_local_and_global_progress(&problem),
-            Some(4) => solver_cycles::solve(&problem),
+            Some(4) => solver_cycles::solve(&problem, idl::IdlSolver::new()),
+            Some(5) => {
+                let z3_ctx = z3::Context::new(&Default::default());
+                let z3_solver = z3::Solver::new(&z3_ctx);
+                let z3_object = (&z3_ctx, z3_solver);
+                solver_cycles::solve(&problem, z3_object)
+            }
             _ => panic!("Invalid algorithm {:?}", opt.algorithm),
         };
 

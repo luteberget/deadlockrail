@@ -63,8 +63,8 @@ pub fn solve(
     check_unconditional: bool,
     settings: StateConstraintSettings,
 ) -> DeadlockResult {
-    // let mut s = satcoder::solvers::cadical::Solver::new();
-    let mut s = satcoder::solvers::minisat::Solver::new();
+    let mut s = satcoder::solvers::cadical::Solver::new();
+    // let mut s = satcoder::solvers::minisat::Solver::new();
     let mut states = vec![initial_state(&mut s, problem)];
 
     let ub = ub_steps(problem);

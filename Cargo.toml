@@ -15,6 +15,6 @@ satcoder = { git = "https://github.com/luteberget/salvers", rev="0f83a5c" }
 structopt = "0.3"
 hprof = "0.1"
 velcro = "0.5"
-
+z3 = {version = "0.11"}
 [profile.release]
 lto=true

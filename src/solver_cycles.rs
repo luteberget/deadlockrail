@@ -2,10 +2,95 @@
 use log::{debug, info, warn};
 
 use crate::{plan::DeadlockResult, problem::Problem};
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::{
+    collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque},
+    ops::Not,
+};
 type Occ<'a> = Vec<&'a String>;
 
-pub fn solve(problem: &Problem) -> DeadlockResult {
+pub trait IDLSolver {
+    type IntVar: Clone;
+    type BoolLit: Not<Output = Self::BoolLit> + Clone + std::fmt::Debug;
+    fn solve(&mut self) -> Result<(), ()>;
+    fn new_bool(&mut self) -> Self::BoolLit;
+    fn new_int(&mut self) -> Self::IntVar;
+    fn add_clause(&mut self, xs: &[Self::BoolLit]);
+    fn add_diff(&mut self, cond: Option<Self::BoolLit>, x: Self::IntVar, y: Self::IntVar, k: i64);
+    fn printname(&self);
+}
+
+impl IDLSolver for idl::IdlSolver {
+    type BoolLit = idl::Lit;
+    type IntVar = idl::DVar;
+
+    fn solve(&mut self) -> Result<(), ()> {
+        self.solve().map(|_| ()).map_err(|_| ())
+    }
+
+    fn new_bool(&mut self) -> Self::BoolLit {
+        self.new_bool()
+    }
+
+    fn new_int(&mut self) -> Self::IntVar {
+        self.new_int()
+    }
+
+    fn add_clause(&mut self, xs: &[Self::BoolLit]) {
+        self.add_clause(xs)
+    }
+
+    fn add_diff(&mut self, cond: Option<Self::BoolLit>, x: Self::IntVar, y: Self::IntVar, k: i64) {
+        self.add_diff(cond, x, y, k);
+    }
+
+    fn printname(&self) {
+        println!("IDL: rust dpllt with idl solver");
+    }
+}
+
+impl<'a> IDLSolver for (&'a z3::Context, z3::Solver<'a>) {
+    type IntVar = z3::ast::Int<'a>;
+
+    type BoolLit = z3::ast::Bool<'a>;
+
+    fn solve(&mut self) -> Result<(), ()> {
+        match self.1.check() {
+            z3::SatResult::Unsat => Err(()),
+            z3::SatResult::Unknown => panic!("z3 undecided"),
+            z3::SatResult::Sat => Ok(()),
+        }
+    }
+
+    fn new_bool(&mut self) -> Self::BoolLit {
+        z3::ast::Bool::fresh_const(&self.0, "y")
+    }
+
+    fn new_int(&mut self) -> Self::IntVar {
+        z3::ast::Int::fresh_const(&self.0, "x")
+    }
+
+    fn add_clause(&mut self, xs: &[Self::BoolLit]) {
+        let refs = xs.iter().collect::<Vec<_>>();
+        self.1.assert(&z3::ast::Bool::or(self.0, &refs));
+    }
+
+    fn add_diff(&mut self, cond: Option<Self::BoolLit>, x: Self::IntVar, y: Self::IntVar, k: i64) {
+        let diff = z3::ast::Int::le(&(x - y), &z3::ast::Int::from_i64(self.0, k));
+
+        if let Some(cond) = cond.as_ref() {
+            self.1.assert(&z3::ast::Bool::implies(cond, &diff));
+        } else {
+            self.1.assert(&diff);
+        }
+    }
+
+    fn printname(&self) {
+        println!("IDL: z3");
+    }
+}
+
+pub fn solve<S: IDLSolver>(problem: &Problem, mut s: S) -> DeadlockResult {
+    s.printname();
     let empty_node: Vec<&String> = vec![];
     let p_init = hprof::enter("cycle init");
     let mut movement_graphs = Vec::new();
@@ -13,12 +98,14 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
         Default::default();
 
     let mut train_init_routes = Vec::new();
+    let mut unit_clauses = Vec::new();
 
     for (train_idx, train) in problem.trains.iter().enumerate() {
         let g = {
             // In Sasso 2023 bencmarks, the original list of initial routes is not consistently ordered.
-            assert!(!train.initial_routes.is_empty());
             let init_routes = sorted_initial_routes(train);
+            assert!(!train.initial_routes.is_empty());
+            assert!(!init_routes.is_empty());
             train_init_routes.push(init_routes.clone());
 
             let mut graph: BTreeMap<Occ, BTreeSet<(Occ, Occ)>> = Default::default();
@@ -28,7 +115,7 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
             while let Some(state) = states.pop() {
                 // Make a look-up structure of which routes cannot be allocated when this train is in this node.
                 let entering = state.last().unwrap();
-                println!("STATE {:?} entering {:?}", state, entering);
+                // println!("STATE {:?} entering {:?}", state, entering);
                 let mut remaining_length = train.routes[*entering].train_length;
                 for route in state.iter().copied().rev() {
                     let r = &train.routes[route];
@@ -37,11 +124,11 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
                         .iter()
                         .chain(std::iter::once(*entering))
                     {
-                        println!(
-                            "{} blocked by {:?}",
-                            unconditional_conflict,
-                            (train_idx, state.clone())
-                        );
+                        // println!(
+                        //     "{} blocked by {:?}",
+                        //     unconditional_conflict,
+                        //     (train_idx, state.clone())
+                        // );
                         route_allocation_blocked_by
                             .entry(unconditional_conflict)
                             .or_default()
@@ -55,11 +142,11 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
                     }
 
                     for allocation_conflict in train.routes[route].allocation_conflicts.iter() {
-                        println!(
-                            "{} blocked by {:?}",
-                            allocation_conflict,
-                            (train_idx, state.clone())
-                        );
+                        // println!(
+                        //     "{} blocked by {:?}",
+                        //     allocation_conflict,
+                        //     (train_idx, state.clone())
+                        // );
                         route_allocation_blocked_by
                             .entry(allocation_conflict)
                             .or_default()
@@ -126,24 +213,24 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
         movement_graphs.push(g);
     }
 
-    let mut s = idl::IdlSolver::new();
-
-    struct TrainVars<'a> {
-        node: BTreeMap<&'a Occ<'a>, (idl::Lit, idl::DVar)>,
-        edge: BTreeMap<(&'a Occ<'a>, &'a Occ<'a>), idl::Lit>,
+    struct TrainVars<'a, S: IDLSolver> {
+        node: BTreeMap<&'a Occ<'a>, (S::BoolLit, S::IntVar)>,
+        // edge: BTreeMap<(&'a Occ<'a>, &'a Occ<'a>), S::BoolLit>,
     }
 
-    let mut train_vars = Vec::new();
+    let mut train_vars: Vec<TrainVars<S>> = Vec::new();
 
     // Need to choose a path through the graph
     for train_idx in 0..problem.trains.len() {
         // let init_node = &inits[train_idx];
         let movement_graph = &movement_graphs[train_idx];
-        let mut node_vars: BTreeMap<&Occ, (idl::Lit, idl::DVar)> = Default::default();
+        let mut node_vars: BTreeMap<&Occ, (S::BoolLit, S::IntVar)> = Default::default();
 
-        let mut train_edges: BTreeMap<(&Occ, &Occ), idl::Lit> = Default::default();
+        // let mut train_edges: BTreeMap<(&Occ, &Occ), S::BoolLit> = Default::default();
         node_vars.insert(&train_init_routes[train_idx], (s.new_bool(), s.new_int()));
         let mut unvisited = vec![&train_init_routes[train_idx]];
+
+        unit_clauses.push(vec![node_vars[&train_init_routes[train_idx]].0.clone()]);
 
         // DFS through the movement graph and add variables and flow constraints.
         while let Some(state) = unvisited.pop() {
@@ -156,61 +243,38 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
                 continue;
             }
 
-            let (var, source_time) = node_vars[&state];
-            let next_vars = movement_graph[state]
-                .iter()
-                .map(|(next, _)| {
-                    (
-                        next,
-                        *node_vars.entry(next).or_insert_with(|| {
-                            unvisited.push(next);
-                            (s.new_bool(), s.new_int())
-                        }),
-                    )
-                })
-                .collect::<Vec<_>>();
+            let (source_var, source_time) = node_vars[&state].clone();
+            let mut alternatives = vec![!source_var.clone()];
+            for (next_node, _) in movement_graph[state].iter() {
+                let (target_var, target_time) = node_vars
+                    .entry(next_node)
+                    .or_insert_with(|| {
+                        unvisited.push(next_node);
+                        (s.new_bool(), s.new_int())
+                    })
+                    .clone();
 
-            let edge_vars = next_vars
-                .iter()
-                .map(|(next, (target_active, target_time))| {
-                    let var = s.new_bool();
-                    train_edges.insert((state, *next), var);
-                    (var, *target_active, *target_time)
-                })
-                .collect::<Vec<_>>();
+                let edge_active = s.new_bool();
+                s.add_clause(&[
+                    !(source_var.clone()),
+                    !(target_var.clone()),
+                    edge_active.clone(),
+                ]);
 
-            // Choose at least one edge if node is active.
-            let mut clause = edge_vars
-                .iter()
-                .map(|(edge_active, _, _)| *edge_active)
-                .collect::<Vec<_>>();
-            clause.push(!var);
-            s.add_clause(&clause);
+                alternatives.push(target_var.clone());
 
-            // // Choose at most one edge.
-            // for e1 in 0..edge_vars.len() {
-            //     for e2 in (e1 + 1)..edge_vars.len() {
-            //         s.add_clause(&vec![!edge_vars[e1].0, !edge_vars[e2].0]);
-            //     }
-            // }
-
-            // Add difference constraint and target node activation
-            for (edge_active, target_active, target_time) in edge_vars.iter().copied() {
-                // println!(
-                //     "Add diff {:?} {:?} {:?}",
-                //     edge_active, source_time, target_time
-                // );
-                s.add_diff(Some(edge_active), source_time, target_time, -1);
-
-                s.add_clause(&vec![!edge_active, target_active]);
+                s.add_diff(Some(edge_active), source_time.clone(), target_time, -1);
             }
+
+            assert!(alternatives.len() >= 2);
+            s.add_clause(&alternatives);
         }
 
         // Each node in the movement graph should now have an associated bool variable.
         assert!(movement_graph.len() == node_vars.len());
         train_vars.push(TrainVars {
             node: node_vars,
-            edge: train_edges,
+            // edge: train_edges,
         })
     }
 
@@ -240,6 +304,10 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
     }
 
     let mut n_conflicts = 0;
+
+    type C<'a> = (usize, &'a Vec<&'a String>, BTreeSet<Vec<&'a String>>);
+    let mut added_conflicts: BTreeSet<(C, C)> = Default::default();
+
     // For all pairs of movement nodes from different trains, deconflict.
     for t1_idx in 0..problem.trains.len() {
         for t1_node in movement_graphs[t1_idx].keys() {
@@ -261,10 +329,22 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
                     }
 
                     let t2_entering_route = t2_node.last().unwrap();
-                    println!(
-                        "train {}  t2_node {:?} t2_entering {:?}",
-                        t2_idx, t2_node, t2_entering_route
-                    );
+                    // println!(
+                    //     "train {}  t2_node {:?} t2_entering {:?}",
+                    //     t2_idx, t2_node, t2_entering_route
+                    // );
+
+                    let t1_init = t1_node == &train_init_routes[t1_idx];
+                    let t2_init = t2_node == &train_init_routes[*t2_idx];
+
+                    if t1_init && t2_init {
+                        warn!("conflicting initial routes between  train {} ({:?} and train {} ({:?})",
+                        t1_idx, t1_node, t2_idx, t2_node);
+                        info!("DEADLOCKED");
+
+                        return DeadlockResult::Deadlocked(());
+                        // continue;
+                    };
 
                     // Allocation is blocked by t2_node.
                     // Either t2 needs to stop blocking t1_entering_route before
@@ -285,75 +365,98 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
                         t1_node.clone(),
                     );
 
-                    println!(
-                        "COnflicts between {}--{:?}--{:?} and {}--{:?}--{:?} ",
+                    // println!(
+                    //     "COnflicts between {}--{:?}--{:?} and {}--{:?}--{:?} ",
+                    //     t1_idx,
+                    //     t1_node,
+                    //     t1_first_alternatives,
+                    //     t2_idx,
+                    //     t2_node,
+                    //     t2_first_alternatives
+                    // );
+
+                    let c1: C = (
                         t1_idx,
                         t1_node,
-                        t1_first_alternatives,
-                        t2_idx,
-                        t2_node,
-                        t2_first_alternatives
+                        t2_first_alternatives.iter().cloned().collect(),
                     );
+                    let c2: C = (
+                        *t2_idx,
+                        t2_node,
+                        t1_first_alternatives.iter().cloned().collect(),
+                    );
+                    let (c1, c2) = if c1.0 < c2.0 { (c1, c2) } else { (c2, c1) };
 
-                    let t1_init = t1_node == &train_init_routes[t1_idx];
-                    let t2_init = t2_node == &train_init_routes[*t2_idx];
+                    let new_conflict = added_conflicts.insert((c1, c2));
+                    if !new_conflict {
+                        // println!(
+                        //     "REDUNDANT COnflicts between {}--{:?}--{:?} and {}--{:?}--{:?} ",
+                        //     t1_idx,
+                        //     t1_node,
+                        //     t1_first_alternatives,
+                        //     t2_idx,
+                        //     t2_node,
+                        //     t2_first_alternatives
+                        // );
+                        continue;
+                    }
 
                     let t1_first = s.new_bool();
                     let t2_first = s.new_bool();
 
                     assert!(!(t1_init && t2_init));
                     if t1_init {
-                        s.add_clause(&vec![!t2_first]);
+                        unit_clauses.push(vec![!(t2_first.clone())]);
                     } else if t2_init {
-                        s.add_clause(&vec![!t1_first]);
+                        unit_clauses.push(vec![!(t1_first.clone())]);
                     }
 
                     for t2_out_node in t2_first_alternatives.iter() {
                         let use_precedence = if t2_first_alternatives.len() == 1 {
-                            t2_first
+                            t2_first.clone()
                         } else {
                             let v = s.new_bool();
                             s.add_clause(&vec![
-                                !t2_first,
-                                !train_vars[*t2_idx].node[&t2_out_node].0,
-                                v,
+                                !t2_first.clone(),
+                                !train_vars[*t2_idx].node[&t2_out_node].0.clone(),
+                                v.clone(),
                             ]);
                             v
                         };
 
                         s.add_diff(
                             Some(use_precedence),
-                            train_vars[*t2_idx].node[&t2_out_node].1,
-                            train_vars[t1_idx].node[t1_node].1,
+                            train_vars[*t2_idx].node[&t2_out_node].1.clone(),
+                            train_vars[t1_idx].node[t1_node].1.clone(),
                             -1,
                         );
                     }
 
                     for t1_out_node in t1_first_alternatives.iter() {
                         let use_precedence = if t1_first_alternatives.len() == 1 {
-                            t1_first
+                            t1_first.clone()
                         } else {
                             let v = s.new_bool();
                             s.add_clause(&vec![
-                                !t1_first,
-                                !train_vars[t1_idx].node[&t1_out_node].0,
-                                v,
+                                !t1_first.clone(),
+                                !train_vars[t1_idx].node[&t1_out_node].0.clone(),
+                                v.clone(),
                             ]);
                             v
                         };
                         s.add_diff(
                             Some(use_precedence),
-                            train_vars[t1_idx].node[&t1_out_node].1,
-                            train_vars[*t2_idx].node[t2_node].1,
+                            train_vars[t1_idx].node[&t1_out_node].1.clone(),
+                            train_vars[*t2_idx].node[t2_node].1.clone(),
                             -1,
                         );
                     }
 
                     s.add_clause(&vec![
-                        !train_vars[t1_idx].node[t1_node].0,
-                        !train_vars[*t2_idx].node[t2_node].0,
-                        t1_first,
-                        t2_first,
+                        !train_vars[t1_idx].node[t1_node].0.clone(),
+                        !train_vars[*t2_idx].node[t2_node].0.clone(),
+                        t1_first.clone(),
+                        t2_first.clone(),
                     ]);
 
                     n_conflicts += 1;
@@ -361,6 +464,7 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
             }
         }
     }
+    drop(added_conflicts);
 
     // 2023-07-03 There is a bug in the IDL solver, which doesn't handle
     // any literals being set before adding the difference constraints,
@@ -369,13 +473,11 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
     // Here, we have postponed adding the unit clauses until now, pending
     // a bug fix in the IDL library.
 
-    for train_idx in 0..problem.trains.len() {
-        s.add_clause(&vec![
-            train_vars[train_idx].node[&train_init_routes[train_idx]].0,
-        ]);
+    for c in unit_clauses {
+        s.add_clause(&c);
     }
 
-    println!("n_conflicts={}", n_conflicts);
+    warn!("n_conflicts={}", n_conflicts);
 
     drop(p_init);
     let _p = hprof::enter("cycle solve");
@@ -384,27 +486,27 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
         Ok(_model) => {
             info!("LIVE");
             for (train_idx, trainvar) in train_vars.iter().enumerate() {
-                for (node, (on, t)) in trainvar.node.iter() {
-                    println!(
-                        "train {} node {:?} on={:?}=={} t={:?}=={}",
-                        train_idx,
-                        node,
-                        on,
-                        s.get_bool_value(*on),
-                        t,
-                        s.get_int_value(*t)
-                    );
-                }
-                for ((n1, n2), on) in trainvar.edge.iter() {
-                    println!(
-                        "train {} EDGE {:?}--->{:?} on={:?}=={}",
-                        train_idx,
-                        n1,
-                        n2,
-                        on,
-                        s.get_bool_value(*on)
-                    );
-                }
+                // for (node, (on, t)) in trainvar.node.iter() {
+                //     debug!(
+                //         "train {} node {:?} on={:?}=={} t={:?}=={}",
+                //         train_idx,
+                //         node,
+                //         on,
+                //         s.get_bool_value(*on),
+                //         t,
+                //         s.get_int_value(*t)
+                //     );
+                // }
+                // for ((n1, n2), on) in trainvar.edge.iter() {
+                //     debug!(
+                //         "train {} EDGE {:?}--->{:?} on={:?}=={}",
+                //         train_idx,
+                //         n1,
+                //         n2,
+                //         on,
+                //         s.get_bool_value(*on)
+                //     );
+                // }
             }
 
             DeadlockResult::Live(crate::plan::Plan {
@@ -420,23 +522,44 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
 
 fn sorted_initial_routes(train: &crate::problem::Train) -> Vec<&String> {
     // Let's assume no trains are headed for a black hole in the initial state.
-    assert!(train
+
+    // Sometimes there is an initial route that is not described as a route.
+    let initial_routes = train
         .initial_routes
         .iter()
-        .all(|n| train.routes[n].next_routes.is_some()));
+        .filter(|r| {
+            if !train.routes.contains_key(*r) {
+                warn!("");
+                return false;
+            }
+
+            true
+        })
+        .collect::<Vec<_>>();
+
+    // println!(
+    //     "initial routes for train {}: {:?}",
+    //     train.name, train.initial_routes
+    // );
+    // for i in initial_routes.iter() {
+    //     println!("  * {:?}", train.routes[*i]);
+    // }
+
+    assert!(initial_routes
+        .iter()
+        .all(|n| train.routes[*n].next_routes.is_some()));
 
     // Check that exactly one of the initial routes does not point to one of the other
     // initial routes.
     assert!(
-        train
-            .initial_routes
+        initial_routes
             .iter()
-            .filter(|n| !train.routes[*n]
+            .filter(|n| !train.routes[**n]
                 .next_routes
                 .as_ref()
                 .unwrap()
                 .iter()
-                .any(|r| train.initial_routes.contains(r)))
+                .any(|r| initial_routes.contains(&r)))
             .count()
             == 1
     );
@@ -445,28 +568,26 @@ fn sorted_initial_routes(train: &crate::problem::Train) -> Vec<&String> {
     let mut rs = Vec::new();
     // Insert the last one first
     rs.push(
-        train
-            .initial_routes
+        *initial_routes
             .iter()
             .find(|n| {
-                !train.routes[*n]
+                !train.routes[**n]
                     .next_routes
                     .as_ref()
                     .unwrap()
                     .iter()
-                    .any(|r| train.initial_routes.contains(r))
+                    .any(|r| initial_routes.contains(&r))
             })
             .unwrap(),
     );
 
     // Insert the one poining to the previous.
-    while rs.len() < train.initial_routes.len() {
+    while rs.len() < initial_routes.len() {
         rs.push(
-            train
-                .initial_routes
+            *initial_routes
                 .iter()
                 .find(|n| {
-                    train.routes[*n]
+                    train.routes[**n]
                         .next_routes
                         .as_ref()
                         .unwrap()
