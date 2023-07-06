@@ -1,25 +1,130 @@
-use log::{info, warn, debug};
+#[allow(unused)]
+use log::{debug, info, warn};
 
 use crate::{plan::DeadlockResult, problem::Problem};
-use std::collections::{BTreeMap, BTreeSet, HashSet};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 type Occ<'a> = Vec<&'a String>;
 
 pub fn solve(problem: &Problem) -> DeadlockResult {
-    let init_string = "init".to_string();
-    let initnode = vec![&init_string];
-
+    let empty_node: Vec<&String> = vec![];
     let p_init = hprof::enter("cycle init");
-    // let inits = problem
-    //     .trains
-    //     .iter()
-    //     .map(sorted_initial_routes)
-    //     .collect::<Vec<_>>();
+    let mut movement_graphs = Vec::new();
+    let mut route_allocation_blocked_by: HashMap<&String, HashSet<(usize, Vec<&String>)>> =
+        Default::default();
 
-    let movement_graphs = problem
-        .trains
-        .iter()
-        .map(|t| movement_graph(t, initnode.clone()))
-        .collect::<Vec<_>>();
+    let mut train_init_routes = Vec::new();
+
+    for (train_idx, train) in problem.trains.iter().enumerate() {
+        let g = {
+            // In Sasso 2023 bencmarks, the original list of initial routes is not consistently ordered.
+            assert!(!train.initial_routes.is_empty());
+            let init_routes = sorted_initial_routes(train);
+            train_init_routes.push(init_routes.clone());
+
+            let mut graph: BTreeMap<Occ, BTreeSet<(Occ, Occ)>> = Default::default();
+            graph.insert(init_routes.clone(), Default::default());
+
+            let mut states = vec![init_routes];
+            while let Some(state) = states.pop() {
+                // Make a look-up structure of which routes cannot be allocated when this train is in this node.
+                let entering = state.last().unwrap();
+                println!("STATE {:?} entering {:?}", state, entering);
+                let mut remaining_length = train.routes[*entering].train_length;
+                for route in state.iter().copied().rev() {
+                    let r = &train.routes[route];
+                    for unconditional_conflict in r
+                        .unconditional_conflicts
+                        .iter()
+                        .chain(std::iter::once(*entering))
+                    {
+                        println!(
+                            "{} blocked by {:?}",
+                            unconditional_conflict,
+                            (train_idx, state.clone())
+                        );
+                        route_allocation_blocked_by
+                            .entry(unconditional_conflict)
+                            .or_default()
+                            .insert((train_idx, state.clone()));
+                    }
+
+                    remaining_length =
+                        remaining_length.saturating_sub(r.route_length_without_switch);
+                    if remaining_length == 0 {
+                        break;
+                    }
+
+                    for allocation_conflict in train.routes[route].allocation_conflicts.iter() {
+                        println!(
+                            "{} blocked by {:?}",
+                            allocation_conflict,
+                            (train_idx, state.clone())
+                        );
+                        route_allocation_blocked_by
+                            .entry(allocation_conflict)
+                            .or_default()
+                            .insert((train_idx, state.clone()));
+                    }
+
+                    remaining_length = remaining_length
+                        .saturating_sub(r.route_length - r.route_length_without_switch);
+                    if remaining_length == 0 {
+                        break;
+                    }
+                }
+
+                // println!("VISITING {:?}", state);
+                let head = state.last().unwrap();
+                if let Some(nexts) = train.routes[*head].next_routes.as_ref() {
+                    for next in nexts.iter() {
+                        // Now, make a new state.
+                        let mut to_drop = state.clone();
+                        to_drop.push(next);
+
+                        // Find the routes that can eventually be dropped when
+                        // the new route has been reached.
+
+                        let mut split_idx = to_drop.len();
+                        let mut remaining_length = train.routes[next].train_length;
+                        while split_idx >= 1 && remaining_length > 0 {
+                            split_idx -= 1;
+                            let route_length = train.routes[to_drop[split_idx]].route_length;
+                            remaining_length = remaining_length.saturating_sub(route_length);
+                        }
+
+                        let new_state = to_drop.split_off(split_idx.min(to_drop.len() - 1));
+
+                        // println!("state {:?} -> drop {:?} -> next {:?}", state, to_drop, new_state);
+
+                        graph
+                            .get_mut(&state)
+                            .unwrap()
+                            .insert((new_state.clone(), to_drop));
+
+                        graph.entry(new_state.clone()).or_insert_with(|| {
+                            states.push(new_state);
+                            Default::default()
+                        });
+                    }
+                } else {
+                    // Black hole, so link up to the empty set.
+                    let black_hole = vec![];
+                    graph.entry(black_hole.clone()).or_default();
+                    graph
+                        .entry(state.clone())
+                        .or_default()
+                        .insert((black_hole, state));
+                }
+            }
+
+            // Should have reached a black hole.
+            assert!(graph.contains_key(&vec![]));
+            // Only black holes should be dead-ends.
+            assert!(graph.iter().all(|(k, v)| k.is_empty() == v.is_empty()));
+            graph
+        };
+        movement_graphs.push(g);
+    }
 
     let mut s = idl::IdlSolver::new();
 
@@ -36,19 +141,12 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
         let movement_graph = &movement_graphs[train_idx];
         let mut node_vars: BTreeMap<&Occ, (idl::Lit, idl::DVar)> = Default::default();
 
-        let init_node_var = s.new_bool();
-
         let mut train_edges: BTreeMap<(&Occ, &Occ), idl::Lit> = Default::default();
-        node_vars.insert(&initnode, (init_node_var, s.new_int()));
-        let mut unvisited = vec![&initnode];
+        node_vars.insert(&train_init_routes[train_idx], (s.new_bool(), s.new_int()));
+        let mut unvisited = vec![&train_init_routes[train_idx]];
 
         // DFS through the movement graph and add variables and flow constraints.
         while let Some(state) = unvisited.pop() {
-            // println!(
-            //     "TRAIN {} state {:?} edges {:?}",
-            //     train_idx, state, movement_graph[state]
-            // );
-
             let is_black_hole = movement_graph[state].is_empty();
             assert!(state.is_empty() == is_black_hole);
 
@@ -116,106 +214,149 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
         })
     }
 
+    fn advance_until_stops_blocking<'a>(
+        blocked_by: &HashSet<(usize, Vec<&String>)>,
+        movement_graph: &BTreeMap<Vec<&'a String>, BTreeSet<(Vec<&'a String>, Vec<&'a String>)>>,
+        t2: &usize,
+        t2_node: Vec<&'a String>,
+    ) -> Vec<Vec<&'a String>> {
+        let mut alternatives: HashSet<Vec<&String>> = Default::default();
+        // Here, we look at permanent conflicts.
+
+        let mut queue = VecDeque::new();
+        queue.push_back(t2_node);
+
+        while let Some(t2_node) = queue.pop_front() {
+            if !blocked_by.contains(&(*t2, t2_node.clone())) {
+                alternatives.insert(t2_node);
+            } else {
+                let nexts = &movement_graph[&t2_node];
+                assert!(!nexts.is_empty());
+                queue.extend(nexts.iter().map(|(n, _)| n.clone()));
+            }
+        }
+
+        alternatives.into_iter().collect()
+    }
+
     let mut n_conflicts = 0;
     // For all pairs of movement nodes from different trains, deconflict.
     for t1_idx in 0..problem.trains.len() {
-        let t1edges = movement_graphs[t1_idx]
-            .iter()
-            .flat_map(|(n1, es)| es.iter().map(move |(n2, temp)| (n1, n2, temp)));
-
-        for (t1n1, t1n2, t1temp) in t1edges {
-            let mut t1_resources: HashSet<&String> = Default::default();
-            for x in [t1n1, t1n2, t1temp] {
-                t1_resources.extend(x.iter().filter(|r| **r != "init").flat_map(|r| {
-                    problem.trains[t1_idx].routes[*r]
-                        .unconditional_conflicts
-                        .iter()
-                        .chain(std::iter::once(*r))
-                }));
+        for t1_node in movement_graphs[t1_idx].keys() {
+            if t1_node == &empty_node {
+                continue;
             }
 
-            for t2_idx in (t1_idx + 1)..problem.trains.len() {
-                let t2edges = movement_graphs[t2_idx]
-                    .iter()
-                    .flat_map(|(n1, es)| es.iter().map(move |(n2, temp)| (n1, n2, temp)));
+            let t1_entering_route = t1_node.last().unwrap();
 
-                for (t2n1, t2n2, t2temp) in t2edges {
-                    let in_conflict = [t2n1, t2n2, t2temp]
-                        .iter()
-                        .any(|routes| routes.iter().any(|r| t1_resources.contains(r)));
+            // Which blocking sets in other trains are blocking me from entering this route?
+            if let Some(blocks) = route_allocation_blocked_by.get(t1_entering_route) {
+                assert!(t1_node != &empty_node || blocks.is_empty());
 
-                    if in_conflict {
-                        let t1_is_initial = t1n1 == &initnode;
-                        let t2_is_initial = t2n1 == &initnode;
-                        if t1_is_initial && t2_is_initial {
-                            warn!("Ignoring conflict in initial state {} {:?} {:?} {:?} {} {:?} {:?} {:?}",
-                            t1_idx, t1n1, t1temp, t1n2, t2_idx, t2n1, t2temp, t2n2);
-                            warn!("  {:?}", t1_resources);
-                        } else if t1_is_initial {
-                            let c = s.new_bool();
-                            debug!(" C {:?}:   {:?} < {:?}", c, t1n2, t2n1);
+                for (t2_idx, t2_node) in blocks {
+                    assert!(t2_node != &empty_node);
 
-                            s.add_diff(
-                                Some(c),
-                                train_vars[t1_idx].node[t1n2].1,
-                                train_vars[t2_idx].node[t2n1].1,
-                                -1,
-                            );
-                            s.add_clause(&vec![
-                                !train_vars[t1_idx].edge[&(t1n1, t1n2)],
-                                !train_vars[t2_idx].edge[&(t2n1, t2n2)],
-                                c,
-                            ]);
-                        } else if t2_is_initial {
-                            let c = s.new_bool();
-                            debug!(" C {:?}:   {:?} < {:?}", c, t2n2, t1n1);
-
-                            s.add_diff(
-                                Some(c),
-                                train_vars[t2_idx].node[t2n2].1,
-                                train_vars[t1_idx].node[t1n1].1,
-                                -1,
-                            );
-                            s.add_clause(&vec![
-                                !train_vars[t1_idx].edge[&(t1n1, t1n2)],
-                                !train_vars[t2_idx].edge[&(t2n1, t2n2)],
-                                c,
-                            ]);
-                        } else {
-                            let c1 = s.new_bool();
-                            let c2 = s.new_bool();
-                            debug!(
-                                "Adding conflict {} {:?} {:?} {:?} {} {:?} {:?} {:?}",
-                                t1_idx, t1n1, t1temp, t1n2, t2_idx, t2n1, t2temp, t2n2
-                            );
-
-                            debug!(" C1 {:?}:   {:?} < {:?}", c1, t2n2, t1n1);
-                            debug!(" C2 {:?}:   {:?} < {:?}", c2, t1n2, t2n1);
-
-                            s.add_diff(
-                                Some(c1),
-                                train_vars[t2_idx].node[t2n2].1,
-                                train_vars[t1_idx].node[t1n1].1,
-                                -1,
-                            );
-
-                            s.add_diff(
-                                Some(c2),
-                                train_vars[t1_idx].node[t1n2].1,
-                                train_vars[t2_idx].node[t2n1].1,
-                                -1,
-                            );
-
-                            s.add_clause(&vec![
-                                !train_vars[t1_idx].edge[&(t1n1, t1n2)],
-                                !train_vars[t2_idx].edge[&(t2n1, t2n2)],
-                                c1,
-                                c2,
-                            ]);
-
-                            n_conflicts += 1;
-                        }
+                    if *t2_idx == t1_idx {
+                        continue;
                     }
+
+                    let t2_entering_route = t2_node.last().unwrap();
+                    println!(
+                        "train {}  t2_node {:?} t2_entering {:?}",
+                        t2_idx, t2_node, t2_entering_route
+                    );
+
+                    // Allocation is blocked by t2_node.
+                    // Either t2 needs to stop blocking t1_entering_route before
+                    // we reach this node.
+
+                    let t2_first_alternatives = advance_until_stops_blocking(
+                        &route_allocation_blocked_by[t1_entering_route],
+                        &movement_graphs[*t2_idx],
+                        t2_idx,
+                        (*t2_node).clone(),
+                    );
+
+                    // or t1 came first.
+                    let t1_first_alternatives = advance_until_stops_blocking(
+                        &route_allocation_blocked_by[t2_entering_route],
+                        &movement_graphs[t1_idx],
+                        &t1_idx,
+                        t1_node.clone(),
+                    );
+
+                    println!(
+                        "COnflicts between {}--{:?}--{:?} and {}--{:?}--{:?} ",
+                        t1_idx,
+                        t1_node,
+                        t1_first_alternatives,
+                        t2_idx,
+                        t2_node,
+                        t2_first_alternatives
+                    );
+
+                    let t1_init = t1_node == &train_init_routes[t1_idx];
+                    let t2_init = t2_node == &train_init_routes[*t2_idx];
+
+                    let t1_first = s.new_bool();
+                    let t2_first = s.new_bool();
+
+                    assert!(!(t1_init && t2_init));
+                    if t1_init {
+                        s.add_clause(&vec![!t2_first]);
+                    } else if t2_init {
+                        s.add_clause(&vec![!t1_first]);
+                    }
+
+                    for t2_out_node in t2_first_alternatives.iter() {
+                        let use_precedence = if t2_first_alternatives.len() == 1 {
+                            t2_first
+                        } else {
+                            let v = s.new_bool();
+                            s.add_clause(&vec![
+                                !t2_first,
+                                !train_vars[*t2_idx].node[&t2_out_node].0,
+                                v,
+                            ]);
+                            v
+                        };
+
+                        s.add_diff(
+                            Some(use_precedence),
+                            train_vars[*t2_idx].node[&t2_out_node].1,
+                            train_vars[t1_idx].node[t1_node].1,
+                            -1,
+                        );
+                    }
+
+                    for t1_out_node in t1_first_alternatives.iter() {
+                        let use_precedence = if t1_first_alternatives.len() == 1 {
+                            t1_first
+                        } else {
+                            let v = s.new_bool();
+                            s.add_clause(&vec![
+                                !t1_first,
+                                !train_vars[t1_idx].node[&t1_out_node].0,
+                                v,
+                            ]);
+                            v
+                        };
+                        s.add_diff(
+                            Some(use_precedence),
+                            train_vars[t1_idx].node[&t1_out_node].1,
+                            train_vars[*t2_idx].node[t2_node].1,
+                            -1,
+                        );
+                    }
+
+                    s.add_clause(&vec![
+                        !train_vars[t1_idx].node[t1_node].0,
+                        !train_vars[*t2_idx].node[t2_node].0,
+                        t1_first,
+                        t2_first,
+                    ]);
+
+                    n_conflicts += 1;
                 }
             }
         }
@@ -229,7 +370,9 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
     // a bug fix in the IDL library.
 
     for train_idx in 0..problem.trains.len() {
-        s.add_clause(&vec![train_vars[train_idx].node[&initnode].0]);
+        s.add_clause(&vec![
+            train_vars[train_idx].node[&train_init_routes[train_idx]].0,
+        ]);
     }
 
     println!("n_conflicts={}", n_conflicts);
@@ -273,74 +416,6 @@ pub fn solve(problem: &Problem) -> DeadlockResult {
             DeadlockResult::Deadlocked(())
         }
     }
-}
-
-fn movement_graph<'a>(
-    train: &'a crate::problem::Train,
-    dummy_init: Vec<&'a String>,
-) -> BTreeMap<Vec<&'a String>, BTreeSet<(Vec<&'a String>, Vec<&'a String>)>> {
-    // In Sasso 2023 bencmarks, the original list of initial routes is not consistently ordered.
-    assert!(!train.initial_routes.is_empty());
-    let init_routes = sorted_initial_routes(train);
-
-    let mut graph: BTreeMap<Occ, BTreeSet<(Occ, Occ)>> = Default::default();
-    graph
-        .entry(dummy_init)
-        .or_default()
-        .insert((init_routes.clone(), vec![]));
-    graph.insert(init_routes.clone(), Default::default());
-
-    let mut states = vec![init_routes];
-    while let Some(state) = states.pop() {
-        // println!("VISITING {:?}", state);
-        let head = state.last().unwrap();
-        if let Some(nexts) = train.routes[*head].next_routes.as_ref() {
-            for next in nexts.iter() {
-                // Now, make a new state.
-                let mut to_drop = state.clone();
-                to_drop.push(next);
-
-                // Find the routes that can eventually be dropped when
-                // the new route has been reached.
-
-                let mut split_idx = to_drop.len();
-                let mut remaining_length = train.routes[next].train_length;
-                while split_idx >= 1 && remaining_length > 0 {
-                    split_idx -= 1;
-                    let route_length = train.routes[to_drop[split_idx]].route_length;
-                    remaining_length = remaining_length.saturating_sub(route_length);
-                }
-
-                let new_state = to_drop.split_off(split_idx.min(to_drop.len() - 1));
-
-                // println!("state {:?} -> drop {:?} -> next {:?}", state, to_drop, new_state);
-
-                graph
-                    .get_mut(&state)
-                    .unwrap()
-                    .insert((new_state.clone(), to_drop));
-
-                graph.entry(new_state.clone()).or_insert_with(|| {
-                    states.push(new_state);
-                    Default::default()
-                });
-            }
-        } else {
-            // Black hole, so link up to the empty set.
-            let black_hole = vec![];
-            graph.entry(black_hole.clone()).or_default();
-            graph
-                .entry(state.clone())
-                .or_default()
-                .insert((black_hole, state));
-        }
-    }
-
-    // Should have reached a black hole.
-    assert!(graph.contains_key(&vec![]));
-    // Only black holes should be dead-ends.
-    assert!(graph.iter().all(|(k, v)| k.is_empty() == v.is_empty()));
-    graph
 }
 
 fn sorted_initial_routes(train: &crate::problem::Train) -> Vec<&String> {
