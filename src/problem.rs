@@ -25,6 +25,8 @@ pub struct TrainRoute {
     pub unconditional_conflicts: Vec<RouteRef>,
     pub allocation_conflicts: Vec<RouteRef>,
     pub next_routes: Option<Vec<RouteRef>>,
+
+    #[serde(default)]
     pub is_multi_train: bool,
 }
 
