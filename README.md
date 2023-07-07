@@ -22,6 +22,9 @@ The directory `benchmark_twotrainscaling` contains a set of instances with two t
  > ./scripts/perf_benchmark_twotrainscaling.sh
 
 
+The directory `benchmark_sasso_2023` contains larger problem instances from an in-progress study, also including features such as multiple trains in each route, priority constraints between trains, and safe-place specifications. This format is partially supported here, but ignores some of these advanced features.
+
+
 ## Usage
 
 ```
