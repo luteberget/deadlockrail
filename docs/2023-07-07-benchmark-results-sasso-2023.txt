@@ -1,0 +1,306 @@
+#
+# ALGORITHM 1
+#
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587bis.json
+2023-07-07 11:10:56,701 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 448.2us = 448.2us (59.2%)
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587.json
+2023-07-07 11:10:56,703 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 313.5us = 313.5us (54.2%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364bis.json
+2023-07-07 11:10:56,709 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked after reaching UB 18 on steps at 19
+  deadlockcheck - 1 * 4.3ms = 4.3ms (91.9%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364.json
+2023-07-07 11:10:56,711 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 2 steps
+  deadlockcheck - 1 * 162.4us = 162.4us (31.2%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033bis.json
+2023-07-07 11:10:56,732 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked after reaching UB 34 on steps at 35
+  deadlockcheck - 1 * 20.3ms = 20.3ms (97.2%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033.json
+2023-07-07 11:10:56,738 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 1.9ms = 1.9ms (78.5%)
+instance benchmark_sasso_2023/instance_2022_05_06_15_16_25_591.json
+2023-07-07 11:10:56,740 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 551.0us = 551.0us (72.4%)
+instance benchmark_sasso_2023/instance_2022_05_09_10_56_14_742.json
+2023-07-07 11:10:56,746 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 6 steps
+  deadlockcheck - 1 * 3.3ms = 3.3ms (82.1%)
+instance benchmark_sasso_2023/instance_2022_05_09_12_01_14_509.json
+2023-07-07 11:10:56,749 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 523.2us = 523.2us (51.8%)
+instance benchmark_sasso_2023/instance_2022_05_09_16_26_27_885.json
+2023-07-07 11:10:56,751 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 2 steps
+  deadlockcheck - 1 * 193.0us = 193.0us (39.7%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_03_47_908.json
+2023-07-07 11:10:56,754 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 811.2us = 811.2us (61.5%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_14_33_710.json
+2023-07-07 11:10:56,763 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 7 steps
+  deadlockcheck - 1 * 7.6ms = 7.6ms (93.1%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642bis.json
+2023-07-07 11:10:56,846 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked after reaching UB 69 on steps at 70
+  deadlockcheck - 1 * 92.2ms = 92.2ms (98.9%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642.json
+2023-07-07 11:10:56,868 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 5.3ms = 5.3ms (83.0%)
+instance benchmark_sasso_2023/instance_2022_05_16_11_48_18_448.json
+2023-07-07 11:10:56,889 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 17.9ms = 17.9ms (86.6%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039bis.json
+2023-07-07 11:10:56,905 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked after reaching UB 40 on steps at 41
+  deadlockcheck - 1 * 11.2ms = 11.2ms (94.0%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039.json
+2023-07-07 11:10:56,909 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 528.2us = 528.2us (56.2%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041bis.json
+2023-07-07 11:10:56,916 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 6.1ms = 6.1ms (90.8%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041.json
+2023-07-07 11:10:56,923 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 4.3ms = 4.3ms (87.4%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041tris.json
+2023-07-07 11:10:56,939 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 7 steps
+  deadlockcheck - 1 * 14.1ms = 14.1ms (95.1%)
+instance benchmark_sasso_2023/instance_2022_12_16_10_59_22_175.json
+2023-07-07 11:10:57,003 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 57.4ms = 57.4ms (91.0%)
+#
+# ALGORITHM 3
+#
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587bis.json
+2023-07-07 11:10:57,008 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 681.9us = 681.9us (69.7%)
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587.json
+2023-07-07 11:10:57,010 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 485.7us = 485.7us (64.4%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364bis.json
+2023-07-07 11:10:57,012 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked in 2 steps
+  deadlockcheck - 1 * 210.2us = 210.2us (38.7%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364.json
+2023-07-07 11:10:57,014 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 2 steps
+  deadlockcheck - 1 * 195.0us = 195.0us (41.2%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033bis.json
+2023-07-07 11:10:57,035 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked in 7 steps
+  deadlockcheck - 1 * 18.6ms = 18.6ms (97.0%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033.json
+2023-07-07 11:10:57,040 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 3.1ms = 3.1ms (86.2%)
+instance benchmark_sasso_2023/instance_2022_05_06_15_16_25_591.json
+2023-07-07 11:10:57,043 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 926.6us = 926.6us (81.6%)
+instance benchmark_sasso_2023/instance_2022_05_09_10_56_14_742.json
+2023-07-07 11:10:57,050 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 6 steps
+  deadlockcheck - 1 * 5.9ms = 5.9ms (93.0%)
+instance benchmark_sasso_2023/instance_2022_05_09_12_01_14_509.json
+2023-07-07 11:10:57,054 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 816.5us = 816.5us (66.0%)
+instance benchmark_sasso_2023/instance_2022_05_09_16_26_27_885.json
+2023-07-07 11:10:57,056 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 2 steps
+  deadlockcheck - 1 * 245.4us = 245.4us (46.8%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_03_47_908.json
+2023-07-07 11:10:57,059 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 1.5ms = 1.5ms (74.8%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_14_33_710.json
+2023-07-07 11:10:57,086 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 7 steps
+  deadlockcheck - 1 * 25.4ms = 25.4ms (97.9%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642bis.json
+2023-07-07 11:10:57,824 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked in 8 steps
+  deadlockcheck - 1 * 734.7ms = 734.7ms (99.9%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642.json
+2023-07-07 11:10:57,838 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 9.7ms = 9.7ms (88.1%)
+instance benchmark_sasso_2023/instance_2022_05_16_11_48_18_448.json
+2023-07-07 11:10:57,915 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 73.0ms = 73.0ms (96.5%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039bis.json
+2023-07-07 11:10:57,921 INFO  [deadlockrail::solver_statespace] DEADLOCKED: situation locked in 3 steps
+  deadlockcheck - 1 * 840.1us = 840.1us (53.2%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039.json
+2023-07-07 11:10:57,924 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 3 steps
+  deadlockcheck - 1 * 1.0ms = 1.0ms (58.4%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041bis.json
+2023-07-07 11:10:57,938 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 12.0ms = 12.0ms (95.1%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041.json
+2023-07-07 11:10:57,951 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 5 steps
+  deadlockcheck - 1 * 9.6ms = 9.6ms (88.3%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041tris.json
+2023-07-07 11:10:57,988 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 7 steps
+  deadlockcheck - 1 * 34.8ms = 34.8ms (98.1%)
+instance benchmark_sasso_2023/instance_2022_12_16_10_59_22_175.json
+2023-07-07 11:10:58,085 INFO  [deadlockrail::solver_statespace] LIVE: situation resolved in 4 steps
+  deadlockcheck - 1 * 90.7ms = 90.7ms (94.5%)
+#
+# ALGORITHM 4
+#
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,091 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 488.5us = 488.5us (48.3%)
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,093 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 122.0us = 122.0us (30.3%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,095 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 143.2us = 143.2us (31.8%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,097 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 88.4us = 88.4us (24.9%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,101 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 1.3ms = 1.3ms (67.9%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,105 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 2.2ms = 2.2ms (78.4%)
+instance benchmark_sasso_2023/instance_2022_05_06_15_16_25_591.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,107 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 185.9us = 185.9us (47.0%)
+instance benchmark_sasso_2023/instance_2022_05_09_10_56_14_742.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,110 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 1.3ms = 1.3ms (78.5%)
+instance benchmark_sasso_2023/instance_2022_05_09_12_01_14_509.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,114 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 427.8us = 427.8us (32.7%)
+instance benchmark_sasso_2023/instance_2022_05_09_16_26_27_885.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,116 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 164.5us = 164.5us (34.3%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_03_47_908.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,118 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 462.0us = 462.0us (47.9%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_14_33_710.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,127 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 6.6ms = 6.6ms (92.4%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,133 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 3.4ms = 3.4ms (75.4%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,142 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 6.6ms = 6.6ms (86.2%)
+instance benchmark_sasso_2023/instance_2022_05_16_11_48_18_448.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,209 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 63.1ms = 63.1ms (96.0%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,213 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 431.6us = 431.6us (48.5%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,215 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 384.9us = 384.9us (50.7%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041bis.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,222 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 4.2ms = 4.2ms (87.3%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,227 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 2.8ms = 2.8ms (82.5%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041tris.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,242 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 11.9ms = 11.9ms (94.9%)
+instance benchmark_sasso_2023/instance_2022_12_16_10_59_22_175.json
+IDL: rust dpllt with idl solver
+2023-07-07 11:10:58,280 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 32.0ms = 32.0ms (85.6%)
+#
+# ALGORITHM 5
+#
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587bis.json
+IDL: z3
+2023-07-07 11:10:58,297 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 14.1ms = 14.1ms (97.2%)
+instance benchmark_sasso_2023/instance_2022_04_11_10_29_32_587.json
+IDL: z3
+2023-07-07 11:10:58,309 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 8.9ms = 8.9ms (97.0%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364bis.json
+IDL: z3
+2023-07-07 11:10:58,316 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 5.6ms = 5.6ms (94.7%)
+instance benchmark_sasso_2023/instance_2022_04_12_09_38_07_364.json
+IDL: z3
+2023-07-07 11:10:58,327 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 8.1ms = 8.1ms (96.7%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033bis.json
+IDL: z3
+2023-07-07 11:10:58,362 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 33.5ms = 33.5ms (98.4%)
+instance benchmark_sasso_2023/instance_2022_05_06_14_08_34_033.json
+IDL: z3
+2023-07-07 11:10:58,440 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 75.4ms = 75.4ms (99.3%)
+instance benchmark_sasso_2023/instance_2022_05_06_15_16_25_591.json
+IDL: z3
+2023-07-07 11:10:58,457 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 14.1ms = 14.1ms (97.0%)
+instance benchmark_sasso_2023/instance_2022_05_09_10_56_14_742.json
+IDL: z3
+2023-07-07 11:10:58,512 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 51.8ms = 51.8ms (99.2%)
+instance benchmark_sasso_2023/instance_2022_05_09_12_01_14_509.json
+IDL: z3
+2023-07-07 11:10:58,526 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 11.4ms = 11.4ms (96.4%)
+instance benchmark_sasso_2023/instance_2022_05_09_16_26_27_885.json
+IDL: z3
+2023-07-07 11:10:58,539 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 10.2ms = 10.2ms (97.3%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_03_47_908.json
+IDL: z3
+2023-07-07 11:10:58,558 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 16.2ms = 16.2ms (96.9%)
+instance benchmark_sasso_2023/instance_2022_05_12_12_14_33_710.json
+IDL: z3
+2023-07-07 11:10:58,814 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 256.5ms = 256.5ms (99.8%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642bis.json
+IDL: z3
+2023-07-07 11:10:58,912 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 90.7ms = 90.7ms (97.8%)
+instance benchmark_sasso_2023/instance_2022_05_13_15_52_34_642.json
+IDL: z3
+2023-07-07 11:10:59,061 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 148.1ms = 148.1ms (99.3%)
+instance benchmark_sasso_2023/instance_2022_05_16_11_48_18_448.json
+IDL: z3
+2023-07-07 11:11:00,709 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 1.7s = 1.7s (99.8%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039bis.json
+IDL: z3
+2023-07-07 11:11:00,780 INFO  [deadlockrail::solver_cycles] DEADLOCKED
+  deadlockcheck - 1 * 17.4ms = 17.4ms (96.3%)
+instance benchmark_sasso_2023/instance_2022_05_16_14_40_21_039.json
+IDL: z3
+2023-07-07 11:11:00,802 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 19.5ms = 19.5ms (97.7%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041bis.json
+IDL: z3
+2023-07-07 11:11:00,897 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 91.8ms = 91.8ms (98.6%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041.json
+IDL: z3
+2023-07-07 11:11:00,985 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 83.4ms = 83.4ms (98.4%)
+instance benchmark_sasso_2023/instance_2022_05_16_16_05_56_041tris.json
+IDL: z3
+2023-07-07 11:11:01,112 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 123.1ms = 123.1ms (98.9%)
+instance benchmark_sasso_2023/instance_2022_12_16_10_59_22_175.json
+IDL: z3
+2023-07-07 11:11:01,793 INFO  [deadlockrail::solver_cycles] LIVE
+  deadlockcheck - 1 * 687.2ms = 687.2ms (99.1%)
