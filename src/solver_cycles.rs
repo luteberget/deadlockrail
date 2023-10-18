@@ -100,6 +100,9 @@ pub fn solve<S: IDLSolver>(problem: &Problem, mut s: S) -> DeadlockResult {
     let mut train_init_routes = Vec::new();
     let mut unit_clauses = Vec::new();
 
+    let mut total_nodes_unexpanded = 0usize;
+    let mut total_nodes_expanded = 0usize;
+
     for (train_idx, train) in problem.trains.iter().enumerate() {
         let g = {
             // In Sasso 2023 bencmarks, the original list of initial routes is not consistently ordered.
@@ -208,10 +211,21 @@ pub fn solve<S: IDLSolver>(problem: &Problem, mut s: S) -> DeadlockResult {
             assert!(graph.contains_key(&vec![]));
             // Only black holes should be dead-ends.
             assert!(graph.iter().all(|(k, v)| k.is_empty() == v.is_empty()));
+
+            let mut reachable_routes :HashSet<Option<&String>>= HashSet::default();
+            for node in graph.keys() {
+                reachable_routes.insert(node.last().copied());
+            }
+
+            println!("Train {} has {} reachable routes expanded to {} in movement graph", train_idx, reachable_routes.len(), graph.len());
+            total_nodes_unexpanded += reachable_routes.len();
+            total_nodes_expanded += graph.len();
             graph
         };
         movement_graphs.push(g);
     }
+
+    println!("Movement graph expanded long trains in {} nodes to short trains in {} nodes", total_nodes_unexpanded, total_nodes_expanded);
 
     struct TrainVars<'a, S: IDLSolver> {
         node: BTreeMap<&'a Occ<'a>, (S::BoolLit, S::IntVar)>,
